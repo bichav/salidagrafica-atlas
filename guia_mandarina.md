@@ -12,22 +12,16 @@ Hablar con mesa de ayuda
 
 Pedir datos a mesa de ayuda
 
-1.  **Instalar plugins**
+1.  **Descargar plugins**
 
-> Copiar carpeta **“segmenta\_plugin\_qgis”** dependiendo de cada SO
-
-**\**Win10***
-
-C:\\Program Files\\QGIS 3.10\\apps\\qgis-ltr\\python\\plugins
-
-\****Otro***
-
-Después se verá :D
+Encontrará el link de descarga en la aplicación web de segmentación
 
 1.  **Desde Qgis**
 
-3.1- *Activar Complemento desde el menú “**Complementos\\Administrar e
+3.1- *Instalar el Complemento desde el menú “**Complementos\\Administrar e
 instalar complementos”***
+
+*Instalar a partir de zip* , utilizando el archivo descargado 'salidagrafica-atlas-master.zip'
 
 ![](.//media/image1.png){width="4.4007228783902015in"
 height="1.3229166666666667in"}
