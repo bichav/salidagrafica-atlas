@@ -181,16 +181,10 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="prov" name="" index="0"/>
-    <alias field="dpto" name="" index="1"/>
-    <alias field="codloc" name="" index="2"/>
-    <alias field="frac" name="" index="3"/>
-    <alias field="radio" name="" index="4"/>
-    <alias field="segmento_id" name="" index="5"/>
-    <alias field="seg" name="" index="6"/>
-    <alias field="descripcion" name="" index="7"/>
-    <alias field="viviendas" name="" index="8"/>
-    <alias field="link" name="" index="9"/>
+    <alias field="seg" name="" index="0"/>
+    <alias field="descripcion" name="" index="1"/>
+    <alias field="viviendas" name="" index="2"/>
+    <alias field="" name="" index="3"/>
   </aliases>
   <defaults>
     <default expression="" field="prov" applyOnUpdate="0"/>
@@ -224,7 +218,7 @@
     <constraint exp="" field="radio" desc=""/>
     <constraint exp="" field="segmento_id" desc=""/>
     <constraint exp="" field="seg" desc=""/>
-    <constraint exp="" field="descripcion" desc=""/>
+    <constraint exp="'\n'  ||  replace( "descripcion" , '. ',  '\n' ) " field="descripcion" desc=""/>
     <constraint exp="" field="viviendas" desc=""/>
     <constraint exp="" field="link" desc=""/>
   </constraintExpressions>
@@ -232,18 +226,18 @@
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="seg">
     <columns>
-      <column name="prov" type="field" width="-1" hidden="0"/>
-      <column name="dpto" type="field" width="-1" hidden="0"/>
-      <column name="codloc" type="field" width="-1" hidden="0"/>
-      <column name="frac" type="field" width="-1" hidden="0"/>
-      <column name="radio" type="field" width="-1" hidden="0"/>
-      <column name="segmento_id" type="field" width="-1" hidden="0"/>
-      <column name="seg" type="field" width="-1" hidden="0"/>
-      <column name="descripcion" type="field" width="-1" hidden="0"/>
-      <column name="viviendas" type="field" width="-1" hidden="0"/>
-      <column name="link" type="field" width="-1" hidden="0"/>
+      <column name="prov" type="field" width="-1" hidden="1"/>
+      <column name="dpto" type="field" width="-1" hidden="1"/>
+      <column name="codloc" type="field" width="-1" hidden="1"/>
+      <column name="frac" type="field" width="-1" hidden="1"/>
+      <column name="radio" type="field" width="-1" hidden="1"/>
+      <column name="segmento_id" type="field" width="-1" hidden="1"/>
+      <column name="seg" type="field" width="16mm" align="middle center" hidden="0"/>
+      <column name="descripcion" type="field" width="219mm" hidden="0"/>
+      <column name="viviendas" type="field" width="16mm" align="middle center" hidden="0"/>
+      <column name="" type="field" width="40mm" hidden="0"/>
       <column type="actions" width="-1" hidden="1"/>
     </columns>
   </attributetableconfig>
