@@ -14,7 +14,7 @@
    <string>Segmentación Censo Ronda 2020</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+  <iconset resource="resources.qrc">
     <normaloff>:/plugins/censo_segmento/icon.png</normaloff>:/plugins/censo_segmento/icon.png</iconset>
   </property>
   <property name="accessibleName">
