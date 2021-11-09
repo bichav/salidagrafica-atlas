@@ -378,7 +378,7 @@ class CensoSegmento:
             print("error en la ruta del archivo R3" )
             
     #### Plantilla tamaño A4 ###############          
-        rutaR4= origen + r'/plantillas/radio_a4.qpt'
+        rutaR4= origen + r'/plantillas/radio_A4.qpt'
         if os.path.exists(rutaR4):
             with open(rutaR4, 'r') as templateFile:
                 myTemplateContent = templateFile.read()
@@ -395,7 +395,7 @@ class CensoSegmento:
             print("error en la ruta del archivo" )
     
     #### Plantilla tamaño A3 ###############  
-        rutaR3= ruta= origen + r'/plantillas/radio_a3.qpt'
+        rutaR3= ruta= origen + r'/plantillas/radio_A3.qpt'
         if os.path.exists(rutaR3):
             with open(rutaR3, 'r') as templateFile:
                 myTemplateContent = templateFile.read()
@@ -560,7 +560,7 @@ class CensoSegmento:
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
         #Añadi una verificación de la ruta del archivo qtp
-        ruta5= origen+ r'/plantillas/segmento_a4.qpt'
+        ruta5= origen+ r'/plantillas/segmento_A4.qpt'
         if os.path.exists(ruta5):
             with open(ruta5, 'r') as templateFile:
                 myTemplateContent = templateFile.read()
@@ -577,7 +577,7 @@ class CensoSegmento:
             print("error en la ruta del archivo" )
     
         #### Plantilla tamaño A3 ###############  
-        ruta4= ruta= origen + r'/plantillas/segmento_a3.qpt'
+        ruta4= ruta= origen + r'/plantillas/segmento_A3.qpt'
         if os.path.exists(ruta4):
             with open(ruta4, 'r') as templateFile:
                 myTemplateContent = templateFile.read()
