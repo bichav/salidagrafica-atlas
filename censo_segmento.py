@@ -343,8 +343,8 @@ class CensoSegmento:
 
         ############################# Agrego la capa Descripcion ########################### 
         sql = aglomerado[0]
-       # uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from indec.describe_segmentos_con_direcciones('" + sql + "'))","geom","", "segmento_id")
-        uri.setDataSource('', " ( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from " + sql + ".r3)","geom","", "segmento_id")
+        uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from indec.describe_segmentos_con_direcciones('" + sql + "'))","geom","", "segmento_id")
+        uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from " + sql + ".r3)","geom","", "segmento_id")
         layer = QgsVectorLayer(uri.uri(), "descripcion", "postgres")
         if not layer.isValid():
             print ("No se cargo capa Descripcion")
