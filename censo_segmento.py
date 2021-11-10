@@ -489,7 +489,7 @@ class CensoSegmento:
             print ("No se cargo capa Listado")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/listado.qml')
+        layer.loadNamedStyle(origen +'/estilo_segmento/listadosegmento.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
