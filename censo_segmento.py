@@ -626,3 +626,114 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo A3")
+
+
+    def runFraccion(self, iface):
+        from qgis.utils import iface
+        #####################################Conexion   existente en el admnistrador de BD##############################################
+        ##########Conexion desde BD a Postgis
+        QgsProject.instance().clear()
+        qs = QSettings()
+        dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.62')
+        dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
+        dbName = qs.value("PostgreSQL/connections/informatica/database",'DEVSEG')
+        
+        ############Pedir al usuario cargar los campos de  usuario y contraseña
+        dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
+        dbPwd = QInputDialog.getText(None, 'contraseña', 'Introduce la contraseña', QLineEdit.Password)
+        
+        #####################################Conexion PostGIS##############################################
+
+        # introducimos nombre del servidor, puerto, nombre de la base de datos, usuario y contraseña
+        uri = QgsDataSourceUri()
+        uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
+
+        ##############################Verificar Usuuario y Contraseña##########################################
+#        origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
+        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
+        origen = os.path.dirname(__file__)
+#       print(sys.path[0])
+#       print (origen)
+
+        ####################### Agrego las tablas .CSV de datos geograficos############################
+        ####### Agrego tabla provincia
+        capa = (origen + '/datos_prov/provincia.csv')
+        nomcapa = 'provincia'  
+        layer = QgsVectorLayer(capa,nomcapa, 'ogr' )
+        if not layer.isValid():
+            print ("la capa no es correcta")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+           
+        
+        ####### Agrego tabla departamento##################################
+        capa = (origen + '/datos_prov/departamentos.csv')
+        nomcapa = 'departamento'  
+        layer = QgsVectorLayer(capa,nomcapa, 'ogr')
+        if not layer.isValid():
+            print ("la capa no es correcta")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+        
+        
+        #######  Agrego tabla localidad######################
+        capa = (origen + '/datos_prov/localidad.csv')
+        nomcapa = 'localidad'  
+        layer = QgsVectorLayer(capa,nomcapa,'ogr')
+        if not layer.isValid():
+            print ("la capa no es correcta")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+
+        ########################## Agrego todas las capas al proyecto###################################
+        
+        #### agrego capa de puntitos
+        sql = aglomerado[0]
+        uri.setDataSource("", "(select r3.seg, r3.viviendas, r3.descripcion, concat(prov,lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'),lpad(r3.frac::text,2,'0'),lpad(r3.radio::text,2,'0'),seg) link,  coalesce(st_collect(l.wkb_geometry_lado),st_makeline(st_point(0,0), st_point(1,1))) geolado, coalesce(st_collect(l.wkb_geometry),st_point(0,0)) geom from " + sql + ".r3 " +" join "+ sql+".segmentacion s on r3.segmento_id=s.segmento_id" + " join "+ sql + ".listado_geo l on l.id_list = s.listado_id group by r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio)","geom","", "link")
+        layer = QgsVectorLayer(uri.uri(), "Listado_viv", "postgres")
+        if not layer.isValid():
+            print ("No se cargo capa Listado")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+        layer.loadNamedStyle(origen +'/estilo_radio/listado.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        layer.triggerRepaint() 
+                
+        ########################### Agregar plantillas de salida##############
+        #### Plantilla tamaño A4 ###############  
+        pry= QgsProject.instance()
+        #Añadi una verificación de la ruta del archivo qtp
+               
+        ####### Agrego la capa  Segmento
+        uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
+        layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
+        if not layer.isValid():
+            print ("No se cargo capa Segmento")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+        layer.loadNamedStyle(origen + '/estilo_radio/segmentos.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        layer.triggerRepaint()
+        
+        ########Agrego la capa  Mascara 
+        sql = aglomerado[0] + ".v_radios"
+        uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
+        vlayer = QgsVectorLayer(uri.uri(),"Mascara","postgres")
+        if not vlayer.isValid():
+            print ("No se cargola capa Mascara ")
+        QgsProject.instance().addMapLayer(vlayer)
+        renderer = vlayer.renderer()
+        vlayer.loadNamedStyle(origen +'/estilo_radio/mascara.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        vlayer.triggerRepaint() 
+        
+        #######Agrego la capa  Especiales
+        uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
+        layer = QgsVectorLayer(uri.uri(), "CodEspeciales", "postgres")
+        if not layer.isValid():
+            print ("No se cargo capa Codigos Especiales")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
