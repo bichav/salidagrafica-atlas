@@ -127,7 +127,7 @@
   </defaults>
   <constraints>
     <constraint constraints="0" unique_strength="0" notnull_strength="0" field="seg" exp_strength="0"/>
-    <constraint constraints="3" unique_strength="1" notnull_strength="1" field="descripcion" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" notnull_strength="0" field="descripcion" exp_strength="0"/>
     <constraint constraints="0" unique_strength="0" notnull_strength="0" field="viviendas" exp_strength="0"/>
     <constraint constraints="3" unique_strength="1" notnull_strength="1" field="link" exp_strength="0"/>
     <constraint constraints="3" unique_strength="1" notnull_strength="1" field="radio" exp_strength="0"/>

@@ -136,7 +136,6 @@ class CensoSegmento:
             added to self.actions list.
         :rtype: QAction
         """
-
         icon = QIcon(icon_path)
         action = QAction(icon, text, parent)
         action.triggered.connect(callback)
@@ -224,16 +223,15 @@ class CensoSegmento:
 
 
 
-
     def runRadio(self, iface):
         from qgis.utils import iface
         #####################################Conexion   existente en el admnistrador de BD##############################################
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
         qs = QSettings()
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.223')
+        dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.62')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
-        dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
+        dbName = qs.value("PostgreSQL/connections/informatica/database",'DEVSEG')
         
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
@@ -247,7 +245,7 @@ class CensoSegmento:
 
         ##############################Verificar Usuuario y Contraseña##########################################
 #        origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
-        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo del aglomerado', text = 'e0359')
+        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
 #       print(sys.path[0])
 #       print (origen)
@@ -281,11 +279,9 @@ class CensoSegmento:
             print ("la capa no es correcta")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        
-        
-
 
         ########################## Agrego todas las capas al proyecto###################################
+        
         #### agrego capa de puntitos
         sql = aglomerado[0]
         uri.setDataSource("", "(select r3.seg, r3.viviendas, r3.descripcion, concat(prov,lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'),lpad(r3.frac::text,2,'0'),lpad(r3.radio::text,2,'0'),seg) link,  coalesce(st_collect(l.wkb_geometry_lado),st_makeline(st_point(0,0), st_point(1,1))) geolado, coalesce(st_collect(l.wkb_geometry),st_point(0,0)) geom from " + sql + ".r3 " +" join "+ sql+".segmentacion s on r3.segmento_id=s.segmento_id" + " join "+ sql + ".listado_geo l on l.id_list = s.listado_id group by r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio)","geom","", "link")
@@ -368,7 +364,7 @@ class CensoSegmento:
 
         ############################# Agrego la capa Descripcion ########################### 
         sql = aglomerado[0]
-        uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from " + sql + ".r3)","geom","", "segmento_id")
+        uri.setDataSource("","( select  seg,  replace(descripcion, '. ' , '\n') descripcion , viviendas, link, lpad( radio::text,2,'0') radio ,  st_collect(geom) geom   FROM (select r3.radio , r3.seg, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),lpad( r3.radio::text,2,'0') ,seg) link,  coalesce(case when l.lado is null then null when count(*)=1 then ST_AddPoint(ST_MakeLine(st_startpoint(l.wkb_geometry_lado),max(l.wkb_geometry)),st_endpoint(l.wkb_geometry_lado))  else st_makeline(l.wkb_geometry order by orden_reco) end,  st_makeline(ST_SetSRID(st_point(0,0),st_srid(wkb_geometry_lado))),ST_SetSRID(st_point(0,1), st_srid(wkb_geometry_lado)) ) geom from " + sql+ ".r3  left join " + sql+ ".segmentacion s on r3.segmento_id=s.segmento_id   left join " +sql+ ".listado_geo l on l.id_list = s.listado_id  group by r3.radio, r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio, l.lado, l.mza, l.wkb_geometry_lado ) foo group by  radio , seg , viviendas , descripcion , link )", "geom" , "", "link")
         layer = QgsVectorLayer(uri.uri(), "descripcion", "postgres")
         if not layer.isValid():
             print ("No se cargo capa Descripcion")
@@ -443,9 +439,9 @@ class CensoSegmento:
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
         qs = QSettings()
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.223')
+        dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.62')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
-        dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
+        dbName = qs.value("PostgreSQL/connections/informatica/database",'DEVSEG')
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
         dbPwd = QInputDialog.getText(None, 'contraseña', 'Introduce la contraseña', QLineEdit.Password)
@@ -455,10 +451,8 @@ class CensoSegmento:
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
         ##############################Verificar Usuuario y Contraseña##########################################
 #       origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
-        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo del aglomerado', text = 'e0359')
+        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
-
-
 
         ####################### Agrego las tablas .CSV de datos geograficos############################
         # Agrego tabla provincia
@@ -488,7 +482,8 @@ class CensoSegmento:
         renderer = layer.renderer()
 
         ########################## Agrego todas las capas al proyecto###################################
-         #### agrego capa de puntitos
+    
+        #### agrego capa de puntitos
         sql = aglomerado[0]
         uri.setDataSource("", "(select r3.seg, r3.viviendas, r3.descripcion, concat(prov,lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'),lpad(r3.frac::text,2,'0'),lpad(r3.radio::text,2,'0'),seg) link,  coalesce(st_collect(l.wkb_geometry_lado),st_makeline(st_point(0,0), st_point(1,1))) geolado, coalesce(st_collect(l.wkb_geometry),st_point(0,0)) geom from " + sql + ".r3 " +" join "+ sql+".segmentacion s on r3.segmento_id=s.segmento_id" + " join "+ sql + ".listado_geo l on l.id_list = s.listado_id group by r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio)","geom","", "link")
         layer = QgsVectorLayer(uri.uri(), "Listado_viv", "postgres")
@@ -496,7 +491,7 @@ class CensoSegmento:
             print ("No se cargo capa Listado")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/listado.qml')
+        layer.loadNamedStyle(origen +'/estilo_segmento/listadosegmento.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
@@ -563,6 +558,20 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
+        
+        ############################# Agrego la capa Descripcion nueva ########################### 
+        sql = aglomerado[0]
+        uri.setDataSource("","( select  seg,  descripcion , viviendas, link, lpad( radio::text,2,'0') radio ,  st_collect(geom) geom   FROM (select r3.radio , r3.seg, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),lpad( r3.radio::text,2,'0') ,seg) link,  coalesce(case when l.lado is null then null when count(*)=1 then ST_AddPoint(ST_MakeLine(st_startpoint(l.wkb_geometry_lado),max(l.wkb_geometry)),st_endpoint(l.wkb_geometry_lado))  else st_makeline(l.wkb_geometry order by orden_reco) end,  st_makeline(ST_SetSRID(st_point(0,0),st_srid(wkb_geometry_lado))),ST_SetSRID(st_point(0,1), st_srid(wkb_geometry_lado)) ) geom from " + sql+ ".r3  left join " + sql+ ".segmentacion s on r3.segmento_id=s.segmento_id   left join " +sql+ ".listado_geo l on l.id_list = s.listado_id  group by r3.radio, r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio, l.lado, l.mza, l.wkb_geometry_lado ) foo group by  radio , seg , viviendas , descripcion , link )", "geom" , "", "link")
+        layer = QgsVectorLayer(uri.uri(), "descripcion", "postgres")
+        if not layer.isValid():
+            print ("No se cargo capa Descripcion")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+        layer.loadNamedStyle(origen +'/estilo_radio/descripcion.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        layer.triggerRepaint() 
+
 
         ############################# Agrego la capa  atlas segmento########################### 
         #uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from indec.describe_segmentos_con_direcciones('" + sql + "'))","geom","", "segmento_id")
@@ -578,19 +587,6 @@ class CensoSegmento:
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
         
-        ############################# Agrego la capa Descripcion ########################### 
-        sql = aglomerado[0] 
-        #uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from indec.describe_segmentos_con_direcciones('" + sql + "'))","geom","", "segmento_id")
-        uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from " + sql + ".r3)","geom","", "segmento_id")
-        layer = QgsVectorLayer(uri.uri(), "descripcion_seg", "postgres")
-        if not layer.isValid():
-            print ("No se cargo capa Descripcion")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_segmento/capaconsulta.qml')
-        iface.mapCanvas().refresh() 
-        QgsProject.instance().mapLayers().values()
-        layer.triggerRepaint() 
 
         
         ########################### Agregar plantillas de salida##############
