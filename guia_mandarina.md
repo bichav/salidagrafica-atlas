@@ -16,14 +16,21 @@ Descargar desde el segmentador web, (se recomienda descomprimir en el escritorio
 
 Pedir datos a mesa de ayuda
 
-2.  **Instalar plugins**
+2.  **Descargar plugins**
 
-> Descargar desde Segmentador web el plugin, para instalarlo en QGIS
+Encontrará el link de descarga en la aplicación web de segmentación.
+
+Descargar desde Segmentador web el plugin, para instalarlo en QGIS
 
 3.  **Desde Qgis**
 
-3.1- *Cargar Complemento desde el menú “**Complementos\\Administrar e
+3.1- *Instalar el Complemento desde el menú “**Complementos\\Administrar e
 instalar complementos”***
+
+*Instalar a partir de zip* , utilizando el archivo descargado 'salidagrafica-atlas-master.zip'
+
+![](.//media/image1.png){width="4.4007228783902015in"
+height="1.3229166666666667in"}
 
 3.2- Se activa icono en el menú de barra de herramientas en la parte
 superior
