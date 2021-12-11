@@ -176,6 +176,13 @@ class CensoSegmento:
         self.add_action(
             poll_icon_path,
             add_to_toolbar=False,
+            text=self.tr(u'Plano de Fracción'),
+            callback=self.runFraccion,
+            parent=self.iface.mainWindow())
+
+        self.add_action(
+            poll_icon_path,
+            add_to_toolbar=False,
             text=self.tr(u'Plano de Radio'),
             callback=self.runRadio,
             parent=self.iface.mainWindow())
@@ -183,8 +190,8 @@ class CensoSegmento:
         self.add_action(
             poll_icon_path,
             add_to_toolbar=False,
-            text=self.tr(u'Plano de Segmentación'),
-            callback=self.runSegmentacion,
+            text=self.tr(u'Plano de Segmento'),
+            callback=self.runSegmento,
             parent=self.iface.mainWindow())
 
         # will be set False in run()
@@ -202,15 +209,15 @@ class CensoSegmento:
 
     def run(self):
         """Run method that performs all the real work"""
-
         # Create the dialog with elements (after translation) and keep reference
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started
         if self.first_start == True:
             self.first_start = False
             self.dlg = CensoSegmentoDialog()
             # Events
+            self.dlg.buttonFraccion.clicked.connect(self.runFraccion)            
             self.dlg.buttonRadio.clicked.connect(self.runRadio)
-            self.dlg.buttonSegmentacion.clicked.connect(self.runSegmentacion)   
+            self.dlg.buttonSegmento.clicked.connect(self.runSegmento)   
 
         # show the dialog
         self.dlg.show()
@@ -430,7 +437,7 @@ class CensoSegmento:
 
 
 
-    def runSegmentacion(self , iface):
+    def runSegmento(self , iface):
         from qgis.utils import iface
         #####################################Conexion existente en el admnistrador de BD##############################################
         ##########Conexion desde BD a Postgis
