@@ -10,8 +10,6 @@
         git sha              : $Format:%H$
         copyright            : (C) 2020 by Maximiliano Monti
         email                : renzomiguelmonti@gmail.com
- ***************************************************************************/
-
 /***************************************************************************
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -33,13 +31,10 @@ from .resources import *
 from .censo_segmento_dialog import CensoSegmentoDialog
 import os
 import sys
-
 class CensoSegmento:
     """QGIS Plugin Implementation."""
-
     def __init__(self, iface):
         """Constructor.
-
         :param iface: An interface instance that will be passed to this class
             which provides the hook by which you can manipulate the QGIS
             application at run time.
@@ -60,21 +55,17 @@ class CensoSegmento:
             self.translator = QTranslator()
             self.translator.load(locale_path)
             QCoreApplication.installTranslator(self.translator)
-
         # Declare instance attributes
         self.actions = []
         self.menu = self.tr(u'&INDEC - CNPHyV')
-
         # Check if plugin was started the first time in current QGIS session
         # Must be set in initGui() to survive plugin reloads
         self.first_start = None
-
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
         """Get the translation for a string using Qt translation API.
 
         We implement this ourselves since we do not inherit QObject.
-
         :param message: String for translation.
         :type message: str, QString
         :returns: Translated version of message.
@@ -94,39 +85,29 @@ class CensoSegmento:
         whats_this='Que es esto',
         parent=None):
         """Add a toolbar icon to the toolbar.
-
         :param icon_path: Path to the icon for this action. Can be a resource
             path (e.g. ':/plugins/foo/bar.png') or a normal file system path.
         :type icon_path: str
-
         :param text: Text that should be shown in menu items for this action.
         :type text: str
-
         :param callback: Function to be called when the action is triggered.
         :type callback: function
-
         :param enabled_flag: A flag indicating if the action should be enabled
             by default. Defaults to True.
         :type enabled_flag: bool
-
         :param add_to_menu: Flag indicating whether the action should also
             be added to the menu. Defaults to True.
         :type add_to_menu: bool
-
         :param add_to_toolbar: Flag indicating whether the action should also
             be added to the toolbar. Defaults to True.
         :type add_to_toolbar: bool
-
         :param status_tip: Optional text to show in a popup when mouse pointer
             hovers over the action.
         :type status_tip: str
-
         :param parent: Parent widget for the new action. Defaults None.
         :type parent: QWidget
-
         :param whats_this: Optional text to show in the status bar when the
             mouse pointer hovers over the action.
-
         :returns: The action that was created. Note that the action is also
             added to self.actions list.
         :rtype: QAction
@@ -137,19 +118,15 @@ class CensoSegmento:
         action.setEnabled(enabled_flag)
         if status_tip is not None:
             action.setStatusTip(status_tip)
-
         if whats_this is not None:
             action.setWhatsThis(whats_this)
-
         if add_to_toolbar:
             # Adds plugin icon to Plugins toolbar
             self.iface.addToolBarIcon(action)
-
         if add_to_menu:
             self.iface.addPluginToMenu(
                 self.menu,
                 action)
-
         self.actions.append(action)
         return action
     def initGui(self):
@@ -182,7 +159,6 @@ class CensoSegmento:
             parent=self.iface.mainWindow())
         # will be set False in run()
         self.first_start = True
-
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
         for action in self.actions:
@@ -201,7 +177,6 @@ class CensoSegmento:
             self.dlg.buttonFraccion.clicked.connect(self.runFraccion)            
             self.dlg.buttonRadio.clicked.connect(self.runRadio)
             self.dlg.buttonSegmento.clicked.connect(self.runSegmento)   
-        # show the dialog
         self.dlg.show()
     def runRadio(self, iface):
         from qgis.utils import iface
@@ -212,13 +187,10 @@ class CensoSegmento:
         dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.62')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'DEVSEG')
-        
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
         dbPwd = QInputDialog.getText(None, 'contraseña', 'Introduce la contraseña', QLineEdit.Password)
-        
         #####################################Conexion PostGIS##############################################
-
         # introducimos nombre del servidor, puerto, nombre de la base de datos, usuario y contraseña
         uri = QgsDataSourceUri()
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
@@ -226,7 +198,6 @@ class CensoSegmento:
 #        origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
         aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
-
         ####################### Agrego las tablas .CSV de datos geograficos############################
         ####### Agrego tabla provincia
         capa = (origen + '/datos_prov/provincia.csv')
@@ -265,12 +236,10 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-                
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
         #Añadi una verificación de la ruta del archivo qtp
-               
         ####### Agrego la capa  Segmento
         uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
@@ -282,7 +251,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
-        
         ########Agrego la capa  Mascara 
         sql = aglomerado[0] + ".v_radios"
         uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
@@ -341,12 +309,10 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-                
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
         #Añadi una verificación de la ruta del archivo qtp
-
  #### Plantilla R3 ###############  
         rutaR3= origen + r'/plantillas/R3.qpt'
         if os.path.exists(rutaR3):
@@ -363,7 +329,6 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo R3" )
-            
     #### Plantilla tamaño A4 ###############          
         rutaR4= origen + r'/plantillas/radio_A4.qpt'
         if os.path.exists(rutaR4):
@@ -380,7 +345,6 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo" )
-    
     #### Plantilla tamaño A3 ###############  
         rutaR3= ruta= origen + r'/plantillas/radio_A3.qpt'
         if os.path.exists(rutaR3):
@@ -397,7 +361,6 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo A3")
-
     def runSegmento(self , iface):
         from qgis.utils import iface
         #####################################Conexion existente en el admnistrador de BD##############################################
@@ -415,10 +378,9 @@ class CensoSegmento:
         uri = QgsDataSourceUri()
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
         ##############################Verificar Usuuario y Contraseña##########################################
-#       origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
+        # origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
         aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
-
         ####################### Agrego las tablas .CSV de datos geograficos############################
         # Agrego tabla provincia
         capa = origen + '/datos_prov/provincia.csv'
@@ -428,7 +390,6 @@ class CensoSegmento:
             print ("la capa no es correcta")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        
         ################## Agrego tabla departamento##################################
         capa = (origen + '/datos_prov/departamentos.csv')
         nomcapa = 'departamento'  
@@ -445,7 +406,6 @@ class CensoSegmento:
             print ("la capa no es correcta")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-
         ########################## Agrego todas las capas al proyecto###################################
         #### agrego capa de puntitos
         sql = aglomerado[0]
@@ -459,7 +419,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-                
         #Agrego la capa  SEGMENTOS 
         uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "segmentos", "postgres")
@@ -518,7 +477,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
-        
         ############################# Agrego la capa Descripcion nueva ########################### 
         sql = aglomerado[0]
         uri.setDataSource("","( select  seg,  descripcion , viviendas, link, lpad( radio::text,2,'0') radio ,  st_collect(geom) geom   FROM (select r3.radio , r3.seg, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),lpad( r3.radio::text,2,'0') ,seg) link,  coalesce(case when l.lado is null then null when count(*)=1 then ST_AddPoint(ST_MakeLine(st_startpoint(l.wkb_geometry_lado),max(l.wkb_geometry)),st_endpoint(l.wkb_geometry_lado))  else st_makeline(l.wkb_geometry order by orden_reco) end,  st_makeline(ST_SetSRID(st_point(0,0),st_srid(wkb_geometry_lado))),ST_SetSRID(st_point(0,1), st_srid(wkb_geometry_lado)) ) geom from " + sql+ ".r3  left join " + sql+ ".segmentacion s on r3.segmento_id=s.segmento_id   left join " +sql+ ".listado_geo l on l.id_list = s.listado_id  group by r3.radio, r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio, l.lado, l.mza, l.wkb_geometry_lado ) foo group by  radio , seg , viviendas , descripcion , link )", "geom" , "", "link")
@@ -531,7 +489,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-
         ############################# Agrego la capa  atlas segmento########################### 
         #uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from indec.describe_segmentos_con_direcciones('" + sql + "'))","geom","", "segmento_id")
         sql = "((((SELECT row_number() over () AS _uid_ , * , concat(prov,depto, loc,frac,radio,lpad(seg::text,2,'0')) linkcapa FROM (SELECT row_number () over () id, prov,depto,loc,frac,radio,seg, geom  FROM (SELECT prov,depto,loc,frac,radio,seg,(st_union(geom )) geom  FROM (SELECT  substring(mza,1,2) prov, substring(mza, 3,3)  depto, substring(mza,6,3) loc, substring(mza,9,2) frac, substring(mza,11,2) radio,  seg,  geom   FROM (SELECT   mzai mza, ladoi lado, segi seg , wkb_geometry geom FROM " +  aglomerado[0] + ".arc" + " where segi is not null UNION  SELECT mzad mza, ladod lado, segd seg, wkb_geometry geom  FROM " +   aglomerado[0] + ".arc" + " where segd is not null ) foo ) foo2  group by prov,depto,loc,frac,radio,seg  ) foo3 ) AS _subq_1_ ) ) ) )"
@@ -545,7 +502,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
-
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
@@ -565,7 +521,6 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo" )
-    
         #### Plantilla tamaño A3 ###############  
         ruta4= ruta= origen + r'/plantillas/segmento_A3.qpt'
         if os.path.exists(ruta4):
@@ -582,7 +537,6 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo A3")
-
     def runFraccion(self, iface):
         from qgis.utils import iface
         #####################################Conexion   existente en el admnistrador de BD##############################################
@@ -592,13 +546,10 @@ class CensoSegmento:
         dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.62')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'DEVSEG')
-        
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
         dbPwd = QInputDialog.getText(None, 'contraseña', 'Introduce la contraseña', QLineEdit.Password)
-        
         #####################################Conexion PostGIS##############################################
-
         # introducimos nombre del servidor, puerto, nombre de la base de datos, usuario y contraseña
         uri = QgsDataSourceUri()
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
@@ -606,7 +557,6 @@ class CensoSegmento:
 #        origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
         aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
-
         ####################### Agrego las tablas .CSV de datos geograficos############################
         ####### Agrego tabla provincia
         capa = (origen + '/datos_prov/provincia.csv')
@@ -641,16 +591,13 @@ class CensoSegmento:
             print ("No se cargo capa Listado")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/listado.qml')
+        layer.loadNamedStyle(origen +'/estilo_fraccion/listado.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-                
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
-        #Añadi una verificación de la ruta del archivo qtp
-               
         ####### Agrego la capa  Segmento
         uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
@@ -658,23 +605,10 @@ class CensoSegmento:
             print ("No se cargo capa Segmento")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen + '/estilo_radio/segmentos.qml')
+        layer.loadNamedStyle(origen + '/estilo_fraccion/segmentos.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
-        
-        ########Agrego la capa  Mascara 
-        sql = aglomerado[0] + ".v_radios"
-        uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
-        vlayer = QgsVectorLayer(uri.uri(),"Mascara","postgres")
-        if not vlayer.isValid():
-            print ("No se cargola capa Mascara ")
-        QgsProject.instance().addMapLayer(vlayer)
-        renderer = vlayer.renderer()
-        vlayer.loadNamedStyle(origen +'/estilo_radio/mascara.qml')
-        iface.mapCanvas().refresh() 
-        QgsProject.instance().mapLayers().values()
-        vlayer.triggerRepaint() 
         #######Agrego la capa  Especiales
         uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "CodEspeciales", "postgres")
@@ -682,7 +616,7 @@ class CensoSegmento:
             print ("No se cargo capa Codigos Especiales")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen + '/estilo_radio/especiales.qml')
+        layer.loadNamedStyle(origen + '/estilo_fraccion/especiales.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
@@ -694,7 +628,19 @@ class CensoSegmento:
             print ("No se cargo la  capa Radio ")
         QgsProject.instance().addMapLayer(vlayer)
         renderer = vlayer.renderer()
-        vlayer.loadNamedStyle(origen +'/estilo_radio/pradio.qml')
+        vlayer.loadNamedStyle(origen +'/estilo_fraccion/pradio.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        vlayer.triggerRepaint() 
+        ###### Agrego la capa  Fracción desde BD
+        sql = aglomerado[0] + ".v_fracciones"
+        uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
+        vlayer = QgsVectorLayer(uri.uri(),"Fracción","postgres")
+        if not vlayer.isValid():
+            print ("No se cargo la  capa Radio ")
+        QgsProject.instance().addMapLayer(vlayer)
+        renderer = vlayer.renderer()
+        vlayer.loadNamedStyle(origen +'/estilo_fraccion/fraccion.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
@@ -705,7 +651,7 @@ class CensoSegmento:
             print ("No se cargo capa Etiquetas manzanas")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/manzanas.qml')
+        layer.loadNamedStyle(origen +'/estilo_fraccion/manzanas.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
@@ -717,54 +663,17 @@ class CensoSegmento:
             print ("No se cargo capa Descripcion")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/descripcion.qml')
+        layer.loadNamedStyle(origen +'/estilo_fraccion/descripcion.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-                
-        ########################### Agregar plantillas de salida##############
-        #### Plantilla tamaño A4 ###############  
+        ########################### Agregar plantilla de salida##############
+        #### Plantilla tamaño A3 ###############  
         pry= QgsProject.instance()
-        #Añadi una verificación de la ruta del archivo qtp
-
- #### Plantilla R3 ###############  
-        rutaR3= origen + r'/plantillas/R3.qpt'
-        if os.path.exists(rutaR3):
-            with open(rutaR3, 'r') as templateFile:
-                myTemplateContent = templateFile.read()
-            layout=QgsPrintLayout(pry)
-            lmg = QgsProject.instance().layoutManager()
-            layout.setName("R3")
-            layout.initializeDefaults()
-            myDocument = QDomDocument()
-            myDocument.setContent(myTemplateContent)
-            ms = QgsMapSettings()
-            layout.loadFromTemplate(myDocument,QgsReadWriteContext(),True)
-            lmg.addLayout(layout)
-        else:
-            print("error en la ruta del archivo R3" )
-            
-    #### Plantilla tamaño A4 ###############          
-        rutaR4= origen + r'/plantillas/radio_A4.qpt'
+        #### Plantilla tamaño A3 ###############  
+        rutaR4= ruta= origen + r'/plantillas/fraccion.qpt'
         if os.path.exists(rutaR4):
             with open(rutaR4, 'r') as templateFile:
-                myTemplateContent = templateFile.read()
-            layout=QgsPrintLayout(pry)
-            lmg = QgsProject.instance().layoutManager()
-            layout.setName("A4")
-            layout.initializeDefaults()
-            myDocument = QDomDocument()
-            myDocument.setContent(myTemplateContent)
-            ms = QgsMapSettings()
-            layout.loadFromTemplate(myDocument,QgsReadWriteContext(),True)
-            lmg.addLayout(layout)
-        else:
-            print("error en la ruta del archivo" )
-    
-    #### Plantilla tamaño A3 ###############  
-        rutaR3= ruta= origen + r'/plantillas/radio_A3.qpt'
-        if os.path.exists(rutaR3):
-            with open(rutaR3, 'r') as templateFile:
                 myTemplateContent = templateFile.read()
             layout=QgsPrintLayout(pry)
             lmg = QgsProject.instance().layoutManager()
