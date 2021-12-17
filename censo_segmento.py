@@ -236,21 +236,21 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
+        ### Agrego la capa Segmentacion con la descripcion ########################### 
+        sql = aglomerado[0]
+        uri.setDataSource("","(select  seg,  replace(descripcion, '. ' , ' ') descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
+        layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
+        if not layer.isValid():
+            print ("No se cargo capa Segmentacion")
+        QgsProject.instance().addMapLayer(layer)
+        renderer = layer.renderer()
+        layer.loadNamedStyle(origen +'/estilo_radio/lados_cortados.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        layer.triggerRepaint() 
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
-        #Añadi una verificación de la ruta del archivo qtp
-        ####### Agrego la capa  Segmento
-        uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
-        layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
-        if not layer.isValid():
-            print ("No se cargo capa Segmento")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        layer.loadNamedStyle(origen + '/estilo_radio/segmentos.qml')
-        iface.mapCanvas().refresh() 
-        QgsProject.instance().mapLayers().values()
-        layer.triggerRepaint()
         ########Agrego la capa  Mascara 
         sql = aglomerado[0] + ".radios"
         uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
@@ -297,23 +297,7 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-        ############################# Agrego la capa Descripcion ########################### 
-        sql = aglomerado[0]
-        uri.setDataSource("","( select  seg,  replace(descripcion, '. ' , '\n') descripcion , viviendas, link, lpad( radio::text,2,'0') radio ,  st_collect(geom) geom   FROM (select r3.radio , r3.seg, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),lpad( r3.radio::text,2,'0') ,seg) link,  coalesce(case when l.lado is null then null when count(*)=1 then ST_AddPoint(ST_MakeLine(st_startpoint(l.wkb_geometry_lado),max(l.wkb_geometry)),st_endpoint(l.wkb_geometry_lado))  else st_makeline(l.wkb_geometry order by orden_reco) end,  st_makeline(ST_SetSRID(st_point(0,0),st_srid(wkb_geometry_lado))),ST_SetSRID(st_point(0,1), st_srid(wkb_geometry_lado)) ) geom from " + sql+ ".r3  left join " + sql+ ".segmentacion s on r3.segmento_id=s.segmento_id   left join " +sql+ ".listado_geo l on l.id_list = s.listado_id  group by r3.radio, r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio, l.lado, l.mza, l.wkb_geometry_lado ) foo group by  radio , seg , viviendas , descripcion , link )", "geom" , "", "link")
-        layer = QgsVectorLayer(uri.uri(), "descripcion", "postgres")
-        if not layer.isValid():
-            print ("No se cargo capa Descripcion")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/descripcion.qml')
-        iface.mapCanvas().refresh() 
-        QgsProject.instance().mapLayers().values()
-        layer.triggerRepaint() 
-        ########################### Agregar plantillas de salida##############
-        #### Plantilla tamaño A4 ###############  
-        pry= QgsProject.instance()
-        #Añadi una verificación de la ruta del archivo qtp
- #### Plantilla R3 ###############  
+        #### Plantilla R3 ###############  
         rutaR3= origen + r'/plantillas/R3.qpt'
         if os.path.exists(rutaR3):
             with open(rutaR3, 'r') as templateFile:
@@ -420,13 +404,13 @@ class CensoSegmento:
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
         #Agrego la capa  SEGMENTOS 
-        uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
-        layer = QgsVectorLayer(uri.uri(), "segmentos", "postgres")
+        uri.setDataSource("","(select  seg,  replace(descripcion, '. ' , ' ') descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
+        layer = QgsVectorLayer(uri.uri(), "capaseg", "postgres")
         if not layer.isValid():
             print ("No se cargo capa segmento")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen + '/estilo_segmento/segmento.qml')
+        layer.loadNamedStyle(origen + '/estilo_segmento/lados_cortados_seg.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
@@ -477,31 +461,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
-        ############################# Agrego la capa Descripcion nueva ########################### 
-        sql = aglomerado[0]
-        uri.setDataSource("","( select  seg,  descripcion , viviendas, link, lpad( radio::text,2,'0') radio ,  st_collect(geom) geom   FROM (select r3.radio , r3.seg, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),lpad( r3.radio::text,2,'0') ,seg) link,  coalesce(case when l.lado is null then null when count(*)=1 then ST_AddPoint(ST_MakeLine(st_startpoint(l.wkb_geometry_lado),max(l.wkb_geometry)),st_endpoint(l.wkb_geometry_lado))  else st_makeline(l.wkb_geometry order by orden_reco) end,  st_makeline(ST_SetSRID(st_point(0,0),st_srid(wkb_geometry_lado))),ST_SetSRID(st_point(0,1), st_srid(wkb_geometry_lado)) ) geom from " + sql+ ".r3  left join " + sql+ ".segmentacion s on r3.segmento_id=s.segmento_id   left join " +sql+ ".listado_geo l on l.id_list = s.listado_id  group by r3.radio, r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio, l.lado, l.mza, l.wkb_geometry_lado ) foo group by  radio , seg , viviendas , descripcion , link )", "geom" , "", "link")
-        layer = QgsVectorLayer(uri.uri(), "capaseg", "postgres")
-        if not layer.isValid():
-            print ("No se cargo capa Descripcion")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_radio/descripcion.qml')
-        iface.mapCanvas().refresh() 
-        QgsProject.instance().mapLayers().values()
-        layer.triggerRepaint() 
-        ############################# Agrego la capa  atlas segmento########################### 
-        #uri.setDataSource("", "( select * ,concat(prov,lpad(dpto::text,3,'0'),lpad(codloc::text,3,'0'),lpad(frac::text,2,'0'),lpad(radio::text,2,'0'),seg) link,  st_point(0,0) geom from indec.describe_segmentos_con_direcciones('" + sql + "'))","geom","", "segmento_id")
-        #sql = "((((SELECT row_number() over () AS _uid_ , * , concat(prov,depto, loc,frac,radio,lpad(seg::text,2,'0')) linkcapa FROM (SELECT row_number () over () id, prov,depto,loc,frac,radio,seg, geom  FROM (SELECT prov,depto,loc,frac,radio,seg,(st_union(geom )) geom  FROM (SELECT  substring(mza,1,2) prov, substring(mza, 3,3)  depto, substring(mza,6,3) loc, substring(mza,9,2) frac, substring(mza,11,2) radio,  seg,  geom   FROM (SELECT   mzai mza, ladoi lado, segi seg , wkb_geometry geom FROM " +  aglomerado[0] + ".arc" + " where segi is not null UNION  SELECT mzad mza, ladod lado, segd seg, wkb_geometry geom  FROM " +   aglomerado[0] + ".arc" + " where segd is not null ) foo ) foo2  group by prov,depto,loc,frac,radio,seg  ) foo3 ) AS _subq_1_ ) ) ) )"
-        #uri.setDataSource("", sql ,"geom","","_uid_")
-        #vlayer = QgsVectorLayer(uri.uri(),"capaseg","postgres")
-        #if not vlayer.isValid():
-        #    print ("No se cargo la capa ")
-        #QgsProject.instance().addMapLayer(vlayer)
-        #renderer = vlayer.renderer()
-        #vlayer.loadNamedStyle(origen +'/estilo_segmento/capaconsulta.qml')
-        #iface.mapCanvas().refresh() 
-        #QgsProject.instance().mapLayers().values()
-        #vlayer.triggerRepaint() 
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
@@ -598,14 +557,14 @@ class CensoSegmento:
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
-        ####### Agrego la capa  Segmento
-        uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
+        ####### Agrego la capa  Segmentacion y descripcion
+        uri.setDataSource("","(select  seg,  replace(descripcion, '. ' , ' ') descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
         if not layer.isValid():
             print ("No se cargo capa Segmento")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen + '/estilo_fraccion/segmentos.qml')
+        layer.loadNamedStyle(origen + '/estilo_fraccion/lados_cortados.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint()
@@ -664,18 +623,6 @@ class CensoSegmento:
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
         layer.loadNamedStyle(origen +'/estilo_fraccion/manzanas.qml')
-        iface.mapCanvas().refresh() 
-        QgsProject.instance().mapLayers().values()
-        layer.triggerRepaint() 
-        ############################# Agrego la capa Descripcion ########################### 
-        sql = aglomerado[0]
-        uri.setDataSource("","( select  seg,  replace(descripcion, '. ' , '\n') descripcion , viviendas, link, lpad( radio::text,2,'0') radio ,  st_collect(geom) geom   FROM (select r3.radio , r3.seg, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),lpad( r3.radio::text,2,'0') ,seg) link,  coalesce(case when l.lado is null then null when count(*)=1 then ST_AddPoint(ST_MakeLine(st_startpoint(l.wkb_geometry_lado),max(l.wkb_geometry)),st_endpoint(l.wkb_geometry_lado))  else st_makeline(l.wkb_geometry order by orden_reco) end,  st_makeline(ST_SetSRID(st_point(0,0),st_srid(wkb_geometry_lado))),ST_SetSRID(st_point(0,1), st_srid(wkb_geometry_lado)) ) geom from " + sql+ ".r3  left join " + sql+ ".segmentacion s on r3.segmento_id=s.segmento_id   left join " +sql+ ".listado_geo l on l.id_list = s.listado_id  group by r3.radio, r3.seg, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, r3.radio, l.lado, l.mza, l.wkb_geometry_lado ) foo group by  radio , seg , viviendas , descripcion , link )", "geom" , "", "link")
-        layer = QgsVectorLayer(uri.uri(), "descripcion", "postgres")
-        if not layer.isValid():
-            print ("No se cargo capa Descripcion")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_fraccion/descripcion.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
