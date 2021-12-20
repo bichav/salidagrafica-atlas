@@ -6,12 +6,12 @@
 name=Censo Segmento
 qgisMinimumVersion=3.0
 description=Censo Segmento
-version=0.2
+version=666
 author=Manuel Retamozo,Veronica Heredia,Maximiliano Monti
-email=mretamozo.at.indec.gob.ar,renzomiguelmonti@gmail.com
+email=mretamozo.at.indec.gob.ar,vheredia@indec.gob.ar, renzomiguelmonti@gmail.com
 
 about=Este plugin es una interfaz para la generación de las salidas gráficas
-    de los planos de segmento y planos de segmentos por radio censal.
+    de los planos de fracción, radio y segmento censal.
 
 tracker=https://gitlab.indec.gob.ar/proyecto-mandarina/qgis-plugin-segmentador/issues
 repository=https://gitlab.indec.gob.ar/proyecto-mandarina/qgis-plugin-segmentador
