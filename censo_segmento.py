@@ -34,12 +34,15 @@ import sys
 class CensoSegmento:
     """QGIS Plugin Implementation."""
     def __init__(self, iface):
+
         """Constructor.
         :param iface: An interface instance that will be passed to this class
             which provides the hook by which you can manipulate the QGIS
             application at run time.
         :type iface: QgsInterface
         """
+        
+        
         # Save reference to the QGIS interface
         self.iface = iface
         # initialize plugin directory
@@ -71,6 +74,7 @@ class CensoSegmento:
         :returns: Translated version of message.
         :rtype: QString
         """
+        
         # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
         return QCoreApplication.translate('CensoSegmento', message)
     def add_action(
@@ -84,6 +88,7 @@ class CensoSegmento:
         status_tip='Por aca puede ir la cosa',
         whats_this='Que es esto',
         parent=None):
+            
         """Add a toolbar icon to the toolbar.
         :param icon_path: Path to the icon for this action. Can be a resource
             path (e.g. ':/plugins/foo/bar.png') or a normal file system path.
@@ -112,6 +117,7 @@ class CensoSegmento:
             added to self.actions list.
         :rtype: QAction
         """
+        
         icon = QIcon(icon_path)
         action = QAction(icon, text, parent)
         action.triggered.connect(callback)
@@ -131,6 +137,7 @@ class CensoSegmento:
         return action
     def initGui(self):
         """Create the menu entries and toolbar icons inside the QGIS GUI."""
+        
         icon_path = ':/plugins/censo_segmento/icon.png'
         current_dir = os.path.dirname(os.path.realpath(__file__))
         poll_icon_path = os.path.join(current_dir,'icons/poll.png')
@@ -161,6 +168,7 @@ class CensoSegmento:
         self.first_start = True
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
+        
         for action in self.actions:
             self.iface.removePluginMenu(
                 self.tr(u'&Censo Segmento'),
@@ -168,6 +176,7 @@ class CensoSegmento:
             self.iface.removeToolBarIcon(action)
     def run(self):
         """Run method that performs all the real work"""
+        
         # Create the dialog with elements (after translation) and keep reference
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started
         if self.first_start == True:
@@ -180,8 +189,10 @@ class CensoSegmento:
         self.dlg.show()
     def runRadio(self, iface):
         from qgis.utils import iface
+        
         #####################################Conexion   existente en el admnistrador de BD##############################################
         ##########Conexion desde BD a Postgis
+        
         QgsProject.instance().clear()
         qs = QSettings()
         dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.222')
@@ -194,8 +205,9 @@ class CensoSegmento:
         # introducimos nombre del servidor, puerto, nombre de la base de datos, usuario y contraseña
         uri = QgsDataSourceUri()
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
+        
         ##############################Verificar Usuuario y Contraseña##########################################
-#        origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
+        # origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
         aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
         ####################### Agrego las tablas .CSV de datos geograficos############################
@@ -238,7 +250,7 @@ class CensoSegmento:
         layer.triggerRepaint() 
         ### Agrego la capa Segmentacion con la descripcion ########################### 
         sql = aglomerado[0]
-        uri.setDataSource("","(select  seg,  replace(descripcion, '. ' , ' ') descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
+        uri.setDataSource("","(select  seg,  replace(descripcion, '. ' , '\n') descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
         if not layer.isValid():
             print ("No se cargo capa Segmentacion")
@@ -248,9 +260,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-        ########################### Agregar plantillas de salida##############
-        #### Plantilla tamaño A4 ###############  
-        pry= QgsProject.instance()
         ########Agrego la capa  Mascara 
         sql = aglomerado[0] + ".radios"
         uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
@@ -297,6 +306,9 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
+        ########################### Agregar plantillas de salida##############
+        pry= QgsProject.instance()
+
         #### Plantilla R3 ###############  
         rutaR3= origen + r'/plantillas/R3.qpt'
         if os.path.exists(rutaR3):
@@ -313,7 +325,7 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo R3" )
-    #### Plantilla tamaño A4 ###############          
+        #### Plantilla tamaño A4 ###############          
         rutaR4= origen + r'/plantillas/radio_A4.qpt'
         if os.path.exists(rutaR4):
             with open(rutaR4, 'r') as templateFile:
@@ -329,7 +341,7 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo" )
-    #### Plantilla tamaño A3 ###############  
+        #### Plantilla tamaño A3 ###############  
         rutaR3= ruta= origen + r'/plantillas/radio_A3.qpt'
         if os.path.exists(rutaR3):
             with open(rutaR3, 'r') as templateFile:
@@ -358,14 +370,17 @@ class CensoSegmento:
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
         dbPwd = QInputDialog.getText(None, 'contraseña', 'Introduce la contraseña', QLineEdit.Password)
-        #####################################Conexion PostGIS##############################################
+       
+       #####################################Conexion PostGIS##############################################
         # introducimos nombre del servidor, puerto, nombre de la base de datos, usuario y contraseña
         uri = QgsDataSourceUri()
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
+        
         ##############################Verificar Usuuario y Contraseña##########################################
         # origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
         aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
+        
         ####################### Agrego las tablas .CSV de datos geograficos############################
         # Agrego tabla provincia
         capa = origen + '/datos_prov/provincia.csv'
@@ -450,18 +465,18 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
-        #Agrego la capa  ETIQUETAS  MANZANA  
-        sql = aglomerado[0] + ".v_manzanas"
-        uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
-        layer = QgsVectorLayer(uri.uri(), "etiqueta_manzana", "postgres")
+        ####### Agrego la capa Etiquetas Manzanas  
+        uri.setDataSource(aglomerado[0] , "lab" , "wkb_geometry" )
+        layer = QgsVectorLayer(uri.uri(), "Etiqueta_manzana", "postgres")
         if not layer.isValid():
-            print ("el numero de aglomerado no es correcto")
+            print ("No se cargo capa Etiquetas manzanas")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
-        layer.loadNamedStyle(origen +'/estilo_segmento/manzana.qml')
+        layer.loadNamedStyle(origen +'/estilo_segmento/manzanas.qml')
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
-        layer.triggerRepaint()
+        layer.triggerRepaint() 
+        
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
@@ -481,6 +496,7 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo" )
+            
         #### Plantilla tamaño A3 ###############  
         ruta4= ruta= origen + r'/plantillas/segmento_A3.qpt'
         if os.path.exists(ruta4):
@@ -497,8 +513,10 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo A3")
+            
     def runFraccion(self, iface):
         from qgis.utils import iface
+        
         #####################################Conexion   existente en el admnistrador de BD##############################################
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
@@ -555,9 +573,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-        ########################### Agregar plantillas de salida##############
-        #### Plantilla tamaño A4 ###############  
-        pry= QgsProject.instance()
         ####### Agrego la capa  Segmentacion y descripcion
         uri.setDataSource("","(select  seg,  replace(descripcion, '. ' , ' ') descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
@@ -609,6 +624,7 @@ class CensoSegmento:
         uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
         vlayer = QgsVectorLayer(uri.uri(),"Fracción","postgres")
         if not vlayer.isValid():
+            
             print ("No se cargo la  capa Radio ")
         QgsProject.instance().addMapLayer(vlayer)
         renderer = vlayer.renderer()
@@ -619,7 +635,7 @@ class CensoSegmento:
         ####### Agrego la capa Etiquetas Manzanas  
         uri.setDataSource(aglomerado[0] , "lab" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "Etiqueta_manzana", "postgres")
-        if not layer.isValid():
+        if not layer.isValid():            
             print ("No se cargo capa Etiquetas manzanas")
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer()
@@ -627,12 +643,13 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
+        
         ########################### Agregar plantilla de salida##############
         #### Plantilla tamaño A3 ###############  
         pry= QgsProject.instance()
         #### Plantilla tamaño A3 ###############  
         rutaR4= ruta= origen + r'/plantillas/fraccion.qpt'
-        if os.path.exists(rutaR4):
+        if os.path.exists(rutaR4):            
             with open(rutaR4, 'r') as templateFile:
                 myTemplateContent = templateFile.read()
             layout=QgsPrintLayout(pry)
@@ -644,5 +661,6 @@ class CensoSegmento:
             ms = QgsMapSettings()
             layout.loadFromTemplate(myDocument,QgsReadWriteContext(),True)
             lmg.addLayout(layout)
+            
         else:
             print("error en la ruta del archivo A3")
