@@ -195,7 +195,7 @@ class CensoSegmento:
         
         QgsProject.instance().clear()
         qs = QSettings()
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.223')
+        dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.82')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
         ############Pedir al usuario cargar los campos de  usuario y contraseña
@@ -363,7 +363,7 @@ class CensoSegmento:
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
         qs = QSettings()
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.223')
+        dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.82')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
         ############Pedir al usuario cargar los campos de  usuario y contraseña
@@ -520,7 +520,7 @@ class CensoSegmento:
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
         qs = QSettings()
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.223')
+        dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.82')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
         ############Pedir al usuario cargar los campos de  usuario y contraseña
