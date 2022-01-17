@@ -211,30 +211,20 @@ class CensoSegmento:
         aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
         origen = os.path.dirname(__file__)
         ####################### Agrego las tablas .CSV de datos geograficos############################
+        
         ####### Agrego tabla provincia
-        capa = (origen + '/datos_prov/provincia.csv')
-        nomcapa = 'provincia'  
-        layer = QgsVectorLayer(capa,nomcapa, 'ogr' )
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        uri.setDataSource("public","provincia","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"provincia","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
         ####### Agrego tabla departamento##################################
-        capa = (origen + '/datos_prov/departamentos.csv')
-        nomcapa = 'departamento'  
-        layer = QgsVectorLayer(capa,nomcapa, 'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        uri.setDataSource("public","departamentos","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"departamento","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
         #######  Agrego tabla localidad######################
-        capa = (origen + '/datos_prov/localidad.csv')
-        nomcapa = 'localidad'  
-        layer = QgsVectorLayer(capa,nomcapa,'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        uri.setDataSource("public","localidad","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"localidad","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
+
         ########################## Agrego todas las capas al proyecto###################################
         #### agrego capa de puntitos
         sql = aglomerado[0]
@@ -260,7 +250,8 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-        ########Agrego la capa  Mascara 
+       
+       ########Agrego la capa  Mascara 
         sql = aglomerado[0] + ".radios"
         uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
         vlayer = QgsVectorLayer(uri.uri(),"Mascara","postgres")
@@ -272,6 +263,7 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
+        
         #######Agrego la capa  Especiales
         uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "CodEspeciales", "postgres")
@@ -381,30 +373,19 @@ class CensoSegmento:
         origen = os.path.dirname(__file__)
         
         ####################### Agrego las tablas .CSV de datos geograficos############################
-        # Agrego tabla provincia
-        capa = origen + '/datos_prov/provincia.csv'
-        nomcapa = 'provincia'  
-        layer = QgsVectorLayer(capa,nomcapa,'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        ################## Agrego tabla departamento##################################
-        capa = (origen + '/datos_prov/departamentos.csv')
-        nomcapa = 'departamento'  
-        layer = QgsVectorLayer(capa,nomcapa,'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
-        ################## Agrego tabla localidad######################
-        capa = (origen + '/datos_prov/localidad.csv')
-        nomcapa = 'localidad'  
-        layer = QgsVectorLayer(capa,nomcapa,'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        ####### Agrego tabla provincia
+        uri.setDataSource("public","provincia","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"provincia","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
+        ####### Agrego tabla departamento##################################
+        uri.setDataSource("public","departamentos","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"departamento","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
+        #######  Agrego tabla localidad######################
+        uri.setDataSource("public","localidad","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"localidad","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
+
         ########################## Agrego todas las capas al proyecto###################################
         #### agrego capa de puntitos
         sql = aglomerado[0]
@@ -536,29 +517,18 @@ class CensoSegmento:
         origen = os.path.dirname(__file__)
         ####################### Agrego las tablas .CSV de datos geograficos############################
         ####### Agrego tabla provincia
-        capa = (origen + '/datos_prov/provincia.csv')
-        nomcapa = 'provincia'  
-        layer = QgsVectorLayer(capa,nomcapa, 'ogr' )
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        uri.setDataSource("public","provincia","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"provincia","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
         ####### Agrego tabla departamento##################################
-        capa = (origen + '/datos_prov/departamentos.csv')
-        nomcapa = 'departamento'  
-        layer = QgsVectorLayer(capa,nomcapa, 'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        uri.setDataSource("public","departamentos","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"departamento","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
         #######  Agrego tabla localidad######################
-        capa = (origen + '/datos_prov/localidad.csv')
-        nomcapa = 'localidad'  
-        layer = QgsVectorLayer(capa,nomcapa,'ogr')
-        if not layer.isValid():
-            print ("la capa no es correcta")
-        QgsProject.instance().addMapLayer(layer)
-        renderer = layer.renderer()
+        uri.setDataSource("public","localidad","","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"localidad","postgres")
+        QgsProject.instance().addMapLayer(vlayer)
+
         ########################## Agrego todas las capas al proyecto###################################
         #### agrego capa de puntitos
         sql = aglomerado[0]
