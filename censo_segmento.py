@@ -208,7 +208,7 @@ class CensoSegmento:
         
         ##############################Verificar Usuuario y Contraseña##########################################
         # origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
-        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
+        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo "ePPDDDLLL"', text = 'e86154030')
         origen = os.path.dirname(__file__)
         ####################### Agrego las tablas .CSV de datos geograficos############################
        
@@ -378,7 +378,7 @@ class CensoSegmento:
         
         ##############################Verificar Usuuario y Contraseña##########################################
         # origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
-        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
+        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo "ePPDDDLLL"', text = 'e86154030')
         origen = os.path.dirname(__file__)
         
         ####################### Agrego las tablas .CSV de datos geograficos############################
@@ -532,7 +532,7 @@ class CensoSegmento:
         uri.setConnection(dbHost,dbPort,dbName,dbUsr[0],dbPwd[0])
         ##############################Verificar Usuuario y Contraseña##########################################
         #        origen = QInputDialog.getText(None, 'origen', 'Introduce la ruta de acceso')
-        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo PPDDDLLL', text = 'e86154030')
+        aglomerado = QInputDialog.getText(None, 'aglomerado', 'Introduce el nombre completo "ePPDDDLLL"', text = 'e86154030')
         origen = os.path.dirname(__file__)
         ####################### Agrego las tablas .CSV de datos geograficos############################
         ####### Agrego tabla provincia
