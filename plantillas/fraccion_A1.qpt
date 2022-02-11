@@ -1,4 +1,4 @@
-<Layout units="mm" printResolution="300" name="fraccion_A3" worldFileMap="{6802136a-1b88-4db5-9623-45cf552fc0dd}">
+<Layout units="mm" printResolution="300" name="fraccion_A1" worldFileMap="{6802136a-1b88-4db5-9623-45cf552fc0dd}">
  <Snapper snapToGrid="0" snapToGuides="1" snapToItems="1" tolerance="5"/>
  <Grid resUnits="mm" offsetY="0" offsetUnits="mm" resolution="10" offsetX="0"/>
  <PageCollection>
@@ -24,7 +24,7 @@
     </data_defined_properties>
    </layer>
   </symbol>
-  <LayoutItem zValue="0" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{d219b376-fc75-4453-9454-7e2fa0c57ab3}" blendMode="0" frameJoinStyle="miter" type="65638" outlineWidthM="0.3,mm" position="0,0,mm" uuid="{d219b376-fc75-4453-9454-7e2fa0c57ab3}" size="420,297,mm" positionOnPage="0,0,mm" groupUuid="" opacity="1" background="true">
+  <LayoutItem zValue="0" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{54b4a84f-49fd-4dbd-bd55-a2bb64d4b1f1}" blendMode="0" frameJoinStyle="miter" type="65638" outlineWidthM="0.3,mm" position="0,0,mm" uuid="{54b4a84f-49fd-4dbd-bd55-a2bb64d4b1f1}" size="841,594,mm" positionOnPage="0,0,mm" groupUuid="" opacity="1" background="true">
    <FrameColor red="0" alpha="255" green="0" blue="0"/>
    <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
    <LayoutObject>
@@ -68,7 +68,7 @@
   </LayoutItem>
   <GuideCollection visible="1"/>
  </PageCollection>
- <LayoutItem zValue="105" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="C:/Users/veroh/Desktop/salidagrafica-atlas/imagenes/logocenso.png" pictureRotation="0" id="" referencePoint="4" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="255,255,255,255" templateUuid="{64d609f6-162b-4c4c-8ba5-03beb5e35dcb}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="53.4733" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="70.6541" resizeMode="0" anchorPoint="0" position="403.122,14.9351,mm" uuid="{64d609f6-162b-4c4c-8ba5-03beb5e35dcb}" size="116.741,53.4733,mm" positionOnPage="403.122,14.9351,mm" groupUuid="" opacity="1" mode="1" background="false">
+ <LayoutItem zValue="105" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="C:/Users/veroh/Desktop/salidagrafica-atlas/imagenes/logocenso.png" pictureRotation="0" id="" referencePoint="4" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="255,255,255,255" templateUuid="{ec479b07-e05c-41ab-a05d-7bc72b44e05c}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="80.5411" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="106.419" resizeMode="0" anchorPoint="0" position="815.793,28.469,mm" uuid="{ec479b07-e05c-41ab-a05d-7bc72b44e05c}" size="234.735,80.5411,mm" positionOnPage="815.793,28.469,mm" groupUuid="" opacity="1" mode="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -88,7 +88,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="65" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{b18f648e-69af-4ca5-8e34-719b67163e58}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="349.8,113.453,mm" uuid="{b18f648e-69af-4ca5-8e34-719b67163e58}" size="62.7481,1.42109e-14,mm" endMarkerFile="" positionOnPage="349.8,113.453,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="65" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{dab35cef-727e-4417-bca6-4f72285ba750}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.426,231.022,mm" uuid="{dab35cef-727e-4417-bca6-4f72285ba750}" size="126.473,0.28193,mm" endMarkerFile="" positionOnPage="708.426,231.022,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -135,27 +135,10 @@
   </symbol>
   <nodes>
    <node x="0" y="0"/>
-   <node x="62.7481" y="0"/>
+   <node x="126.473" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="59" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{59d5ae41-73b7-43e3-b9c3-b517cae2f7dc}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="380.077,179.685,mm" uuid="{59d5ae41-73b7-43e3-b9c3-b517cae2f7dc}" size="32.1071,73.1182,mm" positionOnPage="380.077,179.685,mm" groupUuid="" opacity="1" background="true">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
-  <LayoutObject>
-   <dataDefinedProperties>
-    <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
-    </Option>
-   </dataDefinedProperties>
-   <customproperties/>
-  </LayoutObject>
-  <ComposerItemGroupElement uuid="{9a4208a0-87d2-40ed-a139-21e6560a9702}"/>
-  <ComposerItemGroupElement uuid="{431530e5-d3ca-442d-a0ab-8ce14259eca3}"/>
-  <ComposerItemGroupElement uuid="{c7d13a53-3c7c-4eae-9d69-e3a2b5bb0756}"/>
- </LayoutItem>
- <LayoutItem zValue="55" labelText="DESCRIPCIÓN" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{43f73a7a-4031-4a5a-a890-6e0d4d5acae0}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="5.9582,266.575,mm" uuid="{43f73a7a-4031-4a5a-a890-6e0d4d5acae0}" size="29.5269,5.75976,mm" positionOnPage="5.9582,266.575,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="55" labelText="DESCRIPCIÓN" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{29296625-d9f5-444a-a1fa-905c8bc0bf98}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="17.2035,533.611,mm" uuid="{29296625-d9f5-444a-a1fa-905c8bc0bf98}" size="59.3707,11.1726,mm" positionOnPage="17.2035,533.611,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -171,7 +154,7 @@
   <LabelFont style="Normal" description="Arial,10,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="54" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="0" arrowHeadOutlineColor="103,103,103,255" positionLock="false" startMarkerMode="0" templateUuid="{a103773c-4a61-4290-a48f-239eb564b540}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="103,103,103,255" outlineWidth="0.6" position="355.406,171.718,mm" uuid="{a103773c-4a61-4290-a48f-239eb564b540}" size="15.6868,0.00452583,mm" endMarkerFile="" positionOnPage="355.406,171.718,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="54" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="0" arrowHeadOutlineColor="103,103,103,255" positionLock="false" startMarkerMode="0" templateUuid="{f23029eb-7dda-40f9-a757-b810b7ff769f}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="103,103,103,255" outlineWidth="0.6" position="719.698,344.042,mm" uuid="{f23029eb-7dda-40f9-a757-b810b7ff769f}" size="31.8452,0.290709,mm" endMarkerFile="" positionOnPage="719.698,344.042,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -217,11 +200,11 @@
    </layer>
   </symbol>
   <nodes>
-   <node x="0" y="0.00452583"/>
-   <node x="15.6868" y="0"/>
+   <node x="0" y="0.290709"/>
+   <node x="31.8452" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="53" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="0" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{5848c321-14a0-444f-8b56-b826bb5de9aa}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="0.6" position="356.33,164.5,mm" uuid="{5848c321-14a0-444f-8b56-b826bb5de9aa}" size="14.8182,0.054646,mm" endMarkerFile="" positionOnPage="356.33,164.5,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="53" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="0" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{d1ee2c35-6215-4179-b9dd-ca11c11167d9}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="0.6" position="721.556,330.041,mm" uuid="{d1ee2c35-6215-4179-b9dd-ca11c11167d9}" size="30.0986,0.38793,mm" endMarkerFile="" positionOnPage="721.556,330.041,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -320,11 +303,11 @@
    </layer>
   </symbol>
   <nodes>
-   <node x="0" y="0.054646"/>
-   <node x="14.8182" y="0"/>
+   <node x="0" y="0.38793"/>
+   <node x="30.0986" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="52" labelText="2933&#x9;&#x9;-  GOMEZ CARRILLO" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{e8aea114-cfa8-4597-b591-b220e40148c6}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="370.186,126.992,mm" uuid="{e8aea114-cfa8-4597-b591-b220e40148c6}" size="33.9357,3.14876,mm" positionOnPage="370.186,126.992,mm" groupUuid="{b314735c-e5eb-4773-94b7-d729f4cac33d}" opacity="1" background="false">
+ <LayoutItem zValue="52" labelText="2933&#x9;&#x9;-  GOMEZ CARRILLO" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{599e071c-fd57-4d38-9fc5-8500c38454eb}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="744.535,257.292,mm" uuid="{599e071c-fd57-4d38-9fc5-8500c38454eb}" size="88.8285,7.24188,mm" positionOnPage="744.535,257.292,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -337,10 +320,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,7,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="51" labelText="LEYENDA" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{15272fa5-a677-449a-be73-5f2e283cdb00}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="372.74,116.176,mm" uuid="{15272fa5-a677-449a-be73-5f2e283cdb00}" size="19.5565,3.83563,mm" positionOnPage="372.74,116.176,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="51" labelText="LEYENDA" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{d92ddd60-6065-497d-b64a-ea2c972d6d31}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="749.034,234.545,mm" uuid="{d92ddd60-6065-497d-b64a-ea2c972d6d31}" size="69.4947,14.5051,mm" positionOnPage="749.034,234.545,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -353,10 +336,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,10,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,19,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="50" labelText="Escala 1:[% round(map_get(item_variables( '1'),'map_scale')/100,0)*100%]&#xa;[%case&#xa;when &#xa;@project_crs = 'EPSG:22181'&#xa;then&#xa;'POSGAR94 / Faja 1 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22182'&#xa;then&#xa;'POSGAR94 / Faja 2 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22183'&#xa;then&#xa;'POSGAR94 / Faja 3 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22184'&#xa;then&#xa;'POSGAR94 / Faja 4 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22185'&#xa;then&#xa;'POSGAR94 / Faja 5 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22186'&#xa;then&#xa;'POSGAR94 / Faja 6 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22187'&#xa;then&#xa;'POSGAR94 / Faja 7 - ' || @project_crs&#xa;end&#xa;%]&#xa;" itemRotation="0" marginY="0" marginX="0" id="texto escala" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{2d2c5d26-40e9-42e5-a955-310dcdff513a}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="356.212,263.964,mm" uuid="{2d2c5d26-40e9-42e5-a955-310dcdff513a}" size="55.0892,10.9808,mm" positionOnPage="356.212,263.964,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="50" labelText="Escala 1:[% round(map_get(item_variables( '1'),'map_scale')/100,0)*100%]&#xa;[%case&#xa;when &#xa;@project_crs = 'EPSG:22181'&#xa;then&#xa;'POSGAR94 / Faja 1 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22182'&#xa;then&#xa;'POSGAR94 / Faja 2 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22183'&#xa;then&#xa;'POSGAR94 / Faja 3 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22184'&#xa;then&#xa;'POSGAR94 / Faja 4 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22185'&#xa;then&#xa;'POSGAR94 / Faja 5 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22186'&#xa;then&#xa;'POSGAR94 / Faja 6 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22187'&#xa;then&#xa;'POSGAR94 / Faja 7 - ' || @project_crs&#xa;end&#xa;%]&#xa;" itemRotation="0" marginY="0" marginX="0" id="texto escala" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{2b1d6d36-40ba-4198-8ded-6e1e81124994}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="714.206,548.528,mm" uuid="{2b1d6d36-40ba-4198-8ded-6e1e81124994}" size="110.77,12.2771,mm" positionOnPage="714.206,548.528,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -372,7 +355,7 @@
   <LabelFont style="Normal" description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="49" shapeType="0" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{4a36f516-eb5c-46e4-b5e2-3a11360f65ec}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="361.874,133.693,mm" uuid="{4a36f516-eb5c-46e4-b5e2-3a11360f65ec}" size="2.95352,2.61593,mm" positionOnPage="361.874,133.693,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="49" shapeType="0" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{278a0f0c-b9a8-4fbd-b97a-c623373e39fb}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="732.703,270.283,mm" uuid="{278a0f0c-b9a8-4fbd-b97a-c623373e39fb}" size="6.24196,5.35622,mm" positionOnPage="732.703,270.283,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -408,7 +391,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="48" labelText="Vivienda Colectiva" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{8e216cad-b8d4-4145-b079-25149e071693}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="380.077,144.543,mm" uuid="{8e216cad-b8d4-4145-b079-25149e071693}" size="29.4614,5.39365,mm" positionOnPage="380.077,144.543,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="48" labelText="Vivienda Colectiva" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{f9a19e0c-1ac9-4534-af3b-2a90260194a1}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="768.413,267.73,mm" uuid="{f9a19e0c-1ac9-4534-af3b-2a90260194a1}" size="59.239,10.4624,mm" positionOnPage="768.413,267.73,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -421,10 +404,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,9,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="47" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{34b7c09f-b6e8-4a28-a22b-9a8cdeac9523}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="355.003,156.798,mm" uuid="{34b7c09f-b6e8-4a28-a22b-9a8cdeac9523}" size="15.7558,0.0587376,mm" endMarkerFile="" positionOnPage="355.003,156.798,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="47" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{4560b97e-a132-4bdf-b1ef-72e9eceba272}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="718.887,315.101,mm" uuid="{4560b97e-a132-4bdf-b1ef-72e9eceba272}" size="31.9839,0.395867,mm" endMarkerFile="" positionOnPage="718.887,315.101,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -530,11 +513,11 @@
    </layer>
   </symbol>
   <nodes>
-   <node x="0" y="0.0587376"/>
-   <node x="15.7558" y="0"/>
+   <node x="0" y="0.395867"/>
+   <node x="31.9839" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="46" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{647c8e45-7f59-49c7-990c-9880bbe79033}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="369.364,126.341,mm" uuid="{647c8e45-7f59-49c7-990c-9880bbe79033}" size="31.614,0.133674,mm" endMarkerFile="" positionOnPage="369.364,126.341,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="46" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{d0735451-198d-4d47-a9f0-cca1a74917e7}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="747.763,256.022,mm" uuid="{d0735451-198d-4d47-a9f0-cca1a74917e7}" size="63.8705,0.541226,mm" endMarkerFile="" positionOnPage="747.763,256.022,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -580,11 +563,11 @@
    </layer>
   </symbol>
   <nodes>
-   <node x="0" y="0.133674"/>
-   <node x="31.614" y="0"/>
+   <node x="0" y="0.541226"/>
+   <node x="63.8705" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="45" labelText="Código&#x9; &#x9;Nombre de calle" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{79334849-787f-4eda-b2c8-9870ff0b4b4d}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="367.186,122.674,mm" uuid="{79334849-787f-4eda-b2c8-9870ff0b4b4d}" size="36.9357,3.14876,mm" positionOnPage="367.186,122.674,mm" groupUuid="{b314735c-e5eb-4773-94b7-d729f4cac33d}" opacity="1" background="false">
+ <LayoutItem zValue="45" labelText="Código&#x9; &#x9;Nombre de calle" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{fe6b06d2-4dd6-4d07-bf03-5376fe957f29}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="743.535,249.05,mm" uuid="{fe6b06d2-4dd6-4d07-bf03-5376fe957f29}" size="74.2678,6.10786,mm" positionOnPage="743.535,249.05,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -597,10 +580,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,9,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="43" labelText="UBICACIÓN GEOGRÁFICA" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{ef24c190-29ba-491a-8b6b-11dc56d23b3f}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="359.531,32.6261,mm" uuid="{ef24c190-29ba-491a-8b6b-11dc56d23b3f}" size="44.5905,3.95596,mm" positionOnPage="359.531,32.6261,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="43" labelText="UBICACIÓN GEOGRÁFICA" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{0ec272da-987d-48e2-b2f9-ed0221fa4785}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="735.034,74.3777,mm" uuid="{0ec272da-987d-48e2-b2f9-ed0221fa4785}" size="89.6595,7.67364,mm" positionOnPage="735.034,74.3777,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -613,10 +596,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,10,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,19,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="41" labelText="[% 'Fecha de elaboración del Mapa: '|| format_date( now(),'dd-MM-yyyy hh:mm')%]" itemRotation="0" marginY="0" marginX="0" id="texto fecha" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="2" positionLock="false" valign="64" templateUuid="{3a989bd9-d277-4a19-a982-7033d676039d}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="355.256,258.467,mm" uuid="{3a989bd9-d277-4a19-a982-7033d676039d}" size="49.26,3.82538,mm" positionOnPage="355.256,258.467,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="41" labelText="[% 'Fecha de elaboración del Mapa: '|| format_date( now(),'dd-MM-yyyy hh:mm')%]" itemRotation="0" marginY="0" marginX="0" id="texto fecha" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="2" positionLock="false" valign="64" templateUuid="{0ca1e2f1-1f39-46fb-ade0-a366b09313db}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="719.548,512.456,mm" uuid="{0ca1e2f1-1f39-46fb-ade0-a366b09313db}" size="99.0486,7.42034,mm" positionOnPage="719.548,512.456,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -632,7 +615,7 @@
   <LabelFont style="Normal" description="MS Shell Dlg 2,6,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="40" labelText="Fuente: DPE - INDEC&#xa;Elaborado por: INDEC Coordinación del Sistema Geoestadístico&#xa;Fecha de Elaboración: 2021&#xa;" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{0d78ab61-b5e9-40d7-9c48-f0a8a6ea549f}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="356.212,275.066,mm" uuid="{0d78ab61-b5e9-40d7-9c48-f0a8a6ea549f}" size="55.9721,17.8928,mm" positionOnPage="356.212,275.066,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="40" labelText="Fuente: DPE - INDEC&#xa;Elaborado por: INDEC Coordinación del Sistema Geoestadístico&#xa;Fecha de Elaboración: 2021&#xa;" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{0f4d44d5-0cb2-47c6-93a6-628fefd4aeb5}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="714.206,560.805,mm" uuid="{0f4d44d5-0cb2-47c6-93a6-628fefd4aeb5}" size="90.7935,19.3936,mm" positionOnPage="714.206,560.805,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -648,7 +631,7 @@
   <LabelFont style="Normal" description="Arial,10,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="39" labelText="[%'Fracción: '  ||  &quot;frac&quot;   %] &#xa;&#xa;" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{4aca0b68-c6e6-43f6-8f92-b0a0db9f6d72}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="355.886,88.8036,mm" uuid="{4aca0b68-c6e6-43f6-8f92-b0a0db9f6d72}" size="52.384,22.6148,mm" positionOnPage="355.886,88.8036,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="39" labelText="[%'Fracción: '  ||  &quot;frac&quot;   %] &#xa;&#xa;" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{a21b2355-2fc8-494a-b068-8797fcac8144}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="735.034,173.851,mm" uuid="{a21b2355-2fc8-494a-b068-8797fcac8144}" size="89.0895,43.8674,mm" positionOnPage="735.034,173.851,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -661,10 +644,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Bold" description="Arial,10,-1,5,75,0,0,0,0,0,Negrita"/>
+  <LabelFont style="Bold" description="Arial,21,-1,5,75,0,0,0,0,0,Negrita"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="35" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="358.828,176.347,mm" uuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" size="7.08896,73.9444,mm" positionOnPage="358.828,176.347,mm" groupUuid="" opacity="1" background="true">
+ <LayoutItem zValue="35" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="745.352,372.255,mm" uuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" size="8.43091,132.275,mm" positionOnPage="745.352,372.255,mm" groupUuid="" opacity="1" background="true">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -677,17 +660,17 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <ComposerItemGroupElement uuid="{5396ebe4-57e1-4af0-94e7-b57453847c13}"/>
-  <ComposerItemGroupElement uuid="{bb0cfe14-5027-43ea-ba84-bde42734a6b5}"/>
-  <ComposerItemGroupElement uuid="{2ccfca91-82b0-4b39-87eb-939858c07e19}"/>
-  <ComposerItemGroupElement uuid="{ce23a338-2512-4158-9ff6-c66789a7e3eb}"/>
-  <ComposerItemGroupElement uuid="{58324a83-d50b-4c9e-9191-e5c13c9577c3}"/>
-  <ComposerItemGroupElement uuid="{e0013593-6657-41d3-88ff-f7122fcfa76c}"/>
-  <ComposerItemGroupElement uuid="{b524fc83-6739-467b-b428-47c4f4f29562}"/>
-  <ComposerItemGroupElement uuid="{05dd98ac-60f3-4320-b461-79e380d07849}"/>
-  <ComposerItemGroupElement uuid="{631baff2-cf58-49ba-9947-a747fe6b9cf8}"/>
+  <ComposerItemGroupElement uuid="{d81c2ebe-47bb-4e53-838d-945c6d48283c}"/>
+  <ComposerItemGroupElement uuid="{71b34be1-87b4-4575-9a01-5cd1e4bb0155}"/>
+  <ComposerItemGroupElement uuid="{9187762e-ad69-4fe2-95c2-103e5fee8ad8}"/>
+  <ComposerItemGroupElement uuid="{dca651fc-c6ce-40c5-af28-6d1b4d258944}"/>
+  <ComposerItemGroupElement uuid="{8322ca46-d4aa-47de-b0a9-31ac92c031f9}"/>
+  <ComposerItemGroupElement uuid="{8b7890f8-4fe8-4ab4-869d-01fe159361b6}"/>
+  <ComposerItemGroupElement uuid="{3dd8c0c0-4f77-4ae4-96c5-e06873aefe81}"/>
+  <ComposerItemGroupElement uuid="{854e3a22-60c1-43e4-89cd-15b9fd6846f7}"/>
+  <ComposerItemGroupElement uuid="{9c12945b-0144-42d6-bee4-0c887dd1bdaf}"/>
  </LayoutItem>
- <LayoutItem zValue="34" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{51717e9f-0d62-463c-a4a1-92a01a2d7dd3}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="20.1768,10.9319,mm" uuid="{51717e9f-0d62-463c-a4a1-92a01a2d7dd3}" size="6.65698,13.1812,mm" positionOnPage="20.1768,10.9319,mm" groupUuid="" opacity="1" background="true">
+ <LayoutItem zValue="34" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="14.8571,18.1848,mm" uuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" size="7.958,17.4273,mm" positionOnPage="14.8571,18.1848,mm" groupUuid="" opacity="1" background="true">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -700,26 +683,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <ComposerItemGroupElement uuid="{e980f5b4-bf71-4424-9feb-5a15faa08443}"/>
-  <ComposerItemGroupElement uuid="{d64e4a59-48f2-4f84-94b8-7725171fd135}"/>
+  <ComposerItemGroupElement uuid="{f4700a3f-d5a8-47b8-b0a7-bf2b20bfee38}"/>
+  <ComposerItemGroupElement uuid="{d7bff5bd-1dec-4a90-b3ad-8211e03db9c7}"/>
  </LayoutItem>
- <LayoutItem zValue="31" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{b314735c-e5eb-4773-94b7-d729f4cac33d}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="367.186,122.674,mm" uuid="{b314735c-e5eb-4773-94b7-d729f4cac33d}" size="36.9357,7.46676,mm" positionOnPage="367.186,122.674,mm" groupUuid="" opacity="1" background="true">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
-  <LayoutObject>
-   <dataDefinedProperties>
-    <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
-    </Option>
-   </dataDefinedProperties>
-   <customproperties/>
-  </LayoutObject>
-  <ComposerItemGroupElement uuid="{79334849-787f-4eda-b2c8-9870ff0b4b4d}"/>
-  <ComposerItemGroupElement uuid="{e8aea114-cfa8-4597-b591-b220e40148c6}"/>
- </LayoutItem>
- <LayoutItem frameJoinStyle="miter" position="175.061,278.204,mm" positionOnPage="175.061,278.204,mm" legendFilterByAtlas="1" splitLayer="1" templateUuid="{af2ceabc-b3e7-4cfd-9900-188c5bcfa554}" wrapChar="" rasterBorder="0" symbolHeight="3" title="" zValue="30" boxSpace="3" resizeToContents="0" referencePoint="4" blendMode="0" rasterBorderColor="0,0,0,255" outlineWidthM="0.3,mm" id="" titleAlignment="4" wmsLegendHeight="32" lineSpacing="1" frame="false" rasterBorderWidth="2.77556e-17" columnCount="10" size="343,28,mm" positionLock="false" background="true" uuid="{af2ceabc-b3e7-4cfd-9900-188c5bcfa554}" groupUuid="" equalColumnWidth="1" maxSymbolSize="0" type="65642" symbolAlignment="1" itemRotation="0" opacity="1" wmsLegendWidth="53" symbolWidth="7" minSymbolSize="0" visibility="1" fontColor="#000000" map_uuid="{25873735-f508-430f-af14-3bb26a0f063a}" columnSpace="3" excludeFromExports="0">
+ <LayoutItem frameJoinStyle="miter" position="331.525,562.356,mm" positionOnPage="331.525,562.356,mm" legendFilterByAtlas="1" splitLayer="1" templateUuid="{247f4e2d-b008-48a6-a8db-bb199081d482}" wrapChar="" rasterBorder="0" symbolHeight="5" title="" zValue="30" boxSpace="6" resizeToContents="0" referencePoint="4" blendMode="0" rasterBorderColor="0,0,0,255" outlineWidthM="0.3,mm" id="" titleAlignment="4" wmsLegendHeight="32" lineSpacing="1" frame="false" rasterBorderWidth="2.77556e-17" columnCount="15" size="633.335,29.3701,mm" positionLock="false" background="true" uuid="{247f4e2d-b008-48a6-a8db-bb199081d482}" groupUuid="" equalColumnWidth="1" maxSymbolSize="2" type="65642" symbolAlignment="1" itemRotation="0" opacity="1" wmsLegendWidth="53" symbolWidth="9" minSymbolSize="3" visibility="1" fontColor="#000000" map_uuid="{123c2c81-10ca-447e-b570-e588d0195774}" columnSpace="7" excludeFromExports="0">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -754,7 +721,7 @@
    <customproperties/>
   </LayoutObject>
   <styles>
-   <style marginBottom="0.5" alignment="1" name="title">
+   <style alignment="1" name="title">
     <styleFont style="" description="MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0"/>
    </style>
    <style alignment="1" name="group">
@@ -778,10 +745,18 @@
      <property key="legend/title-label" value=" "/>
     </customproperties>
    </layer-tree-layer>
-   <custom-order enabled="0"/>
+   <layer-tree-layer providerKey="postgres" legend_exp="" checked="Qt::Checked" patch_size="-1,-1" expanded="1" legend_split_behavior="0" id="Segmentacion_52c2c434_db77_42ca_b173_0b2e9a9adde2" name="Segmentacion" source="dbname='DEVSEG' host=10.70.80.62 port=5432 user='vheredia' key='link' checkPrimaryKeyUnicity='1' table=&quot;(select  seg, descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 and count(*)=conteo then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from e66014010.r3  left join e66014010.segmentacion s on r3.segmento_id=s.segmento_id    left join e66014010.listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.conteo, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )&quot; (geom)">
+    <customproperties>
+     <property key="cached_name" value=" "/>
+     <property key="legend/title-label" value=" "/>
+    </customproperties>
+   </layer-tree-layer>
+   <custom-order enabled="0">
+    <item>Segmentacion_52c2c434_db77_42ca_b173_0b2e9a9adde2</item>
+   </custom-order>
   </layer-tree-group>
  </LayoutItem>
- <LayoutItem zValue="29" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/amenity=taxi.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{5396ebe4-57e1-4af0-94e7-b57453847c13}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.65139" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="6.65139" resizeMode="0" anchorPoint="0" position="358.853,235.526,mm" uuid="{5396ebe4-57e1-4af0-94e7-b57453847c13}" size="6.73291,6.65139,mm" positionOnPage="358.853,235.526,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="29" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/amenity=taxi.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{d81c2ebe-47bb-4e53-838d-945c6d48283c}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.00746" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.00746" resizeMode="0" anchorPoint="0" position="745.382,478.117,mm" uuid="{d81c2ebe-47bb-4e53-838d-945c6d48283c}" size="8.00746,11.8983,mm" positionOnPage="745.382,478.117,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -795,7 +770,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="28" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/transport_train_station2.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{bb0cfe14-5027-43ea-ba84-bde42734a6b5}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.67634" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="6.67634" resizeMode="0" anchorPoint="0" position="358.828,202.571,mm" uuid="{bb0cfe14-5027-43ea-ba84-bde42734a6b5}" size="7.08896,6.67634,mm" positionOnPage="358.828,202.571,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="28" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/transport_train_station2.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{71b34be1-87b4-4575-9a01-5cd1e4bb0155}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.43091" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.43091" resizeMode="0" anchorPoint="0" position="745.352,419.165,mm" uuid="{71b34be1-87b4-4575-9a01-5cd1e4bb0155}" size="8.43091,11.9429,mm" positionOnPage="745.352,419.165,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -809,7 +784,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="27" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="symbol/landuse_coniferous_and_deciduous.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{2ccfca91-82b0-4b39-87eb-939858c07e19}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.66205" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="6.66205" resizeMode="0" anchorPoint="0" position="358.853,226.505,mm" uuid="{2ccfca91-82b0-4b39-87eb-939858c07e19}" size="6.7437,6.66205,mm" positionOnPage="358.853,226.505,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="27" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="symbol/landuse_coniferous_and_deciduous.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{9187762e-ad69-4fe2-95c2-103e5fee8ad8}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.02029" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.02029" resizeMode="0" anchorPoint="0" position="745.382,461.98,mm" uuid="{9187762e-ad69-4fe2-95c2-103e5fee8ad8}" size="8.02029,11.9174,mm" positionOnPage="745.382,461.98,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -823,7 +798,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="26" labelText="Plaza&#xa;&#xa;Policía&#xa;&#xa;Terminal de Omnibus" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{9a4208a0-87d2-40ed-a139-21e6560a9702}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="380.077,229.836,mm" uuid="{9a4208a0-87d2-40ed-a139-21e6560a9702}" size="32.1071,22.9672,mm" positionOnPage="380.077,229.836,mm" groupUuid="{59d5ae41-73b7-43e3-b9c3-b517cae2f7dc}" opacity="1" background="false">
+ <LayoutItem zValue="26" labelText="Plaza&#xa;&#xa;Policía&#xa;&#xa;Terminal de Omnibus" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{6f5b85e0-f505-400a-9c80-60fa59b06e75}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="771.942,459.979,mm" uuid="{6f5b85e0-f505-400a-9c80-60fa59b06e75}" size="61.7717,44.551,mm" positionOnPage="771.942,459.979,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -836,10 +811,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,9,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="25" labelText="Estación de FFCC&#xa;&#xa;Hospital&#xa;&#xa;Iglesia" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{431530e5-d3ca-442d-a0ab-8ce14259eca3}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="380.077,204.989,mm" uuid="{431530e5-d3ca-442d-a0ab-8ce14259eca3}" size="29.6369,29.1575,mm" positionOnPage="380.077,204.989,mm" groupUuid="{59d5ae41-73b7-43e3-b9c3-b517cae2f7dc}" opacity="1" background="false">
+ <LayoutItem zValue="25" labelText="Estación de FFCC&#xa;&#xa;Hospital&#xa;&#xa;Iglesia" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{602f2a83-14cd-4198-a310-f9ce9a4dfc7a}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="771.942,417.921,mm" uuid="{602f2a83-14cd-4198-a310-f9ce9a4dfc7a}" size="56.0254,56.5587,mm" positionOnPage="771.942,417.921,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -852,10 +827,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,9,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="24" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/transport_bus_station.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{ce23a338-2512-4158-9ff6-c66789a7e3eb}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.65139" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="6.65139" resizeMode="0" anchorPoint="0" position="358.853,243.64,mm" uuid="{ce23a338-2512-4158-9ff6-c66789a7e3eb}" size="6.73291,6.65139,mm" positionOnPage="358.853,243.64,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="24" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/transport_bus_station.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{dca651fc-c6ce-40c5-af28-6d1b4d258944}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.00746" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.00746" resizeMode="0" anchorPoint="0" position="745.382,492.631,mm" uuid="{dca651fc-c6ce-40c5-af28-6d1b4d258944}" size="8.00746,11.8983,mm" positionOnPage="745.382,492.631,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -869,7 +844,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="23" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="backgrounds/background_square.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{58324a83-d50b-4c9e-9191-e5c13c9577c3}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.67634" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="6.67634" resizeMode="0" anchorPoint="0" position="358.828,185.749,mm" uuid="{58324a83-d50b-4c9e-9191-e5c13c9577c3}" size="6.75817,6.67634,mm" positionOnPage="358.828,185.749,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="23" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="backgrounds/background_square.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{8322ca46-d4aa-47de-b0a9-31ac92c031f9}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,389.073,mm" uuid="{8322ca46-d4aa-47de-b0a9-31ac92c031f9}" size="8.0375,11.9429,mm" positionOnPage="745.352,389.073,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -883,7 +858,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="22" labelText="Cementerio&#xa;&#xa;Edificio Público&#xa;&#xa;Escuela" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{c7d13a53-3c7c-4eae-9d69-e3a2b5bb0756}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="380.077,179.685,mm" uuid="{c7d13a53-3c7c-4eae-9d69-e3a2b5bb0756}" size="24.439,23.967,mm" positionOnPage="380.077,179.685,mm" groupUuid="{59d5ae41-73b7-43e3-b9c3-b517cae2f7dc}" opacity="1" background="false">
+ <LayoutItem zValue="22" labelText="Cementerio&#xa;&#xa;Edificio Público&#xa;&#xa;Escuela" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{38f52158-fe18-4852-905a-0763a53bfea1}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="771.942,375.102,mm" uuid="{38f52158-fe18-4852-905a-0763a53bfea1}" size="52.1816,46.4904,mm" positionOnPage="771.942,375.102,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -896,10 +871,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="" description="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0"/>
+  <LabelFont style="" description="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="21" northMode="0" svgBorderColor="103,103,103,255" itemRotation="0" file="landmark/religion=christian.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="103,103,103,255" templateUuid="{e0013593-6657-41d3-88ff-f7122fcfa76c}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.67634" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="6.67634" resizeMode="0" anchorPoint="0" position="358.828,218.697,mm" uuid="{e0013593-6657-41d3-88ff-f7122fcfa76c}" size="6.75817,6.67634,mm" positionOnPage="358.828,218.697,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="21" northMode="0" svgBorderColor="103,103,103,255" itemRotation="0" file="landmark/religion=christian.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="103,103,103,255" templateUuid="{8b7890f8-4fe8-4ab4-869d-01fe159361b6}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,448.012,mm" uuid="{8b7890f8-4fe8-4ab4-869d-01fe159361b6}" size="8.0375,11.9429,mm" positionOnPage="745.352,448.012,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -913,7 +888,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="20" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="gpsicons/cross.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{b524fc83-6739-467b-b428-47c4f4f29562}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.67634" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="6.67634" resizeMode="0" anchorPoint="0" position="358.828,210.21,mm" uuid="{b524fc83-6739-467b-b428-47c4f4f29562}" size="6.75817,6.67634,mm" positionOnPage="358.828,210.21,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="20" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="gpsicons/cross.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{3dd8c0c0-4f77-4ae4-96c5-e06873aefe81}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,432.83,mm" uuid="{3dd8c0c0-4f77-4ae4-96c5-e06873aefe81}" size="8.0375,11.9429,mm" positionOnPage="745.352,432.83,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -927,7 +902,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="19" northMode="0" svgBorderColor="103,103,103,255" itemRotation="0" file="religion/place_of_worship_christian.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="103,103,103,255" templateUuid="{05dd98ac-60f3-4320-b461-79e380d07849}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.67634" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="6.67634" resizeMode="0" anchorPoint="0" position="358.828,176.347,mm" uuid="{05dd98ac-60f3-4320-b461-79e380d07849}" size="6.75817,6.67634,mm" positionOnPage="358.828,176.347,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="19" northMode="0" svgBorderColor="103,103,103,255" itemRotation="0" file="religion/place_of_worship_christian.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="103,103,103,255" templateUuid="{854e3a22-60c1-43e4-89cd-15b9fd6846f7}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,372.255,mm" uuid="{854e3a22-60c1-43e4-89cd-15b9fd6846f7}" size="8.0375,11.9429,mm" positionOnPage="745.352,372.255,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -941,7 +916,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="18" labelText="Límite de Fracción&#xa;&#xa;Límite de Radio&#xa;&#xa;Ferrocarril&#xa;&#xa;Alambrado&#xa;&#xa;Otro" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{f97df640-cf7e-4269-a1ac-56b7cadc3466}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="380.144,140.197,mm" uuid="{f97df640-cf7e-4269-a1ac-56b7cadc3466}" size="29.3939,33.6199,mm" positionOnPage="380.144,140.197,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="18" labelText="Límite de Fracción&#xa;&#xa;Límite de Radio&#xa;&#xa;Ferrocarril&#xa;&#xa;Alambrado&#xa;&#xa;Otro" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{0fea5468-7255-423a-87f1-a922bfada934}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="769.591,283.04,mm" uuid="{0fea5468-7255-423a-87f1-a922bfada934}" size="59.1032,65.2147,mm" positionOnPage="769.591,283.04,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -954,10 +929,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,9,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="17" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="227,26,28,255" positionLock="false" startMarkerMode="0" templateUuid="{3e0cb02a-e486-4f94-8c81-5bd31f7a0316}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="227,26,28,255" outlineWidth="1.4" position="357.616,150.459,mm" uuid="{3e0cb02a-e486-4f94-8c81-5bd31f7a0316}" size="13.5324,0.0662927,mm" endMarkerFile="" positionOnPage="357.616,150.459,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="17" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="227,26,28,255" positionLock="false" startMarkerMode="0" templateUuid="{470a4ecf-ae3d-44c6-b74d-417601a09e8b}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="227,26,28,255" outlineWidth="1.4" position="724.141,302.805,mm" uuid="{470a4ecf-ae3d-44c6-b74d-417601a09e8b}" size="27.5132,0.410522,mm" endMarkerFile="" positionOnPage="724.141,302.805,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1003,11 +978,11 @@
    </layer>
   </symbol>
   <nodes>
-   <node x="0" y="0.0662927"/>
-   <node x="13.5324" y="0"/>
+   <node x="0" y="0.410522"/>
+   <node x="27.5132" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="16" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{34f4db0c-31b1-4429-b2a3-c11ea44dcfd3}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="357.616,141.976,mm" uuid="{34f4db0c-31b1-4429-b2a3-c11ea44dcfd3}" size="13.3212,0.0665501,mm" endMarkerFile="" positionOnPage="357.616,141.976,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="16" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{7b83d473-fe78-4a1e-aae6-2ba35773dcd0}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="724.141,286.35,mm" uuid="{7b83d473-fe78-4a1e-aae6-2ba35773dcd0}" size="27.0886,0.411021,mm" endMarkerFile="" positionOnPage="724.141,286.35,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1053,11 +1028,11 @@
    </layer>
   </symbol>
   <nodes>
-   <node x="0" y="0.0665501"/>
-   <node x="13.3212" y="0"/>
+   <node x="0" y="0.411021"/>
+   <node x="27.0886" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="15" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="shopping/shopping_estateagent2.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{631baff2-cf58-49ba-9947-a747fe6b9cf8}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="6.67634" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="6.67634" resizeMode="0" anchorPoint="0" position="358.828,193.895,mm" uuid="{631baff2-cf58-49ba-9947-a747fe6b9cf8}" size="6.75817,6.67634,mm" positionOnPage="358.828,193.895,mm" groupUuid="{d0a7dfb6-575b-4ef0-978e-b30895e320dc}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="15" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="shopping/shopping_estateagent2.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{9c12945b-0144-42d6-bee4-0c887dd1bdaf}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,403.645,mm" uuid="{9c12945b-0144-42d6-bee4-0c887dd1bdaf}" size="8.0375,11.9429,mm" positionOnPage="745.352,403.645,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1071,7 +1046,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="14" labelText="N" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{e980f5b4-bf71-4424-9feb-5a15faa08443}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="21.8574,10.9319,mm" uuid="{e980f5b4-bf71-4424-9feb-5a15faa08443}" size="3.92813,5.00321,mm" positionOnPage="21.8574,10.9319,mm" groupUuid="{51717e9f-0d62-463c-a4a1-92a01a2d7dd3}" opacity="1" background="false">
+ <LayoutItem zValue="14" labelText="N" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{f4700a3f-d5a8-47b8-b0a7-bf2b20bfee38}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="16.8662,18.1848,mm" uuid="{f4700a3f-d5a8-47b8-b0a7-bf2b20bfee38}" size="4.69583,6.61493,mm" positionOnPage="16.8662,18.1848,mm" groupUuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1087,7 +1062,7 @@
   <LabelFont style="Normal" description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="13" labelText="[%  'Provincia: '   || '(' || &quot;PROV&quot;  || ') '   || upper(&#xa; attribute(  get_feature( 'provincia', 'codigo', &quot;PROV&quot;  ) , 'nombre')) %]&#xa;&#xa;[%  'Depto: '  ||  '(' || &quot;dpto&quot;  || ') '   ||  upper (attribute( get_feature( 'departamento', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ) , 'nombre'))%]&#xa;&#xa;[%  'Localidad: '  ||  '(' || &quot;codloc&quot;  || ') '  || upper (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ||  &quot;codloc&quot; ) , 'nombre'))%]" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{2feac885-475d-4b98-aded-007ec34842e2}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="355.886,44.0001,mm" uuid="{2feac885-475d-4b98-aded-007ec34842e2}" size="56.1481,31.4889,mm" positionOnPage="355.886,44.0001,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="13" labelText="[%  'Provincia: '   || '(' || &quot;PROV&quot;  || ') '   || upper(&#xa; attribute(  get_feature( 'provincia', 'codigo', &quot;PROV&quot;  ) , 'nombre')) %]&#xa;&#xa;[%  'Depto: '  ||  '(' || &quot;dpto&quot;  || ') '   ||  upper (attribute( get_feature( 'departamento', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ) , 'nombre'))%]&#xa;&#xa;[%  'Localidad: '  ||  '(' || &quot;codloc&quot;  || ') '  || upper (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ||  &quot;codloc&quot; ) , 'nombre'))%]" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{7ee8a3a9-4b4a-453a-a2d2-fbb56eb67bc5}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="724.658,93.1905,mm" uuid="{7ee8a3a9-4b4a-453a-a2d2-fbb56eb67bc5}" size="103.309,65.5975,mm" positionOnPage="724.658,93.1905,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1100,10 +1075,10 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <LabelFont style="Normal" description="Arial,8,-1,5,50,0,0,0,0,0,Normal"/>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
   <FontColor red="0" alpha="255" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="12" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="arrows/NorthArrow_04.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="255,255,255,255" templateUuid="{d64e4a59-48f2-4f84-94b8-7725171fd135}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="9.178" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="5.77173" resizeMode="0" anchorPoint="0" position="20.1768,14.9351,mm" uuid="{d64e4a59-48f2-4f84-94b8-7725171fd135}" size="6.65698,9.178,mm" positionOnPage="20.1768,14.9351,mm" groupUuid="{51717e9f-0d62-463c-a4a1-92a01a2d7dd3}" opacity="1" mode="0" background="false">
+ <LayoutItem zValue="12" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="arrows/NorthArrow_04.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="255,255,255,255" templateUuid="{d7bff5bd-1dec-4a90-b3ad-8211e03db9c7}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="12.1346" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="7.63102" resizeMode="0" anchorPoint="0" position="14.8571,23.4776,mm" uuid="{d7bff5bd-1dec-4a90-b3ad-8211e03db9c7}" size="7.958,12.1346,mm" positionOnPage="14.8571,23.4776,mm" groupUuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" opacity="1" mode="0" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1117,57 +1092,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="9" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{84f89116-b39b-4f94-a99d-1e85cc26c09a}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="349.8,79.0128,mm" uuid="{84f89116-b39b-4f94-a99d-1e85cc26c09a}" size="63.0262,1.42109e-14,mm" endMarkerFile="" positionOnPage="349.8,79.0128,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
-  <LayoutObject>
-   <dataDefinedProperties>
-    <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
-    </Option>
-   </dataDefinedProperties>
-   <customproperties/>
-  </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
-    <prop v="0" k="align_dash_pattern"/>
-    <prop v="square" k="capstyle"/>
-    <prop v="5;2" k="customdash"/>
-    <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-    <prop v="MM" k="customdash_unit"/>
-    <prop v="0" k="dash_pattern_offset"/>
-    <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
-    <prop v="MM" k="dash_pattern_offset_unit"/>
-    <prop v="0" k="draw_inside_polygon"/>
-    <prop v="bevel" k="joinstyle"/>
-    <prop v="0,0,0,255" k="line_color"/>
-    <prop v="solid" k="line_style"/>
-    <prop v="0.3" k="line_width"/>
-    <prop v="MM" k="line_width_unit"/>
-    <prop v="0" k="offset"/>
-    <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-    <prop v="MM" k="offset_unit"/>
-    <prop v="0" k="ring_filter"/>
-    <prop v="0" k="tweak_dash_pattern_on_corners"/>
-    <prop v="0" k="use_custom_dash"/>
-    <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-    <data_defined_properties>
-     <Option type="Map">
-      <Option value="" name="name" type="QString"/>
-      <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
-     </Option>
-    </data_defined_properties>
-   </layer>
-  </symbol>
-  <nodes>
-   <node x="0" y="0"/>
-   <node x="63.0262" y="0"/>
-  </nodes>
- </LayoutItem>
- <LayoutItem zValue="8" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{c4b239b0-97a9-4268-b65b-8b6763ee9bd5}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="349.8,28.727,mm" uuid="{c4b239b0-97a9-4268-b65b-8b6763ee9bd5}" size="62.8375,1.06581e-14,mm" endMarkerFile="" positionOnPage="349.8,28.727,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="9" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{05a5a82f-1de3-40ca-abab-988378d29b30}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.426,164.216,mm" uuid="{05a5a82f-1de3-40ca-abab-988378d29b30}" size="127.032,0.28193,mm" endMarkerFile="" positionOnPage="708.426,164.216,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1214,10 +1139,10 @@
   </symbol>
   <nodes>
    <node x="0" y="0"/>
-   <node x="62.8375" y="0"/>
+   <node x="127.032" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="6" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{872db2f5-49a8-48df-be30-e9f9ef39c435}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="349.618,263.719,mm" uuid="{872db2f5-49a8-48df-be30-e9f9ef39c435}" size="63.0198,0,mm" endMarkerFile="" positionOnPage="349.618,263.719,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="8" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{7c6dcb20-164e-48f2-94b9-9f029167b6ec}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.426,66.6734,mm" uuid="{7c6dcb20-164e-48f2-94b9-9f029167b6ec}" size="126.653,0.28193,mm" endMarkerFile="" positionOnPage="708.426,66.6734,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1264,10 +1189,60 @@
   </symbol>
   <nodes>
    <node x="0" y="0"/>
-   <node x="63.0198" y="0"/>
+   <node x="126.653" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="5" itemRotation="0" drawCanvasItems="false" followPreset="false" id="1" referencePoint="4" mapFlags="0" isTemporal="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" keepLayerSet="false" followPresetName="" templateUuid="{25873735-f508-430f-af14-3bb26a0f063a}" blendMode="0" frameJoinStyle="miter" type="65639" outlineWidthM="0.3,mm" labelMargin="0,mm" mapRotation="0" position="176.811,133.594,mm" uuid="{25873735-f508-430f-af14-3bb26a0f063a}" size="339.5,255.395,mm" positionOnPage="176.811,133.594,mm" groupUuid="" opacity="1" background="true">
+ <LayoutItem zValue="6" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{7f34c177-ac7e-41d5-a507-216d4f2d4750}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.06,522.503,mm" uuid="{7f34c177-ac7e-41d5-a507-216d4f2d4750}" size="127.019,0.28193,mm" endMarkerFile="" positionOnPage="708.06,522.503,mm" groupUuid="" opacity="1" background="false">
+  <FrameColor red="0" alpha="255" green="0" blue="0"/>
+  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" name="name" type="QString"/>
+     <Option name="properties"/>
+     <Option value="collection" name="type" type="QString"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
+   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+    <prop v="0" k="align_dash_pattern"/>
+    <prop v="square" k="capstyle"/>
+    <prop v="5;2" k="customdash"/>
+    <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+    <prop v="MM" k="customdash_unit"/>
+    <prop v="0" k="dash_pattern_offset"/>
+    <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
+    <prop v="MM" k="dash_pattern_offset_unit"/>
+    <prop v="0" k="draw_inside_polygon"/>
+    <prop v="bevel" k="joinstyle"/>
+    <prop v="0,0,0,255" k="line_color"/>
+    <prop v="solid" k="line_style"/>
+    <prop v="0.3" k="line_width"/>
+    <prop v="MM" k="line_width_unit"/>
+    <prop v="0" k="offset"/>
+    <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+    <prop v="MM" k="offset_unit"/>
+    <prop v="0" k="ring_filter"/>
+    <prop v="0" k="tweak_dash_pattern_on_corners"/>
+    <prop v="0" k="use_custom_dash"/>
+    <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+    <data_defined_properties>
+     <Option type="Map">
+      <Option value="" name="name" type="QString"/>
+      <Option name="properties"/>
+      <Option value="collection" name="type" type="QString"/>
+     </Option>
+    </data_defined_properties>
+   </layer>
+  </symbol>
+  <nodes>
+   <node x="0" y="0"/>
+   <node x="127.019" y="0"/>
+  </nodes>
+ </LayoutItem>
+ <LayoutItem zValue="5" itemRotation="0" drawCanvasItems="false" followPreset="false" id="1" referencePoint="4" mapFlags="0" isTemporal="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" keepLayerSet="false" followPresetName="" templateUuid="{123c2c81-10ca-447e-b570-e588d0195774}" blendMode="0" frameJoinStyle="miter" type="65639" outlineWidthM="0.3,mm" labelMargin="0,mm" mapRotation="0" position="360.743,270.133,mm" uuid="{123c2c81-10ca-447e-b570-e588d0195774}" size="682.643,495.407,mm" positionOnPage="360.743,270.133,mm" groupUuid="" opacity="1" background="true">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1296,7 +1271,7 @@
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <Extent xmax="4594088.40974530857056379" xmin="4590393.09025469142943621" ymin="6705854.3125" ymax="6708634.1875"/>
+  <Extent xmax="3486207.45229636132717133" xmin="3479380.54770363867282867" ymin="7220770.793403091840446" ymax="7225725.20659690909087658"/>
   <LayerSet/>
   <AtlasMap scalingMode="2" margin="0.05" atlasDriven="1"/>
   <labelBlockingItems/>
@@ -1305,7 +1280,7 @@
   </atlasClippingSettings>
   <itemClippingSettings clippingType="0" clipSource="" forceLabelsInside="0" enabled="0"/>
  </LayoutItem>
- <LayoutItem zValue="4" shapeType="1" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{f7792ab7-29da-48af-b7a6-2530ce9d5d33}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="2.5,263.719,mm" uuid="{f7792ab7-29da-48af-b7a6-2530ce9d5d33}" size="347.091,29.781,mm" positionOnPage="2.5,263.719,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="4" shapeType="1" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{1e5fc80b-2cb5-41c4-bf3c-898b22058886}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="10.0984,522.503,mm" uuid="{1e5fc80b-2cb5-41c4-bf3c-898b22058886}" size="698.21,58.0501,mm" positionOnPage="10.0984,522.503,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1341,7 +1316,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="3" shapeType="1" itemRotation="0" id="" referencePoint="4" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{55fbfc0a-deea-4de7-9940-0503e0ed4254}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="381.259,147.5,mm" uuid="{55fbfc0a-deea-4de7-9940-0503e0ed4254}" size="63.2824,292,mm" positionOnPage="381.259,147.5,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="3" shapeType="1" itemRotation="0" id="" referencePoint="4" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{86025889-5343-4314-b152-9c783144e6bd}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="771.833,297.206,mm" uuid="{86025889-5343-4314-b152-9c783144e6bd}" size="127.547,566.693,mm" positionOnPage="771.833,297.206,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1398,7 +1373,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="2" shapeType="1" itemRotation="0" id="" referencePoint="4" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{2a2dc16f-8525-4508-9cb9-a08487a7ef08}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="207.7,147.37,mm" uuid="{2a2dc16f-8525-4508-9cb9-a08487a7ef08}" size="410.4,291.74,mm" positionOnPage="207.7,147.37,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="2" shapeType="1" itemRotation="0" id="" referencePoint="4" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{c1dd4477-af9d-436d-b1ee-a343daeaa4d8}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="422.852,296.954,mm" uuid="{c1dd4477-af9d-436d-b1ee-a343daeaa4d8}" size="825.508,566.189,mm" positionOnPage="422.852,296.954,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1455,7 +1430,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="1" shapeType="1" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{a15045c5-76ae-4c0b-babb-811d1b8e061e}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="6.1082,5.388,mm" uuid="{a15045c5-76ae-4c0b-babb-811d1b8e061e}" size="405.043,286.224,mm" positionOnPage="6.1082,5.388,mm" groupUuid="" opacity="1" background="false">
+ <LayoutItem zValue="1" shapeType="1" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{3473bdfb-790d-4e95-9b16-0ccf7c9be4d0}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="17.3535,21.4012,mm" uuid="{3473bdfb-790d-4e95-9b16-0ccf7c9be4d0}" size="814.736,555.489,mm" positionOnPage="17.3535,21.4012,mm" groupUuid="" opacity="1" background="false">
   <FrameColor red="0" alpha="255" green="0" blue="0"/>
   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
   <LayoutObject>
@@ -1511,5 +1486,5 @@
   <property key="pdfTextFormat" value="0"/>
   <property key="singleFile" value="false"/>
  </customproperties>
- <Atlas coverageLayer="" hideCoverage="0" pageNameExpression="'F'  || &quot;FRAC&quot;  " filterFeatures="0" filenamePattern="'Fraccion-F' ||  &quot;FRAC&quot;   ||   '-' ||   (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot; || &quot;codloc&quot; ) , 'nombre') ) &#xd;" sortKey="frac" sortFeatures="1" sortAscending="1" enabled="1"/>
+ <Atlas coverageLayer="Fracción_f69b92a2_18ae_4c63_a6ba_ac036111651a" coverageLayerSource="dbname='DEVSEG' host=10.70.80.62 port=5432 user='vheredia' key='gid' checkPrimaryKeyUnicity='1' table=&quot;( select * from e66014010.fracciones)&quot; (wkb_geometry)" hideCoverage="0" pageNameExpression="'F'  || &quot;FRAC&quot;  " filterFeatures="0" filenamePattern="'Fraccion-F' ||  &quot;FRAC&quot;   ||   '-' ||   (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot; || &quot;codloc&quot; ) , 'nombre') ) &#xd;" sortKey="frac" sortFeatures="1" sortAscending="1" enabled="1" coverageLayerName="Fracción" coverageLayerProvider="postgres"/>
 </Layout>
