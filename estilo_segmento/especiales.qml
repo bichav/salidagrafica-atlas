@@ -1,30 +1,30 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis labelsEnabled="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" version="3.16.10-Hannover" styleCategories="AllStyleCategories" simplifyDrawingHints="1" maxScale="0" minScale="100000000" simplifyMaxScale="1" simplifyAlgorithm="0" simplifyLocal="1" readOnly="0">
+<qgis simplifyAlgorithm="0" readOnly="0" simplifyLocal="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" simplifyDrawingHints="1" version="3.16.10-Hannover" labelsEnabled="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <temporal enabled="0" endExpression="" durationUnit="min" fixedDuration="0" startField="" endField="" accumulate="0" mode="0" startExpression="" durationField="">
+  <temporal enabled="0" startField="" fixedDuration="0" endField="" durationField="" startExpression="" endExpression="" mode="0" durationUnit="min" accumulate="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 type="RuleRenderer" enableorderby="1" forceraster="0" symbollevels="1">
+  <renderer-v2 forceraster="0" type="RuleRenderer" enableorderby="1" symbollevels="1">
     <rules key="{4757d8cf-dd23-48d7-bdfb-72f3bcb79d02}">
       <rule key="{fd605965-43a5-468c-892f-8396fdb87ccb}">
-        <rule filter="&quot;codigo20&quot; in (99950, 99951, 99952)&#xd;&#xa;" label="lineas alambrado" key="{4a658f89-12d6-4c41-8b11-6a24b87ef895}" symbol="0"/>
-        <rule filter="(&quot;codigo20&quot;   in (99900,99910, 99915, 99920, 99925, 99930))&#xd;&#xa;&#xd;&#xa;  " label="ferrocarril" key="{3c9218fe-60f0-443c-b0fe-562aebcea2d6}" symbol="1"/>
-        <rule filter="(&quot;codigo20&quot;  in ( 99932, 99945 , 99946, 99947, 99948, 99949, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))&#xd;&#xa;&#xd;&#xa;" label="otros" key="{248b9762-227a-4b55-a519-1f3f001cc02e}" symbol="2"/>
+        <rule key="{4a658f89-12d6-4c41-8b11-6a24b87ef895}" filter="&quot;codigo20&quot; in (99950, 99951, 99952)&#xd;&#xa;" label="lineas alambrado" symbol="0"/>
+        <rule key="{3c9218fe-60f0-443c-b0fe-562aebcea2d6}" filter="(&quot;codigo20&quot;   in (99900,99910, 99915, 99920, 99925, 99930))&#xd;&#xa;&#xd;&#xa;  " label="ferrocarril" symbol="1"/>
+        <rule key="{248b9762-227a-4b55-a519-1f3f001cc02e}" filter="(&quot;codigo20&quot;  in ( 99932, 99945 , 99946, 99947, 99948, 99949, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))&#xd;&#xa;&#xd;&#xa;" label="otros" symbol="2"/>
       </rule>
-      <rule filter="(&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" key="{66bf58da-dd0b-4e75-b6b0-eee0998ec3cb}" symbol="3">
-        <rule filter="(&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))&#xd;&#xa;" label="calles" key="{7a580f65-960c-4eee-adc1-91c1549fc7c5}" symbol="4"/>
+      <rule key="{66bf58da-dd0b-4e75-b6b0-eee0998ec3cb}" filter="(&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" symbol="3">
+        <rule key="{7a580f65-960c-4eee-adc1-91c1549fc7c5}" filter="(&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))&#xd;&#xa;" label="calles" symbol="4"/>
       </rule>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" alpha="1" type="line" force_rhr="0" name="0">
-        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+      <symbol type="line" force_rhr="0" alpha="1" name="0" clip_to_extent="1">
+        <layer pass="0" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
@@ -54,7 +54,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="MarkerLine">
+        <layer pass="0" enabled="1" class="MarkerLine" locked="0">
           <prop k="average_angle_length" v="4"/>
           <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="average_angle_unit" v="MapUnit"/>
@@ -77,8 +77,8 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="@0@1">
-            <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <symbol type="marker" force_rhr="0" alpha="1" name="@0@1" clip_to_extent="1">
+            <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -108,8 +108,8 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" type="line" force_rhr="0" name="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+      <symbol type="line" force_rhr="0" alpha="1" name="1" clip_to_extent="1">
+        <layer pass="0" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
@@ -139,7 +139,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+        <layer pass="0" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
@@ -169,7 +169,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+        <layer pass="0" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="15;25"/>
@@ -200,8 +200,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" type="line" force_rhr="0" name="2">
-        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+      <symbol type="line" force_rhr="0" alpha="1" name="2" clip_to_extent="1">
+        <layer pass="0" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="2;1"/>
@@ -232,8 +232,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" type="line" force_rhr="0" name="3">
-        <layer locked="0" enabled="1" pass="2" class="SimpleLine">
+      <symbol type="line" force_rhr="0" alpha="1" name="3" clip_to_extent="1">
+        <layer pass="2" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
@@ -264,8 +264,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" type="line" force_rhr="0" name="4">
-        <layer locked="0" enabled="1" pass="1" class="SimpleLine">
+      <symbol type="line" force_rhr="0" alpha="1" name="4" clip_to_extent="1">
+        <layer pass="1" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
@@ -311,7 +311,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+        <layer pass="0" enabled="1" class="SimpleLine" locked="0">
           <prop k="align_dash_pattern" v="0"/>
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
@@ -360,19 +360,19 @@
       </symbol>
     </symbols>
     <orderby>
-      <orderByClause nullsFirst="0" asc="1"> $length </orderByClause>
+      <orderByClause asc="1" nullsFirst="0"> $length </orderByClause>
     </orderby>
   </renderer-v2>
   <labeling type="rule-based">
-    <rules key="{98b8c2f5-95a3-45c4-99bf-3c199c8e075f}">
-      <rule filter=" @map_scale  &lt;= 2000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="100" description="etiquetas nombre especiales" key="{5eec26ea-4117-40e2-bcc1-f42bd1b69bdf}" scalemaxdenom="2000">
+    <rules key="{70084c33-ad45-4819-b732-7aa5f2104ce2}">
+      <rule scalemaxdenom="2000" key="{1e1cd48d-1cbe-42a5-ae98-5fa0d14a5551}" description="etiquetas nombre especiales" filter=" @map_scale  &lt;= 2000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="100">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="11" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="11" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -401,7 +401,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -411,9 +411,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="10" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="Point" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="2000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="100" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="10" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="Point" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="100" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="2000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -453,7 +453,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -467,14 +467,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter=" @map_scale  &lt;= 3000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="2000" description="etiquetas nombre especiales" key="{cccd5845-faa1-4f48-bc62-0777b4621cd3}" scalemaxdenom="3000">
+      <rule scalemaxdenom="3000" key="{9459f62d-35e0-45b6-9ce0-7d3df986f34f}" description="etiquetas nombre especiales" filter=" @map_scale  &lt;= 3000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="2000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="9" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="9" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -503,7 +503,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -513,9 +513,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="10" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="Point" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="3000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="2000" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="10" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="Point" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="2000" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="3000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -555,7 +555,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -569,14 +569,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="@map_scale  > 3000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="3000" description="etiquetas nombre especiales" key="{08575a0f-3682-4437-a6b9-d880ec80b32d}" scalemaxdenom="5000">
+      <rule scalemaxdenom="5000" key="{891aa9ea-98e4-483e-a596-6a0ef0d41b10}" description="etiquetas nombre especiales" filter="@map_scale  > 3000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="3000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="6" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="6" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -605,7 +605,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -615,9 +615,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="10" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="Point" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="5000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="3000" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="10" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="Point" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="3000" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="5000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -657,7 +657,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -671,14 +671,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="@map_scale  > 5000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="5000" description="etiquetas nombre especiales" key="{eebdd65c-449e-48b6-bcc5-d070a3160bdd}" scalemaxdenom="1000000000">
+      <rule scalemaxdenom="1000000000" key="{3d1dac6a-6ed2-4c21-ad99-586553d0594f}" description="etiquetas nombre especiales" filter="@map_scale  > 5000 and (&quot;codigo20&quot;  in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="5000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="3" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="3" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -707,7 +707,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -717,9 +717,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="4294967295" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="10" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="Point" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="1000000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="5001" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="4294967295" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="10" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="Point" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="5001" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="1000000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -759,7 +759,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -773,14 +773,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter=" @map_scale  &lt;= 2000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="100" description="etiqueta nombre de calle " key="{942f3324-f79a-47fe-86f0-c36f7679b94d}" scalemaxdenom="2000">
+      <rule scalemaxdenom="2000" key="{1797f846-0a34-4d80-931b-8e1b7bf2ed6a}" description="etiqueta nombre de calle " filter=" @map_scale  &lt;= 2000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="100">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="11" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="11" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -809,7 +809,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -819,9 +819,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="9" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="RenderMetersInMapUnits" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="2000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="100" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="9" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="RenderMetersInMapUnits" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="100" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="2000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -861,7 +861,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -875,14 +875,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter=" @map_scale  &lt;= 3000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="2000" description="etiqueta nombre de calle " key="{0d429f32-5461-484e-9cf6-95683cbfb5b8}" scalemaxdenom="3000">
+      <rule scalemaxdenom="3000" key="{396b1750-d182-4712-9ecb-ef2c097e4faa}" description="etiqueta nombre de calle " filter=" @map_scale  &lt;= 3000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="2000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="10" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="10" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -911,7 +911,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -921,9 +921,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="9" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="RenderMetersInMapUnits" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="3000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="2000" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="9" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="RenderMetersInMapUnits" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="2000" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="3000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -963,7 +963,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -977,14 +977,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter=" @map_scale  > 3000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="3000" description="etiqueta nombre de calle " key="{e9735a30-52e1-4bd3-a9cc-11bcdae956a4}" scalemaxdenom="5000">
+      <rule scalemaxdenom="5000" key="{f4d76b6c-69c6-46c7-a5f4-83f395b3aea5}" description="etiqueta nombre de calle " filter=" @map_scale  > 3000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="3000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="8" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="8" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -1013,7 +1013,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1023,9 +1023,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="9" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="RenderMetersInMapUnits" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="5000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="3000" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="9" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="RenderMetersInMapUnits" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="3000" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="5000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -1065,7 +1065,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1079,14 +1079,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter=" @map_scale  > 5000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="5000" description="etiqueta nombre de calle " key="{e5bdeca4-f9f9-4244-b665-27345a577421}" scalemaxdenom="8000">
+      <rule scalemaxdenom="8000" key="{c4b526a3-244a-4502-90e5-ab7699f1c204}" description="etiqueta nombre de calle " filter=" @map_scale  > 5000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="5000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="5" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="5" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -1115,7 +1115,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1125,9 +1125,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="9" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="RenderMetersInMapUnits" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="8000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="5000" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="9" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="RenderMetersInMapUnits" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="5000" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="8000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -1167,7 +1167,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1181,14 +1181,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="@map_scale  >  8000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="8000" description="etiqueta nombre de calle " key="{8d182dec-05aa-474d-9b5f-0ddc39e5517a}" scalemaxdenom="10000000">
+      <rule scalemaxdenom="10000000" key="{cc4d53f6-e582-44ef-86d9-f91d7f1e0653}" description="etiqueta nombre de calle " filter="@map_scale  >  8000 and (&quot;codigo20&quot;  not in (99900,99910, 99915, 99920, 99925, 99930, 99932, 99945 , 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99955, 99965, 99966, 99967, 99968, 99970, 99971, 99972, 99973, 99974, 99975, 99980 ))" scalemindenom="8000">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="3" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="codinomb" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="3" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="codinomb" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="190,178,151,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -1217,7 +1217,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1227,9 +1227,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="4294967295" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="9" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="Point" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="3" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="RenderMetersInMapUnits" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="1" mergeLines="1" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="10000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="0" scaleMin="8001" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="4294967295" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="3" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="9" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="RenderMetersInMapUnits" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="Point" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="1" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="0" obstacleFactor="1" scaleMin="8001" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="10000" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -1269,7 +1269,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1283,14 +1283,14 @@
           </callout>
         </settings>
       </rule>
-      <rule filter="(attribute (@atlas_feature ,'radio') = substr ( &quot;mzai&quot; , 11,2)&#xd;&#xa;or  &#xd;&#xa;attribute (@atlas_feature ,'radio') = substr ( &quot;mzad&quot; , 11,2))&#xd;&#xd;&#xa;" key="{c03f63aa-bbaa-4f10-b40e-896d262c6c76}">
+      <rule key="{b611acfe-5637-48e1-879b-c353b30d82f1}" filter="(attribute (@atlas_feature ,'radio') = substr ( &quot;mzai&quot; , 11,2)&#xd;&#xa;or  &#xd;&#xa;attribute (@atlas_feature ,'radio') = substr ( &quot;mzad&quot; , 11,2))&#xd;&#xd;&#xa;">
         <settings calloutType="simple">
-          <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="10" fontFamily="MS Shell Dlg 2" multilineHeight="1" blendMode="0" isExpression="1" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-            <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-            <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="1.5" maskJoinStyle="128"/>
-            <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-              <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="10" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="MS Shell Dlg 2" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="1" fontWeight="50" fieldName="" textColor="0,0,0,255">
+            <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+            <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="1.5" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+            <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+              <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                   <prop k="angle" v="0"/>
                   <prop k="color" v="164,113,88,255"/>
                   <prop k="horizontal_anchor_point" v="1"/>
@@ -1319,7 +1319,7 @@
                 </layer>
               </symbol>
             </background>
-            <shadow shadowScale="100" shadowRadius="1.5" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0.7" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+            <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1329,9 +1329,9 @@
             </dd_properties>
             <substitutions/>
           </text-style>
-          <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-          <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="10" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="2" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="1" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MM" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-          <rendering displayAll="0" scaleVisibility="0" mergeLines="0" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="2000" scaleMax="0" fontLimitPixelSize="0" drawLabels="1" obstacleType="1" upsidedownLabels="0" obstacle="1" scaleMin="0" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+          <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+          <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistance="0" geometryGeneratorEnabled="0" placement="2" preserveRotation="1" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="10" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="MM" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="MM" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+          <rendering obstacleType="1" scaleVisibility="0" minFeatureSize="0" mergeLines="0" displayAll="0" maxNumLabels="2000" limitNumLabels="0" labelPerPart="0" obstacle="1" obstacleFactor="1" scaleMin="0" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="0" fontMinPixelSize="3" upsidedownLabels="0"/>
           <dd_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -1350,7 +1350,7 @@
               <Option type="bool" value="false" name="drawToAllParts"/>
               <Option type="QString" value="0" name="enabled"/>
               <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-              <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+              <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
               <Option type="double" value="0" name="minLength"/>
               <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
               <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1363,14 +1363,14 @@
             </Option>
           </callout>
         </settings>
-        <rule filter="attribute (@atlas_feature ,'seg') =  &quot;segi&quot;" scalemindenom="10" key="{d92ba47e-9935-4dcf-ad1c-2caa0ff401b8}" scalemaxdenom="3500">
+        <rule scalemaxdenom="3500" key="{1bdebbde-de30-4e47-86a3-7c02edee0efd}" filter="array_contains (attribute (@atlas_feature ,'lados') ,  &quot;mzai&quot;|| lpad( &quot;ladoi&quot;,2,'0'))&#xd;&#xa; " scalemindenom="10">
           <settings calloutType="simple">
-            <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="8" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="ladoi" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-              <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-              <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-              <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-                <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                  <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+            <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="8" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="ladoi" textColor="0,0,0,255">
+              <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+              <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+              <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+                <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                  <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                     <prop k="angle" v="0"/>
                     <prop k="color" v="125,139,143,255"/>
                     <prop k="horizontal_anchor_point" v="1"/>
@@ -1399,7 +1399,7 @@
                   </layer>
                 </symbol>
               </background>
-              <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+              <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
               <dd_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -1409,9 +1409,9 @@
               </dd_properties>
               <substitutions/>
             </text-style>
-            <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-            <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="2" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="2" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="0" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="12" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MapUnit" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-            <rendering displayAll="0" scaleVisibility="1" mergeLines="0" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="1" scaleMax="3500" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="1" scaleMin="10" labelPerPart="0" obstacleFactor="0" limitNumLabels="0" fontMinPixelSize="3"/>
+            <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+            <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="12" overrunDistance="0" geometryGeneratorEnabled="0" placement="2" preserveRotation="0" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="2" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="MapUnit" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="MM" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+            <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="0" displayAll="0" maxNumLabels="1" limitNumLabels="0" labelPerPart="0" obstacle="1" obstacleFactor="0" scaleMin="10" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="3500" fontMinPixelSize="3" upsidedownLabels="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1441,7 +1441,7 @@
                 <Option type="bool" value="false" name="drawToAllParts"/>
                 <Option type="QString" value="0" name="enabled"/>
                 <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-                <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+                <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
                 <Option type="double" value="0" name="minLength"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
                 <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1455,14 +1455,14 @@
             </callout>
           </settings>
         </rule>
-        <rule filter="attribute (@atlas_feature ,'seg') =  &quot;segi&quot;&#xd;&#xa;&#xd;&#xa;" scalemindenom="3500" key="{bb703e04-f9f1-4ed2-aebd-43092deb2a2a}" scalemaxdenom="100000000">
+        <rule scalemaxdenom="100000000" key="{b9c6fb18-3dc8-43a5-822e-95fca64e8dfc}" filter="array_contains (attribute (@atlas_feature ,'lados') ,  &quot;mzai&quot;|| lpad( &quot;ladoi&quot;,2,'0'))&#xd;&#xa; " scalemindenom="3500">
           <settings calloutType="simple">
-            <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="6" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="ladoi" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-              <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-              <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-              <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-                <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                  <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+            <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="6" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="ladoi" textColor="0,0,0,255">
+              <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+              <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+              <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+                <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                  <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                     <prop k="angle" v="0"/>
                     <prop k="color" v="125,139,143,255"/>
                     <prop k="horizontal_anchor_point" v="1"/>
@@ -1491,7 +1491,7 @@
                   </layer>
                 </symbol>
               </background>
-              <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+              <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
               <dd_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -1501,9 +1501,9 @@
               </dd_properties>
               <substitutions/>
             </text-style>
-            <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-            <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="2" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="2" maxCurvedCharAngleOut="-25" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="0" maxCurvedCharAngleIn="25" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="12" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MapUnit" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-            <rendering displayAll="0" scaleVisibility="1" mergeLines="0" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="1" scaleMax="100000000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="1" scaleMin="3500" labelPerPart="0" obstacleFactor="0" limitNumLabels="0" fontMinPixelSize="3"/>
+            <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+            <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="12" overrunDistance="0" geometryGeneratorEnabled="0" placement="2" preserveRotation="0" maxCurvedCharAngleOut="-25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="2" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="MapUnit" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="MM" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+            <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="0" displayAll="0" maxNumLabels="1" limitNumLabels="0" labelPerPart="0" obstacle="1" obstacleFactor="0" scaleMin="3500" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="100000000" fontMinPixelSize="3" upsidedownLabels="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1533,7 +1533,7 @@
                 <Option type="bool" value="false" name="drawToAllParts"/>
                 <Option type="QString" value="0" name="enabled"/>
                 <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-                <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+                <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
                 <Option type="double" value="0" name="minLength"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
                 <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1547,14 +1547,14 @@
             </callout>
           </settings>
         </rule>
-        <rule filter="attribute (@atlas_feature ,'seg') =  &quot;segd&quot;" scalemindenom="10" key="{8ab4db69-eef0-44ef-8626-149171e7567c}" scalemaxdenom="3500">
+        <rule scalemaxdenom="3500" key="{62fd6e88-dc0c-4753-a600-8d3831e56f3e}" filter="array_contains (attribute (@atlas_feature ,'lados') ,  &quot;mzad&quot;|| lpad( &quot;ladod&quot;,2,'0'))&#xd;&#xa; " scalemindenom="10">
           <settings calloutType="simple">
-            <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="8" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="ladod" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-              <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-              <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-              <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-                <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                  <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+            <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="8" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="ladod" textColor="0,0,0,255">
+              <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+              <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+              <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+                <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                  <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                     <prop k="angle" v="0"/>
                     <prop k="color" v="213,180,60,255"/>
                     <prop k="horizontal_anchor_point" v="1"/>
@@ -1583,7 +1583,7 @@
                   </layer>
                 </symbol>
               </background>
-              <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+              <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
               <dd_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -1593,9 +1593,9 @@
               </dd_properties>
               <substitutions/>
             </text-style>
-            <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-            <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="4" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="2" maxCurvedCharAngleOut="-20" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="0" maxCurvedCharAngleIn="20" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="12" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MapUnit" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-            <rendering displayAll="1" scaleVisibility="1" mergeLines="0" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="1" scaleMax="3500" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="1" scaleMin="10" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+            <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+            <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="12" overrunDistance="0" geometryGeneratorEnabled="0" placement="2" preserveRotation="0" maxCurvedCharAngleOut="-20" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="4" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="MapUnit" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="MM" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="20" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+            <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="0" displayAll="1" maxNumLabels="1" limitNumLabels="0" labelPerPart="0" obstacle="1" obstacleFactor="1" scaleMin="10" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="3500" fontMinPixelSize="3" upsidedownLabels="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1625,7 +1625,7 @@
                 <Option type="bool" value="false" name="drawToAllParts"/>
                 <Option type="QString" value="0" name="enabled"/>
                 <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-                <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+                <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
                 <Option type="double" value="0" name="minLength"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
                 <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1639,14 +1639,14 @@
             </callout>
           </settings>
         </rule>
-        <rule filter="attribute (@atlas_feature ,'seg') =  &quot;segd&quot;" scalemindenom="3500" key="{21518936-c712-4679-96e7-1d35ead06474}" scalemaxdenom="1000000">
+        <rule scalemaxdenom="1000000" key="{d233b544-4d88-4855-9e87-f7b9467b6d0f}" filter="array_contains (attribute (@atlas_feature ,'lados') ,  &quot;mzad&quot;|| lpad( &quot;ladod&quot;,2,'0'))&#xd;&#xa; " scalemindenom="3500">
           <settings calloutType="simple">
-            <text-style fontUnderline="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" allowHtml="0" fontSize="6" fontFamily="Arial" multilineHeight="1" blendMode="0" isExpression="0" fontKerning="1" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName="ladod" capitalization="0" fontWordSpacing="0" textColor="0,0,0,255" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSizeUnit="Point" useSubstitutions="0" fontStrikeout="0" textOpacity="1">
-              <text-buffer bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="255,255,255,255" bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferDraw="0"/>
-              <text-mask maskSizeUnits="MM" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskType="0" maskedSymbolLayers="" maskSize="0" maskJoinStyle="128"/>
-              <background shapeOpacity="1" shapeOffsetUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeType="0" shapeRotation="0" shapeRotationType="0" shapeRadiiUnit="MM" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeSizeUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeType="0" shapeSVGFile="" shapeBorderWidth="0" shapeBlendMode="0" shapeJoinStyle="64">
-                <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="markerSymbol">
-                  <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+            <text-style fontSizeUnit="Point" fontKerning="1" capitalization="0" previewBkgrdColor="255,255,255,255" textOpacity="1" useSubstitutions="0" allowHtml="0" textOrientation="horizontal" fontSize="6" fontItalic="0" fontLetterSpacing="0" fontUnderline="0" blendMode="0" fontFamily="Arial" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" namedStyle="Normal" fontStrikeout="0" isExpression="0" fontWeight="50" fieldName="ladod" textColor="0,0,0,255">
+              <text-buffer bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferOpacity="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="1"/>
+              <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskSize="0" maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskType="0" maskedSymbolLayers=""/>
+              <background shapeOpacity="1" shapeSizeType="0" shapeBorderWidth="0" shapeFillColor="255,255,255,255" shapeBorderColor="128,128,128,255" shapeType="0" shapeRadiiY="0" shapeSVGFile="" shapeBlendMode="0" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeOffsetX="0" shapeRotation="0" shapeOffsetY="0" shapeRadiiX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeJoinStyle="64" shapeDraw="0">
+                <symbol type="marker" force_rhr="0" alpha="1" name="markerSymbol" clip_to_extent="1">
+                  <layer pass="0" enabled="1" class="SimpleMarker" locked="0">
                     <prop k="angle" v="0"/>
                     <prop k="color" v="213,180,60,255"/>
                     <prop k="horizontal_anchor_point" v="1"/>
@@ -1675,7 +1675,7 @@
                   </layer>
                 </symbol>
               </background>
-              <shadow shadowScale="100" shadowRadius="0" shadowDraw="0" shadowBlendMode="6" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowOpacity="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+              <shadow shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowOffsetUnit="MM" shadowOpacity="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="0" shadowBlendMode="6" shadowOffsetDist="1" shadowScale="100" shadowRadiusUnit="MM" shadowColor="0,0,0,255"/>
               <dd_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -1685,9 +1685,9 @@
               </dd_properties>
               <substitutions/>
             </text-style>
-            <text-format placeDirectionSymbol="0" decimals="3" multilineAlign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" plussign="0" wrapChar="" autoWrapLength="0" rightDirectionSymbol=">" leftDirectionSymbol="&lt;" formatNumbers="0"/>
-            <placement centroidInside="0" lineAnchorType="0" geometryGeneratorEnabled="0" overrunDistance="0" placementFlags="4" polygonPlacementFlags="2" yOffset="0" priority="5" repeatDistanceUnits="MM" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="2" maxCurvedCharAngleOut="-20" repeatDistance="0" layerType="LineGeometry" xOffset="0" fitInPolygonOnly="0" preserveRotation="0" maxCurvedCharAngleIn="20" overrunDistanceUnit="MM" lineAnchorPercent="0.5" geometryGenerator="" offsetUnits="MM" dist="12" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MapUnit" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetType="0" centroidWhole="0" rotationAngle="0"/>
-            <rendering displayAll="1" scaleVisibility="1" mergeLines="0" minFeatureSize="0" fontMaxPixelSize="10000" zIndex="0" maxNumLabels="1" scaleMax="10000000" fontLimitPixelSize="0" drawLabels="1" obstacleType="0" upsidedownLabels="0" obstacle="1" scaleMin="3500" labelPerPart="0" obstacleFactor="1" limitNumLabels="0" fontMinPixelSize="3"/>
+            <text-format multilineAlign="0" formatNumbers="0" addDirectionSymbol="0" decimals="3" reverseDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" wrapChar="" rightDirectionSymbol=">" autoWrapLength="0" leftDirectionSymbol="&lt;"/>
+            <placement offsetUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="12" overrunDistance="0" geometryGeneratorEnabled="0" placement="2" preserveRotation="0" maxCurvedCharAngleOut="-20" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" placementFlags="4" priority="5" offsetType="0" repeatDistance="0" lineAnchorType="0" yOffset="0" distUnits="MapUnit" rotationAngle="0" geometryGenerator="" layerType="LineGeometry" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" repeatDistanceUnits="MM" polygonPlacementFlags="2" xOffset="0" maxCurvedCharAngleIn="20" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" overrunDistanceUnit="MM" centroidWhole="0" lineAnchorPercent="0.5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4"/>
+            <rendering obstacleType="0" scaleVisibility="1" minFeatureSize="0" mergeLines="0" displayAll="1" maxNumLabels="1" limitNumLabels="0" labelPerPart="0" obstacle="1" obstacleFactor="1" scaleMin="3500" fontMaxPixelSize="10000" zIndex="0" fontLimitPixelSize="0" drawLabels="1" scaleMax="10000000" fontMinPixelSize="3" upsidedownLabels="0"/>
             <dd_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -1722,7 +1722,7 @@
                 <Option type="bool" value="false" name="drawToAllParts"/>
                 <Option type="QString" value="0" name="enabled"/>
                 <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-                <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; class=&quot;SimpleLine&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+                <Option type="QString" value="&lt;symbol type=&quot;line&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; clip_to_extent=&quot;1&quot;>&lt;layer pass=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot;>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
                 <Option type="double" value="0" name="minLength"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
                 <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -1749,12 +1749,12 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleBasedVisibility="0" rotationOffset="270" showAxis="0" scaleDependency="Area" maxScaleDenominator="1e+08" spacingUnitScale="3x:0,0,0,0,0,0" spacingUnit="MM" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" penAlpha="255" direction="1" opacity="1" enabled="0" penWidth="0" barWidth="5" lineSizeType="MM" diagramOrientation="Up" minimumSize="0" width="15" height="15" minScaleDenominator="0" spacing="0" backgroundColor="#ffffff">
+    <DiagramCategory penColor="#000000" showAxis="0" sizeType="MM" direction="1" spacing="0" scaleBasedVisibility="0" minimumSize="0" spacingUnit="MM" maxScaleDenominator="1e+08" lineSizeScale="3x:0,0,0,0,0,0" penWidth="0" scaleDependency="Area" minScaleDenominator="0" opacity="1" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" backgroundAlpha="255" penAlpha="255" backgroundColor="#ffffff" enabled="0" sizeScale="3x:0,0,0,0,0,0" height="15" width="15" rotationOffset="270" lineSizeType="MM" diagramOrientation="Up">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute field="" color="#000000" label=""/>
+      <attribute color="#000000" label="" field=""/>
       <axisSymbol>
-        <symbol clip_to_extent="1" alpha="1" type="line" force_rhr="0" name="">
-          <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+        <symbol type="line" force_rhr="0" alpha="1" name="" clip_to_extent="1">
+          <layer pass="0" enabled="1" class="SimpleLine" locked="0">
             <prop k="align_dash_pattern" v="0"/>
             <prop k="capstyle" v="square"/>
             <prop k="customdash" v="5;2"/>
@@ -1788,7 +1788,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="2" dist="0" zIndex="0" showAll="1" linePlacementFlags="18" priority="0" obstacle="0">
+  <DiagramLayerSettings placement="2" linePlacementFlags="18" dist="0" zIndex="0" priority="0" obstacle="0" showAll="1">
     <properties>
       <Option type="Map">
         <Option type="QString" value="" name="name"/>
@@ -1804,217 +1804,217 @@
   <legend type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="ogc_fid" configurationFlags="None">
+    <field configurationFlags="None" name="ogc_fid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="userid" configurationFlags="None">
+    <field configurationFlags="None" name="userid">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="fnode_" configurationFlags="None">
+    <field configurationFlags="None" name="fnode_">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="tnode_" configurationFlags="None">
+    <field configurationFlags="None" name="tnode_">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="lpoly_" configurationFlags="None">
+    <field configurationFlags="None" name="lpoly_">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="rpoly_" configurationFlags="None">
+    <field configurationFlags="None" name="rpoly_">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="length" configurationFlags="None">
+    <field configurationFlags="None" name="length">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="e2501_" configurationFlags="None">
+    <field configurationFlags="None" name="e0154_">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="e2501_id" configurationFlags="None">
+    <field configurationFlags="None" name="e0154_id">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="codigo10" configurationFlags="None">
+    <field configurationFlags="None" name="codigo10">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nomencla" configurationFlags="None">
+    <field configurationFlags="None" name="nomencla">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="codigo20" configurationFlags="None">
+    <field configurationFlags="None" name="codigo20">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ancho" configurationFlags="None">
+    <field configurationFlags="None" name="ancho">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="anchomed" configurationFlags="None">
+    <field configurationFlags="None" name="anchomed">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="tipo" configurationFlags="None">
+    <field configurationFlags="None" name="tipo">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nombre" configurationFlags="None">
+    <field configurationFlags="None" name="nombre">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ladoi" configurationFlags="None">
+    <field configurationFlags="None" name="ladoi">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="ladod" configurationFlags="None">
+    <field configurationFlags="None" name="ladod">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="desdei" configurationFlags="None">
+    <field configurationFlags="None" name="desdei">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="desded" configurationFlags="None">
+    <field configurationFlags="None" name="desded">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="hastai" configurationFlags="None">
+    <field configurationFlags="None" name="hastai">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="hastad" configurationFlags="None">
+    <field configurationFlags="None" name="hastad">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="mzai" configurationFlags="None">
+    <field configurationFlags="None" name="mzai">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="mzad" configurationFlags="None">
+    <field configurationFlags="None" name="mzad">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="codloc20" configurationFlags="None">
+    <field configurationFlags="None" name="codloc20">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nomencla10" configurationFlags="None">
+    <field configurationFlags="None" name="nomencla10">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nomenclai" configurationFlags="None">
+    <field configurationFlags="None" name="nomenclai">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="nomenclad" configurationFlags="None">
+    <field configurationFlags="None" name="nomenclad">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="codinomb" configurationFlags="None">
+    <field configurationFlags="None" name="codinomb">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="segi" configurationFlags="None">
+    <field configurationFlags="None" name="segi">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="segd" configurationFlags="None">
+    <field configurationFlags="None" name="segd">
       <editWidget type="Range">
         <config>
           <Option/>
@@ -2023,175 +2023,175 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="ogc_fid" index="0" name=""/>
-    <alias field="userid" index="1" name=""/>
-    <alias field="fnode_" index="2" name=""/>
-    <alias field="tnode_" index="3" name=""/>
-    <alias field="lpoly_" index="4" name=""/>
-    <alias field="rpoly_" index="5" name=""/>
-    <alias field="length" index="6" name=""/>
-    <alias field="e2501_" index="7" name=""/>
-    <alias field="e2501_id" index="8" name=""/>
-    <alias field="codigo10" index="9" name=""/>
-    <alias field="nomencla" index="10" name=""/>
-    <alias field="codigo20" index="11" name=""/>
-    <alias field="ancho" index="12" name=""/>
-    <alias field="anchomed" index="13" name=""/>
-    <alias field="tipo" index="14" name=""/>
-    <alias field="nombre" index="15" name=""/>
-    <alias field="ladoi" index="16" name=""/>
-    <alias field="ladod" index="17" name=""/>
-    <alias field="desdei" index="18" name=""/>
-    <alias field="desded" index="19" name=""/>
-    <alias field="hastai" index="20" name=""/>
-    <alias field="hastad" index="21" name=""/>
-    <alias field="mzai" index="22" name=""/>
-    <alias field="mzad" index="23" name=""/>
-    <alias field="codloc20" index="24" name=""/>
-    <alias field="nomencla10" index="25" name=""/>
-    <alias field="nomenclai" index="26" name=""/>
-    <alias field="nomenclad" index="27" name=""/>
-    <alias field="codinomb" index="28" name=""/>
-    <alias field="segi" index="29" name=""/>
-    <alias field="segd" index="30" name=""/>
+    <alias index="0" field="ogc_fid" name=""/>
+    <alias index="1" field="userid" name=""/>
+    <alias index="2" field="fnode_" name=""/>
+    <alias index="3" field="tnode_" name=""/>
+    <alias index="4" field="lpoly_" name=""/>
+    <alias index="5" field="rpoly_" name=""/>
+    <alias index="6" field="length" name=""/>
+    <alias index="7" field="e0154_" name=""/>
+    <alias index="8" field="e0154_id" name=""/>
+    <alias index="9" field="codigo10" name=""/>
+    <alias index="10" field="nomencla" name=""/>
+    <alias index="11" field="codigo20" name=""/>
+    <alias index="12" field="ancho" name=""/>
+    <alias index="13" field="anchomed" name=""/>
+    <alias index="14" field="tipo" name=""/>
+    <alias index="15" field="nombre" name=""/>
+    <alias index="16" field="ladoi" name=""/>
+    <alias index="17" field="ladod" name=""/>
+    <alias index="18" field="desdei" name=""/>
+    <alias index="19" field="desded" name=""/>
+    <alias index="20" field="hastai" name=""/>
+    <alias index="21" field="hastad" name=""/>
+    <alias index="22" field="mzai" name=""/>
+    <alias index="23" field="mzad" name=""/>
+    <alias index="24" field="codloc20" name=""/>
+    <alias index="25" field="nomencla10" name=""/>
+    <alias index="26" field="nomenclai" name=""/>
+    <alias index="27" field="nomenclad" name=""/>
+    <alias index="28" field="codinomb" name=""/>
+    <alias index="29" field="segi" name=""/>
+    <alias index="30" field="segd" name=""/>
   </aliases>
   <defaults>
-    <default field="ogc_fid" applyOnUpdate="0" expression=""/>
-    <default field="userid" applyOnUpdate="0" expression=""/>
-    <default field="fnode_" applyOnUpdate="0" expression=""/>
-    <default field="tnode_" applyOnUpdate="0" expression=""/>
-    <default field="lpoly_" applyOnUpdate="0" expression=""/>
-    <default field="rpoly_" applyOnUpdate="0" expression=""/>
-    <default field="length" applyOnUpdate="0" expression=""/>
-    <default field="e2501_" applyOnUpdate="0" expression=""/>
-    <default field="e2501_id" applyOnUpdate="0" expression=""/>
-    <default field="codigo10" applyOnUpdate="0" expression=""/>
-    <default field="nomencla" applyOnUpdate="0" expression=""/>
-    <default field="codigo20" applyOnUpdate="0" expression=""/>
-    <default field="ancho" applyOnUpdate="0" expression=""/>
-    <default field="anchomed" applyOnUpdate="0" expression=""/>
-    <default field="tipo" applyOnUpdate="0" expression=""/>
-    <default field="nombre" applyOnUpdate="0" expression=""/>
-    <default field="ladoi" applyOnUpdate="0" expression=""/>
-    <default field="ladod" applyOnUpdate="0" expression=""/>
-    <default field="desdei" applyOnUpdate="0" expression=""/>
-    <default field="desded" applyOnUpdate="0" expression=""/>
-    <default field="hastai" applyOnUpdate="0" expression=""/>
-    <default field="hastad" applyOnUpdate="0" expression=""/>
-    <default field="mzai" applyOnUpdate="0" expression=""/>
-    <default field="mzad" applyOnUpdate="0" expression=""/>
-    <default field="codloc20" applyOnUpdate="0" expression=""/>
-    <default field="nomencla10" applyOnUpdate="0" expression=""/>
-    <default field="nomenclai" applyOnUpdate="0" expression=""/>
-    <default field="nomenclad" applyOnUpdate="0" expression=""/>
-    <default field="codinomb" applyOnUpdate="0" expression=""/>
-    <default field="segi" applyOnUpdate="0" expression=""/>
-    <default field="segd" applyOnUpdate="0" expression=""/>
+    <default expression="" field="ogc_fid" applyOnUpdate="0"/>
+    <default expression="" field="userid" applyOnUpdate="0"/>
+    <default expression="" field="fnode_" applyOnUpdate="0"/>
+    <default expression="" field="tnode_" applyOnUpdate="0"/>
+    <default expression="" field="lpoly_" applyOnUpdate="0"/>
+    <default expression="" field="rpoly_" applyOnUpdate="0"/>
+    <default expression="" field="length" applyOnUpdate="0"/>
+    <default expression="" field="e0154_" applyOnUpdate="0"/>
+    <default expression="" field="e0154_id" applyOnUpdate="0"/>
+    <default expression="" field="codigo10" applyOnUpdate="0"/>
+    <default expression="" field="nomencla" applyOnUpdate="0"/>
+    <default expression="" field="codigo20" applyOnUpdate="0"/>
+    <default expression="" field="ancho" applyOnUpdate="0"/>
+    <default expression="" field="anchomed" applyOnUpdate="0"/>
+    <default expression="" field="tipo" applyOnUpdate="0"/>
+    <default expression="" field="nombre" applyOnUpdate="0"/>
+    <default expression="" field="ladoi" applyOnUpdate="0"/>
+    <default expression="" field="ladod" applyOnUpdate="0"/>
+    <default expression="" field="desdei" applyOnUpdate="0"/>
+    <default expression="" field="desded" applyOnUpdate="0"/>
+    <default expression="" field="hastai" applyOnUpdate="0"/>
+    <default expression="" field="hastad" applyOnUpdate="0"/>
+    <default expression="" field="mzai" applyOnUpdate="0"/>
+    <default expression="" field="mzad" applyOnUpdate="0"/>
+    <default expression="" field="codloc20" applyOnUpdate="0"/>
+    <default expression="" field="nomencla10" applyOnUpdate="0"/>
+    <default expression="" field="nomenclai" applyOnUpdate="0"/>
+    <default expression="" field="nomenclad" applyOnUpdate="0"/>
+    <default expression="" field="codinomb" applyOnUpdate="0"/>
+    <default expression="" field="segi" applyOnUpdate="0"/>
+    <default expression="" field="segd" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint constraints="3" field="ogc_fid" notnull_strength="1" exp_strength="0" unique_strength="1"/>
-    <constraint constraints="0" field="userid" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="fnode_" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="tnode_" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="lpoly_" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="rpoly_" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="length" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="e2501_" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="e2501_id" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="codigo10" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="nomencla" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="codigo20" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="ancho" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="anchomed" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="tipo" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="nombre" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="ladoi" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="ladod" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="desdei" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="desded" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="hastai" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="hastad" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="mzai" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="mzad" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="codloc20" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="nomencla10" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="nomenclai" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="nomenclad" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="codinomb" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="segi" notnull_strength="0" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" field="segd" notnull_strength="0" exp_strength="0" unique_strength="0"/>
+    <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="ogc_fid"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="userid"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="fnode_"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tnode_"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="lpoly_"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="rpoly_"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="length"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="e0154_"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="e0154_id"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="codigo10"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="nomencla"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="codigo20"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="ancho"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="anchomed"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tipo"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="nombre"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="ladoi"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="ladod"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="desdei"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="desded"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="hastai"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="hastad"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="mzai"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="mzad"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="codloc20"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="nomencla10"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="nomenclai"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="nomenclad"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="codinomb"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="segi"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="segd"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="ogc_fid" desc="" exp=""/>
-    <constraint field="userid" desc="" exp=""/>
-    <constraint field="fnode_" desc="" exp=""/>
-    <constraint field="tnode_" desc="" exp=""/>
-    <constraint field="lpoly_" desc="" exp=""/>
-    <constraint field="rpoly_" desc="" exp=""/>
-    <constraint field="length" desc="" exp=""/>
-    <constraint field="e2501_" desc="" exp=""/>
-    <constraint field="e2501_id" desc="" exp=""/>
-    <constraint field="codigo10" desc="" exp=""/>
-    <constraint field="nomencla" desc="" exp=""/>
-    <constraint field="codigo20" desc="" exp=""/>
-    <constraint field="ancho" desc="" exp=""/>
-    <constraint field="anchomed" desc="" exp=""/>
-    <constraint field="tipo" desc="" exp=""/>
-    <constraint field="nombre" desc="" exp=""/>
-    <constraint field="ladoi" desc="" exp=""/>
-    <constraint field="ladod" desc="" exp=""/>
-    <constraint field="desdei" desc="" exp=""/>
-    <constraint field="desded" desc="" exp=""/>
-    <constraint field="hastai" desc="" exp=""/>
-    <constraint field="hastad" desc="" exp=""/>
-    <constraint field="mzai" desc="" exp=""/>
-    <constraint field="mzad" desc="" exp=""/>
-    <constraint field="codloc20" desc="" exp=""/>
-    <constraint field="nomencla10" desc="" exp=""/>
-    <constraint field="nomenclai" desc="" exp=""/>
-    <constraint field="nomenclad" desc="" exp=""/>
-    <constraint field="codinomb" desc="" exp=""/>
-    <constraint field="segi" desc="" exp=""/>
-    <constraint field="segd" desc="" exp=""/>
+    <constraint exp="" desc="" field="ogc_fid"/>
+    <constraint exp="" desc="" field="userid"/>
+    <constraint exp="" desc="" field="fnode_"/>
+    <constraint exp="" desc="" field="tnode_"/>
+    <constraint exp="" desc="" field="lpoly_"/>
+    <constraint exp="" desc="" field="rpoly_"/>
+    <constraint exp="" desc="" field="length"/>
+    <constraint exp="" desc="" field="e0154_"/>
+    <constraint exp="" desc="" field="e0154_id"/>
+    <constraint exp="" desc="" field="codigo10"/>
+    <constraint exp="" desc="" field="nomencla"/>
+    <constraint exp="" desc="" field="codigo20"/>
+    <constraint exp="" desc="" field="ancho"/>
+    <constraint exp="" desc="" field="anchomed"/>
+    <constraint exp="" desc="" field="tipo"/>
+    <constraint exp="" desc="" field="nombre"/>
+    <constraint exp="" desc="" field="ladoi"/>
+    <constraint exp="" desc="" field="ladod"/>
+    <constraint exp="" desc="" field="desdei"/>
+    <constraint exp="" desc="" field="desded"/>
+    <constraint exp="" desc="" field="hastai"/>
+    <constraint exp="" desc="" field="hastad"/>
+    <constraint exp="" desc="" field="mzai"/>
+    <constraint exp="" desc="" field="mzad"/>
+    <constraint exp="" desc="" field="codloc20"/>
+    <constraint exp="" desc="" field="nomencla10"/>
+    <constraint exp="" desc="" field="nomenclai"/>
+    <constraint exp="" desc="" field="nomenclad"/>
+    <constraint exp="" desc="" field="codinomb"/>
+    <constraint exp="" desc="" field="segi"/>
+    <constraint exp="" desc="" field="segd"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="&quot;ladoi&quot;">
+  <attributetableconfig sortExpression="&quot;ladoi&quot;" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
-      <column width="-1" type="field" hidden="0" name="ogc_fid"/>
-      <column width="-1" type="field" hidden="0" name="userid"/>
-      <column width="-1" type="field" hidden="0" name="fnode_"/>
-      <column width="-1" type="field" hidden="0" name="tnode_"/>
-      <column width="-1" type="field" hidden="0" name="lpoly_"/>
-      <column width="-1" type="field" hidden="0" name="rpoly_"/>
-      <column width="-1" type="field" hidden="0" name="length"/>
-      <column width="-1" type="field" hidden="0" name="codigo10"/>
-      <column width="-1" type="field" hidden="0" name="nomencla"/>
-      <column width="-1" type="field" hidden="0" name="codigo20"/>
-      <column width="-1" type="field" hidden="0" name="ancho"/>
-      <column width="-1" type="field" hidden="0" name="anchomed"/>
-      <column width="-1" type="field" hidden="0" name="tipo"/>
-      <column width="-1" type="field" hidden="0" name="nombre"/>
-      <column width="-1" type="field" hidden="0" name="ladoi"/>
-      <column width="-1" type="field" hidden="0" name="ladod"/>
-      <column width="-1" type="field" hidden="0" name="desdei"/>
-      <column width="-1" type="field" hidden="0" name="desded"/>
-      <column width="-1" type="field" hidden="0" name="hastai"/>
-      <column width="-1" type="field" hidden="0" name="hastad"/>
-      <column width="173" type="field" hidden="0" name="mzai"/>
-      <column width="319" type="field" hidden="0" name="mzad"/>
-      <column width="-1" type="field" hidden="0" name="codloc20"/>
-      <column width="-1" type="field" hidden="0" name="nomencla10"/>
-      <column width="-1" type="field" hidden="0" name="nomenclai"/>
-      <column width="-1" type="field" hidden="0" name="nomenclad"/>
-      <column width="-1" type="field" hidden="0" name="codinomb"/>
-      <column width="-1" type="field" hidden="0" name="segi"/>
-      <column width="-1" type="field" hidden="0" name="segd"/>
-      <column width="-1" type="actions" hidden="1"/>
-      <column width="-1" type="field" hidden="0" name="e2501_"/>
-      <column width="-1" type="field" hidden="0" name="e2501_id"/>
+      <column type="field" hidden="0" width="-1" name="ogc_fid"/>
+      <column type="field" hidden="0" width="-1" name="userid"/>
+      <column type="field" hidden="0" width="-1" name="fnode_"/>
+      <column type="field" hidden="0" width="-1" name="tnode_"/>
+      <column type="field" hidden="0" width="-1" name="lpoly_"/>
+      <column type="field" hidden="0" width="-1" name="rpoly_"/>
+      <column type="field" hidden="0" width="-1" name="length"/>
+      <column type="field" hidden="0" width="-1" name="codigo10"/>
+      <column type="field" hidden="0" width="-1" name="nomencla"/>
+      <column type="field" hidden="0" width="-1" name="codigo20"/>
+      <column type="field" hidden="0" width="-1" name="ancho"/>
+      <column type="field" hidden="0" width="-1" name="anchomed"/>
+      <column type="field" hidden="0" width="-1" name="tipo"/>
+      <column type="field" hidden="0" width="-1" name="nombre"/>
+      <column type="field" hidden="0" width="-1" name="ladoi"/>
+      <column type="field" hidden="0" width="-1" name="ladod"/>
+      <column type="field" hidden="0" width="-1" name="desdei"/>
+      <column type="field" hidden="0" width="-1" name="desded"/>
+      <column type="field" hidden="0" width="-1" name="hastai"/>
+      <column type="field" hidden="0" width="-1" name="hastad"/>
+      <column type="field" hidden="0" width="173" name="mzai"/>
+      <column type="field" hidden="0" width="319" name="mzad"/>
+      <column type="field" hidden="0" width="-1" name="codloc20"/>
+      <column type="field" hidden="0" width="-1" name="nomencla10"/>
+      <column type="field" hidden="0" width="-1" name="nomenclai"/>
+      <column type="field" hidden="0" width="-1" name="nomenclad"/>
+      <column type="field" hidden="0" width="-1" name="codinomb"/>
+      <column type="field" hidden="0" width="-1" name="segi"/>
+      <column type="field" hidden="0" width="-1" name="segd"/>
+      <column type="actions" hidden="1" width="-1"/>
+      <column type="field" hidden="0" width="-1" name="e0154_"/>
+      <column type="field" hidden="0" width="-1" name="e0154_id"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -2244,6 +2244,8 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="e0034_id"/>
     <field editable="1" name="e0066_"/>
     <field editable="1" name="e0066_id"/>
+    <field editable="1" name="e0154_"/>
+    <field editable="1" name="e0154_id"/>
     <field editable="1" name="e0158_"/>
     <field editable="1" name="e0158_id"/>
     <field editable="1" name="e0359_"/>
@@ -2304,6 +2306,8 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="e0034_id"/>
     <field labelOnTop="0" name="e0066_"/>
     <field labelOnTop="0" name="e0066_id"/>
+    <field labelOnTop="0" name="e0154_"/>
+    <field labelOnTop="0" name="e0154_id"/>
     <field labelOnTop="0" name="e0158_"/>
     <field labelOnTop="0" name="e0158_id"/>
     <field labelOnTop="0" name="e0359_"/>
