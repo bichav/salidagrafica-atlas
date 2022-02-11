@@ -6,7 +6,7 @@
 name=Censo Segmento
 qgisMinimumVersion=3.0
 description=Censo Segmento
-version=666_tilcara
+version=666_chajari
 author=Manuel Retamozo,Veronica Heredia,Maximiliano Monti
 email=mretamozo.at.indec.gob.ar,vheredia@indec.gob.ar, renzomiguelmonti@gmail.com
 
