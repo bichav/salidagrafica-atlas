@@ -1,9 +1,9 @@
-<Layout units="mm" printResolution="300" name="fraccion_A1" worldFileMap="{6802136a-1b88-4db5-9623-45cf552fc0dd}">
- <Snapper snapToGrid="0" snapToGuides="1" snapToItems="1" tolerance="5"/>
- <Grid resUnits="mm" offsetY="0" offsetUnits="mm" resolution="10" offsetX="0"/>
+<Layout units="mm" printResolution="300" worldFileMap="{6802136a-1b88-4db5-9623-45cf552fc0dd}" name="fraccion_A1">
+ <Snapper snapToGuides="1" snapToItems="1" tolerance="5" snapToGrid="0"/>
+ <Grid offsetUnits="mm" offsetY="0" resolution="10" offsetX="0" resUnits="mm"/>
  <PageCollection>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-   <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleFill" locked="0" pass="0">
     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
     <prop v="255,255,255,255" k="color"/>
     <prop v="miter" k="joinstyle"/>
@@ -17,34 +17,34 @@
     <prop v="solid" k="style"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
   </symbol>
-  <LayoutItem zValue="0" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{54b4a84f-49fd-4dbd-bd55-a2bb64d4b1f1}" blendMode="0" frameJoinStyle="miter" type="65638" outlineWidthM="0.3,mm" position="0,0,mm" uuid="{54b4a84f-49fd-4dbd-bd55-a2bb64d4b1f1}" size="841,594,mm" positionOnPage="0,0,mm" groupUuid="" opacity="1" background="true">
-   <FrameColor red="0" alpha="255" green="0" blue="0"/>
-   <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+  <LayoutItem zValue="0" position="0,0,mm" size="841,594,mm" templateUuid="{4e23f881-5501-4d68-9fc6-6c26ded5215e}" background="true" positionLock="false" visibility="1" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{4e23f881-5501-4d68-9fc6-6c26ded5215e}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="0,0,mm" opacity="1" frame="false" type="65638">
+   <FrameColor alpha="255" red="0" green="0" blue="0"/>
+   <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
    <LayoutObject>
     <dataDefinedProperties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
-      <Option name="properties" type="Map">
-       <Option name="dataDefinedPaperOrientation" type="Map">
-        <Option value="false" name="active" type="bool"/>
-        <Option value="1" name="type" type="int"/>
-        <Option value="" name="val" type="QString"/>
+      <Option value="" type="QString" name="name"/>
+      <Option type="Map" name="properties">
+       <Option type="Map" name="dataDefinedPaperOrientation">
+        <Option value="false" type="bool" name="active"/>
+        <Option value="1" type="int" name="type"/>
+        <Option value="" type="QString" name="val"/>
        </Option>
       </Option>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </dataDefinedProperties>
     <customproperties/>
    </LayoutObject>
-   <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-    <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+   <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+    <layer enabled="1" class="SimpleFill" locked="0" pass="0">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
      <prop v="255,255,255,255" k="color"/>
      <prop v="miter" k="joinstyle"/>
@@ -58,9 +58,9 @@
      <prop v="solid" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option value="" name="name" type="QString"/>
+       <Option value="" type="QString" name="name"/>
        <Option name="properties"/>
-       <Option value="collection" name="type" type="QString"/>
+       <Option value="collection" type="QString" name="type"/>
       </Option>
      </data_defined_properties>
     </layer>
@@ -68,41 +68,41 @@
   </LayoutItem>
   <GuideCollection visible="1"/>
  </PageCollection>
- <LayoutItem zValue="105" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="C:/Users/veroh/Desktop/salidagrafica-atlas/imagenes/logocenso.png" pictureRotation="0" id="" referencePoint="4" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="255,255,255,255" templateUuid="{ec479b07-e05c-41ab-a05d-7bc72b44e05c}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="80.5411" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="106.419" resizeMode="0" anchorPoint="0" position="815.793,28.469,mm" uuid="{ec479b07-e05c-41ab-a05d-7bc72b44e05c}" size="234.735,80.5411,mm" positionOnPage="815.793,28.469,mm" groupUuid="" opacity="1" mode="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="105" anchorPoint="0" pictureRotation="0" mode="1" file="C:/Users/veroh/Desktop/salidagrafica-atlas/imagenes/logocenso.png" position="860.864,39.4257,mm" size="325.904,113.758,mm" templateUuid="{b85b13b1-5f41-49a8-9e41-d61f3ec7c5e7}" background="false" pictureHeight="113.758" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="255,255,255,255" referencePoint="4" pictureWidth="150.308" groupUuid="" blendMode="0" uuid="{b85b13b1-5f41-49a8-9e41-d61f3ec7c5e7}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0.2" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="0,0,0,255" positionOnPage="860.864,39.4257,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties" type="Map">
-      <Option name="dataDefinedSource" type="Map">
-       <Option value="true" name="active" type="bool"/>
-       <Option value="substr(layer_property('provincia', 'path'), 0,  -25) || '/imagenes/logohorizontal.png'" name="expression" type="QString"/>
-       <Option value="3" name="type" type="int"/>
+     <Option value="" type="QString" name="name"/>
+     <Option type="Map" name="properties">
+      <Option type="Map" name="dataDefinedSource">
+       <Option value="true" type="bool" name="active"/>
+       <Option value="substr(layer_property('provincia', 'path'), 0,  -25) || '/imagenes/logohorizontal.png'" type="QString" name="expression"/>
+       <Option value="3" type="int" name="type"/>
       </Option>
      </Option>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="65" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{dab35cef-727e-4417-bca6-4f72285ba750}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.426,231.022,mm" uuid="{dab35cef-727e-4417-bca6-4f72285ba750}" size="126.473,0.28193,mm" endMarkerFile="" positionOnPage="708.426,231.022,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="65" outlineWidth="1" arrowHeadWidth="4" position="708.426,231.022,mm" size="126.473,0.28193,mm" endMarkerFile="" templateUuid="{c14f129f-7ee8-41aa-8aac-f00405689de6}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{c14f129f-7ee8-41aa-8aac-f00405689de6}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="708.426,231.022,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -126,9 +126,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -138,37 +138,37 @@
    <node x="126.473" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="55" labelText="DESCRIPCIÓN" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{29296625-d9f5-444a-a1fa-905c8bc0bf98}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="17.2035,533.611,mm" uuid="{29296625-d9f5-444a-a1fa-905c8bc0bf98}" size="59.3707,11.1726,mm" positionOnPage="17.2035,533.611,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="55" marginY="0" position="17.2035,533.611,mm" size="59.3707,11.1726,mm" templateUuid="{6f6cbc40-212e-4270-86df-0b9d02fb1ff6}" background="false" labelText="DESCRIPCIÓN" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{6f6cbc40-212e-4270-86df-0b9d02fb1ff6}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="17.2035,533.611,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,10,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="54" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="0" arrowHeadOutlineColor="103,103,103,255" positionLock="false" startMarkerMode="0" templateUuid="{f23029eb-7dda-40f9-a757-b810b7ff769f}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="103,103,103,255" outlineWidth="0.6" position="719.698,344.042,mm" uuid="{f23029eb-7dda-40f9-a757-b810b7ff769f}" size="31.8452,0.290709,mm" endMarkerFile="" positionOnPage="719.698,344.042,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="54" outlineWidth="0.6" arrowHeadWidth="0" position="719.698,344.042,mm" size="31.8452,0.290709,mm" endMarkerFile="" templateUuid="{ef01f164-f86d-4bf2-9c14-4ce32f61c31e}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="103,103,103,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{ef01f164-f86d-4bf2-9c14-4ce32f61c31e}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="719.698,344.042,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="103,103,103,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="3;2" k="customdash"/>
@@ -192,9 +192,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -204,21 +204,21 @@
    <node x="31.8452" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="53" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="0" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{d1ee2c35-6215-4179-b9dd-ca11c11167d9}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="0.6" position="721.556,330.041,mm" uuid="{d1ee2c35-6215-4179-b9dd-ca11c11167d9}" size="30.0986,0.38793,mm" endMarkerFile="" positionOnPage="721.556,330.041,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="53" outlineWidth="0.6" arrowHeadWidth="0" position="721.556,330.041,mm" size="30.0986,0.38793,mm" endMarkerFile="" templateUuid="{decd33ff-1df7-4cd2-8fc1-54e678da6c48}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{decd33ff-1df7-4cd2-8fc1-54e678da6c48}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="721.556,330.041,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="1" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="1" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="round" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -242,13 +242,13 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
-   <layer locked="0" class="MarkerLine" enabled="1" pass="0">
+   <layer enabled="1" class="MarkerLine" locked="0" pass="0">
     <prop v="4" k="average_angle_length"/>
     <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
     <prop v="MM" k="average_angle_unit"/>
@@ -266,13 +266,13 @@
     <prop v="1" k="rotate"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
-    <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="@@1" type="marker">
-     <layer locked="0" class="SimpleMarker" enabled="1" pass="0">
+    <symbol alpha="1" force_rhr="0" type="marker" clip_to_extent="1" name="@@1">
+     <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
       <prop v="0" k="angle"/>
       <prop v="255,0,0,255" k="color"/>
       <prop v="1" k="horizontal_anchor_point"/>
@@ -293,9 +293,9 @@
       <prop v="1" k="vertical_anchor_point"/>
       <data_defined_properties>
        <Option type="Map">
-        <Option value="" name="name" type="QString"/>
+        <Option value="" type="QString" name="name"/>
         <Option name="properties"/>
-        <Option value="collection" name="type" type="QString"/>
+        <Option value="collection" type="QString" name="type"/>
        </Option>
       </data_defined_properties>
      </layer>
@@ -307,69 +307,69 @@
    <node x="30.0986" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="52" labelText="2933&#x9;&#x9;-  GOMEZ CARRILLO" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{599e071c-fd57-4d38-9fc5-8500c38454eb}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="744.535,257.292,mm" uuid="{599e071c-fd57-4d38-9fc5-8500c38454eb}" size="88.8285,7.24188,mm" positionOnPage="744.535,257.292,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="52" marginY="0" position="744.535,257.292,mm" size="88.8285,7.24188,mm" templateUuid="{c08cea3f-ba5e-4126-ab81-1880b6b7c9a4}" background="false" labelText="2933&#x9;&#x9;-  GOMEZ CARRILLO" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="1" uuid="{c08cea3f-ba5e-4126-ab81-1880b6b7c9a4}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="744.535,257.292,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="51" labelText="LEYENDA" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{d92ddd60-6065-497d-b64a-ea2c972d6d31}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="749.034,234.545,mm" uuid="{d92ddd60-6065-497d-b64a-ea2c972d6d31}" size="69.4947,14.5051,mm" positionOnPage="749.034,234.545,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="51" marginY="0" position="749.034,234.545,mm" size="69.4947,14.5051,mm" templateUuid="{5dd4f885-bee8-4bd4-a9d5-4b5e4ac166e7}" background="false" labelText="LEYENDA" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{5dd4f885-bee8-4bd4-a9d5-4b5e4ac166e7}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="749.034,234.545,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,19,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="50" labelText="Escala 1:[% round(map_get(item_variables( '1'),'map_scale')/100,0)*100%]&#xa;[%case&#xa;when &#xa;@project_crs = 'EPSG:22181'&#xa;then&#xa;'POSGAR94 / Faja 1 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22182'&#xa;then&#xa;'POSGAR94 / Faja 2 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22183'&#xa;then&#xa;'POSGAR94 / Faja 3 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22184'&#xa;then&#xa;'POSGAR94 / Faja 4 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22185'&#xa;then&#xa;'POSGAR94 / Faja 5 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22186'&#xa;then&#xa;'POSGAR94 / Faja 6 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22187'&#xa;then&#xa;'POSGAR94 / Faja 7 - ' || @project_crs&#xa;end&#xa;%]&#xa;" itemRotation="0" marginY="0" marginX="0" id="texto escala" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{2b1d6d36-40ba-4198-8ded-6e1e81124994}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="714.206,548.528,mm" uuid="{2b1d6d36-40ba-4198-8ded-6e1e81124994}" size="110.77,12.2771,mm" positionOnPage="714.206,548.528,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="50" marginY="0" position="714.206,548.528,mm" size="110.77,12.2771,mm" templateUuid="{0c198709-2dbd-45bf-bb1f-04acebed5b7c}" background="false" labelText="Escala 1:[% round(map_get(item_variables( '1'),'map_scale')/100,0)*100%]&#xa;[%case&#xa;when &#xa;@project_crs = 'EPSG:22181'&#xa;then&#xa;'POSGAR94 / Faja 1 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22182'&#xa;then&#xa;'POSGAR94 / Faja 2 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22183'&#xa;then&#xa;'POSGAR94 / Faja 3 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22184'&#xa;then&#xa;'POSGAR94 / Faja 4 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22185'&#xa;then&#xa;'POSGAR94 / Faja 5 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22186'&#xa;then&#xa;'POSGAR94 / Faja 6 - ' || @project_crs&#xa;when &#xa;@project_crs = 'EPSG:22187'&#xa;then&#xa;'POSGAR94 / Faja 7 - ' || @project_crs&#xa;end&#xa;%]&#xa;" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="texto escala" referencePoint="0" groupUuid="" blendMode="0" halign="1" uuid="{0c198709-2dbd-45bf-bb1f-04acebed5b7c}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="714.206,548.528,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="49" shapeType="0" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{278a0f0c-b9a8-4fbd-b97a-c623373e39fb}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="732.703,270.283,mm" uuid="{278a0f0c-b9a8-4fbd-b97a-c623373e39fb}" size="6.24196,5.35622,mm" positionOnPage="732.703,270.283,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="49" position="732.703,270.283,mm" size="6.24196,5.35622,mm" templateUuid="{59775f5b-d1db-486a-acfc-6ce7f1f9ae1b}" background="false" cornerRadiusMeasure="0,mm" positionLock="false" visibility="1" excludeFromExports="0" id="" shapeType="0" referencePoint="0" groupUuid="" blendMode="0" uuid="{59775f5b-d1db-486a-acfc-6ce7f1f9ae1b}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="732.703,270.283,mm" opacity="1" frame="false" type="65643">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-   <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleFill" locked="0" pass="0">
     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
     <prop v="227,26,28,255" k="color"/>
     <prop v="miter" k="joinstyle"/>
@@ -383,45 +383,45 @@
     <prop v="solid" k="style"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="48" labelText="Vivienda Colectiva" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{f9a19e0c-1ac9-4534-af3b-2a90260194a1}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="768.413,267.73,mm" uuid="{f9a19e0c-1ac9-4534-af3b-2a90260194a1}" size="59.239,10.4624,mm" positionOnPage="768.413,267.73,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="48" marginY="0" position="768.413,267.73,mm" size="59.239,10.4624,mm" templateUuid="{3eaa9c9a-694b-4dfd-a05a-15407eb51c56}" background="false" labelText="Vivienda Colectiva" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{3eaa9c9a-694b-4dfd-a05a-15407eb51c56}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="768.413,267.73,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="47" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{4560b97e-a132-4bdf-b1ef-72e9eceba272}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="718.887,315.101,mm" uuid="{4560b97e-a132-4bdf-b1ef-72e9eceba272}" size="31.9839,0.395867,mm" endMarkerFile="" positionOnPage="718.887,315.101,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="47" outlineWidth="1" arrowHeadWidth="4" position="718.887,315.101,mm" size="31.9839,0.395867,mm" endMarkerFile="" templateUuid="{d82da4f2-300a-4fc1-ad8a-ec5ecb67c700}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{d82da4f2-300a-4fc1-ad8a-ec5ecb67c700}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="718.887,315.101,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -445,13 +445,13 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="7;6" k="customdash"/>
@@ -475,13 +475,13 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -505,9 +505,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -517,21 +517,21 @@
    <node x="31.9839" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="46" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{d0735451-198d-4d47-a9f0-cca1a74917e7}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="747.763,256.022,mm" uuid="{d0735451-198d-4d47-a9f0-cca1a74917e7}" size="63.8705,0.541226,mm" endMarkerFile="" positionOnPage="747.763,256.022,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="46" outlineWidth="1" arrowHeadWidth="4" position="747.763,256.022,mm" size="63.8705,0.541226,mm" endMarkerFile="" templateUuid="{199476b7-99c7-4474-b92c-620e94543b9b}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{199476b7-99c7-4474-b92c-620e94543b9b}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="747.763,256.022,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -555,9 +555,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -567,155 +567,155 @@
    <node x="63.8705" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="45" labelText="Código&#x9; &#x9;Nombre de calle" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{fe6b06d2-4dd6-4d07-bf03-5376fe957f29}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="743.535,249.05,mm" uuid="{fe6b06d2-4dd6-4d07-bf03-5376fe957f29}" size="74.2678,6.10786,mm" positionOnPage="743.535,249.05,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="45" marginY="0" position="743.535,249.05,mm" size="74.2678,6.10786,mm" templateUuid="{a67744a0-157f-4590-8c4f-63217d2231c0}" background="false" labelText="Código&#x9; &#x9;Nombre de calle" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="1" uuid="{a67744a0-157f-4590-8c4f-63217d2231c0}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="743.535,249.05,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="43" labelText="UBICACIÓN GEOGRÁFICA" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{0ec272da-987d-48e2-b2f9-ed0221fa4785}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="735.034,74.3777,mm" uuid="{0ec272da-987d-48e2-b2f9-ed0221fa4785}" size="89.6595,7.67364,mm" positionOnPage="735.034,74.3777,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="43" marginY="0" position="735.034,74.3777,mm" size="89.6595,7.67364,mm" templateUuid="{d259908c-f3df-407c-ac1b-9d50856c73cb}" background="false" labelText="UBICACIÓN GEOGRÁFICA" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="1" uuid="{d259908c-f3df-407c-ac1b-9d50856c73cb}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="735.034,74.3777,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,19,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="41" labelText="[% 'Fecha de elaboración del Mapa: '|| format_date( now(),'dd-MM-yyyy hh:mm')%]" itemRotation="0" marginY="0" marginX="0" id="texto fecha" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="2" positionLock="false" valign="64" templateUuid="{0ca1e2f1-1f39-46fb-ade0-a366b09313db}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="719.548,512.456,mm" uuid="{0ca1e2f1-1f39-46fb-ade0-a366b09313db}" size="99.0486,7.42034,mm" positionOnPage="719.548,512.456,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="41" marginY="0" position="719.548,512.456,mm" size="99.0486,7.42034,mm" templateUuid="{a2f7e09b-9c94-4f6c-a5de-46eed03e2783}" background="false" labelText="[% 'Fecha de elaboración del Mapa: '|| format_date( now(),'dd-MM-yyyy hh:mm')%]" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="texto fecha" referencePoint="0" groupUuid="" blendMode="0" halign="2" uuid="{a2f7e09b-9c94-4f6c-a5de-46eed03e2783}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="64" positionOnPage="719.548,512.456,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="MS Shell Dlg 2,6,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="40" labelText="Fuente: DPE - INDEC&#xa;Elaborado por: INDEC Coordinación del Sistema Geoestadístico&#xa;Fecha de Elaboración: 2021&#xa;" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{0f4d44d5-0cb2-47c6-93a6-628fefd4aeb5}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="714.206,560.805,mm" uuid="{0f4d44d5-0cb2-47c6-93a6-628fefd4aeb5}" size="90.7935,19.3936,mm" positionOnPage="714.206,560.805,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="40" marginY="0" position="714.206,560.805,mm" size="90.7935,19.3936,mm" templateUuid="{7c09a4d0-29a3-4d32-8484-61163c81959c}" background="false" labelText="Fuente: DPE - INDEC&#xa;Elaborado por: INDEC Coordinación del Sistema Geoestadístico&#xa;Fecha de Elaboración: 2021&#xa;" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="1" uuid="{7c09a4d0-29a3-4d32-8484-61163c81959c}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="714.206,560.805,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,10,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="39" labelText="[%'Fracción: '  ||  &quot;frac&quot;   %] &#xa;&#xa;" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{a21b2355-2fc8-494a-b068-8797fcac8144}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="735.034,173.851,mm" uuid="{a21b2355-2fc8-494a-b068-8797fcac8144}" size="89.0895,43.8674,mm" positionOnPage="735.034,173.851,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="39" marginY="0" position="735.034,173.851,mm" size="89.0895,43.8674,mm" templateUuid="{4e04257f-6e1f-402d-b0ca-dadbe99da210}" background="false" labelText="[%'Fracción: '  ||  &quot;frac&quot;   %] &#xa;&#xa;" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{4e04257f-6e1f-402d-b0ca-dadbe99da210}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="735.034,173.851,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Bold" description="Arial,21,-1,5,75,0,0,0,0,0,Negrita"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="35" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="745.352,372.255,mm" uuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" size="8.43091,132.275,mm" positionOnPage="745.352,372.255,mm" groupUuid="" opacity="1" background="true">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="35" position="745.352,372.255,mm" size="8.43091,132.274,mm" templateUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" background="true" positionLock="false" visibility="1" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="745.352,372.255,mm" opacity="1" frame="false" type="65637">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <ComposerItemGroupElement uuid="{d81c2ebe-47bb-4e53-838d-945c6d48283c}"/>
-  <ComposerItemGroupElement uuid="{71b34be1-87b4-4575-9a01-5cd1e4bb0155}"/>
-  <ComposerItemGroupElement uuid="{9187762e-ad69-4fe2-95c2-103e5fee8ad8}"/>
-  <ComposerItemGroupElement uuid="{dca651fc-c6ce-40c5-af28-6d1b4d258944}"/>
-  <ComposerItemGroupElement uuid="{8322ca46-d4aa-47de-b0a9-31ac92c031f9}"/>
-  <ComposerItemGroupElement uuid="{8b7890f8-4fe8-4ab4-869d-01fe159361b6}"/>
-  <ComposerItemGroupElement uuid="{3dd8c0c0-4f77-4ae4-96c5-e06873aefe81}"/>
-  <ComposerItemGroupElement uuid="{854e3a22-60c1-43e4-89cd-15b9fd6846f7}"/>
-  <ComposerItemGroupElement uuid="{9c12945b-0144-42d6-bee4-0c887dd1bdaf}"/>
+  <ComposerItemGroupElement uuid="{6a466e51-7201-4135-a8ac-005ec5dc226f}"/>
+  <ComposerItemGroupElement uuid="{c419bcd4-1f35-41e7-9e18-6a9968a5e0ef}"/>
+  <ComposerItemGroupElement uuid="{88c0a5f1-fafe-4698-bbec-b003b4fa30d2}"/>
+  <ComposerItemGroupElement uuid="{d4b6e235-ad4c-4377-8ad0-724844a6fc82}"/>
+  <ComposerItemGroupElement uuid="{80a4edb5-c28f-4be3-95e0-58a17dd7d1fe}"/>
+  <ComposerItemGroupElement uuid="{366d47da-3a0c-48a8-9b3e-95bd9231c370}"/>
+  <ComposerItemGroupElement uuid="{93eecee7-1f66-49b2-9e3d-3dfcd39c3677}"/>
+  <ComposerItemGroupElement uuid="{12d7bbd5-2e7e-47ea-8727-821db9a402f4}"/>
+  <ComposerItemGroupElement uuid="{f2539fc8-0411-4518-a444-25c65c481710}"/>
  </LayoutItem>
- <LayoutItem zValue="34" itemRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" blendMode="0" frameJoinStyle="miter" type="65637" outlineWidthM="0.3,mm" position="14.8571,18.1848,mm" uuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" size="7.958,17.4273,mm" positionOnPage="14.8571,18.1848,mm" groupUuid="" opacity="1" background="true">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="34" position="14.8571,18.1848,mm" size="7.958,17.4274,mm" templateUuid="{bad80506-b0f7-4b28-b99d-3dfc3ec1f4e9}" background="true" positionLock="false" visibility="1" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{bad80506-b0f7-4b28-b99d-3dfc3ec1f4e9}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="14.8571,18.1848,mm" opacity="1" frame="false" type="65637">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <ComposerItemGroupElement uuid="{f4700a3f-d5a8-47b8-b0a7-bf2b20bfee38}"/>
-  <ComposerItemGroupElement uuid="{d7bff5bd-1dec-4a90-b3ad-8211e03db9c7}"/>
+  <ComposerItemGroupElement uuid="{a74674ad-0243-4c59-8d69-b52b70263040}"/>
+  <ComposerItemGroupElement uuid="{ad25dfc6-f743-4b26-b801-bf6759e0386c}"/>
  </LayoutItem>
- <LayoutItem frameJoinStyle="miter" position="331.525,562.356,mm" positionOnPage="331.525,562.356,mm" legendFilterByAtlas="1" splitLayer="1" templateUuid="{247f4e2d-b008-48a6-a8db-bb199081d482}" wrapChar="" rasterBorder="0" symbolHeight="5" title="" zValue="30" boxSpace="6" resizeToContents="0" referencePoint="4" blendMode="0" rasterBorderColor="0,0,0,255" outlineWidthM="0.3,mm" id="" titleAlignment="4" wmsLegendHeight="32" lineSpacing="1" frame="false" rasterBorderWidth="2.77556e-17" columnCount="15" size="633.335,29.3701,mm" positionLock="false" background="true" uuid="{247f4e2d-b008-48a6-a8db-bb199081d482}" groupUuid="" equalColumnWidth="1" maxSymbolSize="2" type="65642" symbolAlignment="1" itemRotation="0" opacity="1" wmsLegendWidth="53" symbolWidth="9" minSymbolSize="3" visibility="1" fontColor="#000000" map_uuid="{123c2c81-10ca-447e-b570-e588d0195774}" columnSpace="7" excludeFromExports="0">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem background="true" title="" symbolHeight="5" wmsLegendHeight="32" columnSpace="7" uuid="{9ee714e7-2d26-4b87-b203-805ea52c39a1}" blendMode="0" visibility="1" symbolWidth="9" excludeFromExports="0" minSymbolSize="3" symbolAlignment="1" wmsLegendWidth="53" wrapChar="" rasterBorder="0" columnCount="15" positionLock="false" rasterBorderColor="0,0,0,255" zValue="30" rasterBorderWidth="2.77556e-17" itemRotation="0" templateUuid="{9ee714e7-2d26-4b87-b203-805ea52c39a1}" frameJoinStyle="miter" position="331.525,562.356,mm" opacity="1" referencePoint="4" legendFilterByAtlas="1" map_uuid="{dbe55022-4248-4a2a-9c3b-2d7916742f9e}" splitLayer="1" positionOnPage="331.525,562.356,mm" type="65642" frame="false" size="633.335,29.3701,mm" id="" resizeToContents="0" boxSpace="6" maxSymbolSize="2" fontColor="#000000" equalColumnWidth="1" lineSpacing="1" groupUuid="" titleAlignment="4" outlineWidthM="0.3,mm">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties" type="Map">
-      <Option name="dataDefinedHeight" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+     <Option value="" type="QString" name="name"/>
+     <Option type="Map" name="properties">
+      <Option type="Map" name="dataDefinedHeight">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedLegendColumns" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedLegendColumns">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedLegendTitle" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="@map_scale" name="expression" type="QString"/>
-       <Option value="3" name="type" type="int"/>
+      <Option type="Map" name="dataDefinedLegendTitle">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="@map_scale" type="QString" name="expression"/>
+       <Option value="3" type="int" name="type"/>
       </Option>
-      <Option name="dataDefinedWidth" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedWidth">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
      </Option>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
@@ -727,226 +727,224 @@
    <style alignment="1" name="group">
     <styleFont style="" description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"/>
    </style>
-   <style marginTop="2" alignment="1" name="subgroup">
+   <style alignment="1" marginTop="2" name="subgroup">
     <styleFont style="" description="MS Shell Dlg 2,13,-1,5,50,0,0,0,0,0"/>
    </style>
-   <style marginTop="3.5" alignment="1" name="symbol">
+   <style alignment="1" marginTop="3.5" name="symbol">
     <styleFont style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
    </style>
-   <style marginLeft="2" marginTop="3.5" alignment="1" name="symbolLabel">
+   <style alignment="1" marginTop="3.5" marginLeft="2" name="symbolLabel">
     <styleFont style="Normal" description="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0,Normal"/>
    </style>
   </styles>
   <layer-tree-group>
    <customproperties/>
-   <layer-tree-layer legend_exp="" checked="Qt::Checked" patch_size="-1,-1" expanded="0" legend_split_behavior="0" id="Segmentacion_d52187fd_b127_40f1_81d4_5510ba17ce29" name="Segmentacion">
+   <layer-tree-layer checked="Qt::Checked" expanded="0" patch_size="-1,-1" id="Segmentacion_d52187fd_b127_40f1_81d4_5510ba17ce29" legend_split_behavior="0" legend_exp="" name="Segmentacion">
     <customproperties>
      <property key="cached_name" value=" "/>
      <property key="legend/title-label" value=" "/>
     </customproperties>
    </layer-tree-layer>
-   <layer-tree-layer providerKey="postgres" legend_exp="" checked="Qt::Checked" patch_size="-1,-1" expanded="1" legend_split_behavior="0" id="Segmentacion_52c2c434_db77_42ca_b173_0b2e9a9adde2" name="Segmentacion" source="dbname='DEVSEG' host=10.70.80.62 port=5432 user='vheredia' key='link' checkPrimaryKeyUnicity='1' table=&quot;(select  seg, descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 and count(*)=conteo then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from e66014010.r3  left join e66014010.segmentacion s on r3.segmento_id=s.segmento_id    left join e66014010.listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.conteo, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )&quot; (geom)">
+   <layer-tree-layer checked="Qt::Checked" expanded="1" patch_size="-1,-1" id="Segmentacion_52c2c434_db77_42ca_b173_0b2e9a9adde2" legend_split_behavior="0" legend_exp="" name="Segmentacion">
     <customproperties>
      <property key="cached_name" value=" "/>
      <property key="legend/title-label" value=" "/>
     </customproperties>
    </layer-tree-layer>
-   <custom-order enabled="0">
-    <item>Segmentacion_52c2c434_db77_42ca_b173_0b2e9a9adde2</item>
-   </custom-order>
+   <custom-order enabled="0"/>
   </layer-tree-group>
  </LayoutItem>
- <LayoutItem zValue="29" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/amenity=taxi.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{d81c2ebe-47bb-4e53-838d-945c6d48283c}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.00746" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.00746" resizeMode="0" anchorPoint="0" position="745.382,478.117,mm" uuid="{d81c2ebe-47bb-4e53-838d-945c6d48283c}" size="8.00746,11.8983,mm" positionOnPage="745.382,478.117,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="29" anchorPoint="0" pictureRotation="0" mode="0" file="transport/amenity=taxi.svg" position="745.382,478.117,mm" size="8.00746,11.8983,mm" templateUuid="{6a466e51-7201-4135-a8ac-005ec5dc226f}" background="false" pictureHeight="8.00746" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.00746" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{6a466e51-7201-4135-a8ac-005ec5dc226f}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="255,255,255,255" positionOnPage="745.382,478.117,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="28" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/transport_train_station2.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{71b34be1-87b4-4575-9a01-5cd1e4bb0155}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.43091" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.43091" resizeMode="0" anchorPoint="0" position="745.352,419.165,mm" uuid="{71b34be1-87b4-4575-9a01-5cd1e4bb0155}" size="8.43091,11.9429,mm" positionOnPage="745.352,419.165,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="28" anchorPoint="0" pictureRotation="0" mode="0" file="transport/transport_train_station2.svg" position="745.352,419.165,mm" size="8.43091,11.9429,mm" templateUuid="{c419bcd4-1f35-41e7-9e18-6a9968a5e0ef}" background="false" pictureHeight="8.43091" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.43091" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{c419bcd4-1f35-41e7-9e18-6a9968a5e0ef}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="255,255,255,255" positionOnPage="745.352,419.165,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="27" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="symbol/landuse_coniferous_and_deciduous.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{9187762e-ad69-4fe2-95c2-103e5fee8ad8}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.02029" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.02029" resizeMode="0" anchorPoint="0" position="745.382,461.98,mm" uuid="{9187762e-ad69-4fe2-95c2-103e5fee8ad8}" size="8.02029,11.9174,mm" positionOnPage="745.382,461.98,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="27" anchorPoint="0" pictureRotation="0" mode="0" file="symbol/landuse_coniferous_and_deciduous.svg" position="745.382,461.98,mm" size="8.02029,11.9174,mm" templateUuid="{88c0a5f1-fafe-4698-bbec-b003b4fa30d2}" background="false" pictureHeight="8.02029" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.02029" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{88c0a5f1-fafe-4698-bbec-b003b4fa30d2}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="255,255,255,255" positionOnPage="745.382,461.98,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="26" labelText="Plaza&#xa;&#xa;Policía&#xa;&#xa;Terminal de Omnibus" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{6f5b85e0-f505-400a-9c80-60fa59b06e75}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="771.942,459.979,mm" uuid="{6f5b85e0-f505-400a-9c80-60fa59b06e75}" size="61.7717,44.551,mm" positionOnPage="771.942,459.979,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="26" marginY="0" position="771.942,459.979,mm" size="61.7717,44.551,mm" templateUuid="{7c176bdc-ce3e-46da-8989-ed5ff68c6cec}" background="false" labelText="Plaza&#xa;&#xa;Policía&#xa;&#xa;Terminal de Omnibus" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{7c176bdc-ce3e-46da-8989-ed5ff68c6cec}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="771.942,459.979,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
-    </Option>
-   </dataDefinedProperties>
-   <customproperties/>
-  </LayoutObject>
-  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
- </LayoutItem>
- <LayoutItem zValue="25" labelText="Estación de FFCC&#xa;&#xa;Hospital&#xa;&#xa;Iglesia" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{602f2a83-14cd-4198-a310-f9ce9a4dfc7a}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="771.942,417.921,mm" uuid="{602f2a83-14cd-4198-a310-f9ce9a4dfc7a}" size="56.0254,56.5587,mm" positionOnPage="771.942,417.921,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
-  <LayoutObject>
-   <dataDefinedProperties>
-    <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="24" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="transport/transport_bus_station.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{dca651fc-c6ce-40c5-af28-6d1b4d258944}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.00746" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.00746" resizeMode="0" anchorPoint="0" position="745.382,492.631,mm" uuid="{dca651fc-c6ce-40c5-af28-6d1b4d258944}" size="8.00746,11.8983,mm" positionOnPage="745.382,492.631,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="25" marginY="0" position="771.942,417.921,mm" size="56.0254,56.5587,mm" templateUuid="{87d0514d-21b9-47f5-b0d1-c58803fa348c}" background="false" labelText="Estación de FFCC&#xa;&#xa;Hospital&#xa;&#xa;Iglesia" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{87d0514d-21b9-47f5-b0d1-c58803fa348c}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="771.942,417.921,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
+ </LayoutItem>
+ <LayoutItem zValue="24" anchorPoint="0" pictureRotation="0" mode="0" file="transport/transport_bus_station.svg" position="745.382,492.631,mm" size="8.00746,11.8983,mm" templateUuid="{d4b6e235-ad4c-4377-8ad0-724844a6fc82}" background="false" pictureHeight="8.00746" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.00746" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{d4b6e235-ad4c-4377-8ad0-724844a6fc82}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="255,255,255,255" positionOnPage="745.382,492.631,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="23" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="backgrounds/background_square.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{8322ca46-d4aa-47de-b0a9-31ac92c031f9}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,389.073,mm" uuid="{8322ca46-d4aa-47de-b0a9-31ac92c031f9}" size="8.0375,11.9429,mm" positionOnPage="745.352,389.073,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="23" anchorPoint="0" pictureRotation="0" mode="0" file="backgrounds/background_square.svg" position="745.352,389.073,mm" size="8.0375,11.9429,mm" templateUuid="{80a4edb5-c28f-4be3-95e0-58a17dd7d1fe}" background="false" pictureHeight="8.0375" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.0375" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{80a4edb5-c28f-4be3-95e0-58a17dd7d1fe}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="255,255,255,255" positionOnPage="745.352,389.073,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="22" labelText="Cementerio&#xa;&#xa;Edificio Público&#xa;&#xa;Escuela" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{38f52158-fe18-4852-905a-0763a53bfea1}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="771.942,375.102,mm" uuid="{38f52158-fe18-4852-905a-0763a53bfea1}" size="52.1816,46.4904,mm" positionOnPage="771.942,375.102,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="22" marginY="0" position="771.942,375.102,mm" size="52.1816,46.4904,mm" templateUuid="{a980ac5f-712b-4d22-a029-b99c18a5d479}" background="false" labelText="Cementerio&#xa;&#xa;Edificio Público&#xa;&#xa;Escuela" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{a980ac5f-712b-4d22-a029-b99c18a5d479}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="771.942,375.102,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="" description="MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="21" northMode="0" svgBorderColor="103,103,103,255" itemRotation="0" file="landmark/religion=christian.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="103,103,103,255" templateUuid="{8b7890f8-4fe8-4ab4-869d-01fe159361b6}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,448.012,mm" uuid="{8b7890f8-4fe8-4ab4-869d-01fe159361b6}" size="8.0375,11.9429,mm" positionOnPage="745.352,448.012,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="21" anchorPoint="0" pictureRotation="0" mode="0" file="landmark/religion=christian.svg" position="745.352,448.012,mm" size="8.0375,11.9429,mm" templateUuid="{366d47da-3a0c-48a8-9b3e-95bd9231c370}" background="false" pictureHeight="8.0375" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="103,103,103,255" referencePoint="0" pictureWidth="8.0375" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{366d47da-3a0c-48a8-9b3e-95bd9231c370}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0.2" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="103,103,103,255" positionOnPage="745.352,448.012,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="20" northMode="0" svgBorderColor="255,255,255,255" itemRotation="0" file="gpsicons/cross.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{3dd8c0c0-4f77-4ae4-96c5-e06873aefe81}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,432.83,mm" uuid="{3dd8c0c0-4f77-4ae4-96c5-e06873aefe81}" size="8.0375,11.9429,mm" positionOnPage="745.352,432.83,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="20" anchorPoint="0" pictureRotation="0" mode="0" file="gpsicons/cross.svg" position="745.352,432.83,mm" size="8.0375,11.9429,mm" templateUuid="{93eecee7-1f66-49b2-9e3d-3dfcd39c3677}" background="false" pictureHeight="8.0375" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.0375" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{93eecee7-1f66-49b2-9e3d-3dfcd39c3677}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="255,255,255,255" positionOnPage="745.352,432.83,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="19" northMode="0" svgBorderColor="103,103,103,255" itemRotation="0" file="religion/place_of_worship_christian.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="103,103,103,255" templateUuid="{854e3a22-60c1-43e4-89cd-15b9fd6846f7}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,372.255,mm" uuid="{854e3a22-60c1-43e4-89cd-15b9fd6846f7}" size="8.0375,11.9429,mm" positionOnPage="745.352,372.255,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="19" anchorPoint="0" pictureRotation="0" mode="0" file="religion/place_of_worship_christian.svg" position="745.352,372.255,mm" size="8.0375,11.9429,mm" templateUuid="{12d7bbd5-2e7e-47ea-8727-821db9a402f4}" background="false" pictureHeight="8.0375" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="103,103,103,255" referencePoint="0" pictureWidth="8.0375" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{12d7bbd5-2e7e-47ea-8727-821db9a402f4}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0.2" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="103,103,103,255" positionOnPage="745.352,372.255,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="18" labelText="Límite de Fracción&#xa;&#xa;Límite de Radio&#xa;&#xa;Ferrocarril&#xa;&#xa;Alambrado&#xa;&#xa;Otro" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{0fea5468-7255-423a-87f1-a922bfada934}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="769.591,283.04,mm" uuid="{0fea5468-7255-423a-87f1-a922bfada934}" size="59.1032,65.2147,mm" positionOnPage="769.591,283.04,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="18" marginY="0" position="769.591,283.04,mm" size="59.1032,65.2147,mm" templateUuid="{e6d01e0d-b19b-4917-a9ab-700d0a1b6d12}" background="false" labelText="Límite de Fracción&#xa;&#xa;Límite de Radio&#xa;&#xa;Ferrocarril&#xa;&#xa;Alambrado&#xa;&#xa;Otro" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="8" uuid="{e6d01e0d-b19b-4917-a9ab-700d0a1b6d12}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="769.591,283.04,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="17" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="227,26,28,255" positionLock="false" startMarkerMode="0" templateUuid="{470a4ecf-ae3d-44c6-b74d-417601a09e8b}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="227,26,28,255" outlineWidth="1.4" position="724.141,302.805,mm" uuid="{470a4ecf-ae3d-44c6-b74d-417601a09e8b}" size="27.5132,0.410522,mm" endMarkerFile="" positionOnPage="724.141,302.805,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="17" outlineWidth="1.4" arrowHeadWidth="4" position="724.141,302.805,mm" size="27.5132,0.410522,mm" endMarkerFile="" templateUuid="{97e65345-0914-467b-9f49-46c84bf1b633}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="227,26,28,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{97e65345-0914-467b-9f49-46c84bf1b633}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="724.141,302.805,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="227,26,28,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="1;1;1;2;5;2" k="customdash"/>
@@ -970,9 +968,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -982,21 +980,21 @@
    <node x="27.5132" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="16" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{7b83d473-fe78-4a1e-aae6-2ba35773dcd0}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="724.141,286.35,mm" uuid="{7b83d473-fe78-4a1e-aae6-2ba35773dcd0}" size="27.0886,0.411021,mm" endMarkerFile="" positionOnPage="724.141,286.35,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="16" outlineWidth="1" arrowHeadWidth="4" position="724.141,286.35,mm" size="27.0886,0.411021,mm" endMarkerFile="" templateUuid="{7f357fdf-6ac7-4abd-be2e-9dc282630216}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{7f357fdf-6ac7-4abd-be2e-9dc282630216}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="724.141,286.35,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -1020,9 +1018,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -1032,81 +1030,81 @@
    <node x="27.0886" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="15" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="shopping/shopping_estateagent2.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="0,0,0,255" templateUuid="{9c12945b-0144-42d6-bee4-0c887dd1bdaf}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="8.0375" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="8.0375" resizeMode="0" anchorPoint="0" position="745.352,403.645,mm" uuid="{9c12945b-0144-42d6-bee4-0c887dd1bdaf}" size="8.0375,11.9429,mm" positionOnPage="745.352,403.645,mm" groupUuid="{ae0e13f2-95bf-4ee3-9964-968952d99b3f}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="15" anchorPoint="0" pictureRotation="0" mode="0" file="shopping/shopping_estateagent2.svg" position="745.352,403.645,mm" size="8.0375,11.9429,mm" templateUuid="{f2539fc8-0411-4518-a444-25c65c481710}" background="false" pictureHeight="8.0375" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="0,0,0,255" referencePoint="0" pictureWidth="8.0375" groupUuid="{5bba3491-3110-4fa1-81ac-0b94cc02d664}" blendMode="0" uuid="{f2539fc8-0411-4518-a444-25c65c481710}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0.2" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="0,0,0,255" positionOnPage="745.352,403.645,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="14" labelText="N" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="8" positionLock="false" valign="32" templateUuid="{f4700a3f-d5a8-47b8-b0a7-bf2b20bfee38}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="16.8662,18.1848,mm" uuid="{f4700a3f-d5a8-47b8-b0a7-bf2b20bfee38}" size="4.69583,6.61493,mm" positionOnPage="16.8662,18.1848,mm" groupUuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="14" marginY="0" position="16.8662,18.1848,mm" size="4.69583,6.61493,mm" templateUuid="{a74674ad-0243-4c59-8d69-b52b70263040}" background="false" labelText="N" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="{bad80506-b0f7-4b28-b99d-3dfc3ec1f4e9}" blendMode="0" halign="8" uuid="{a74674ad-0243-4c59-8d69-b52b70263040}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="16.8662,18.1848,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="13" labelText="[%  'Provincia: '   || '(' || &quot;PROV&quot;  || ') '   || upper(&#xa; attribute(  get_feature( 'provincia', 'codigo', &quot;PROV&quot;  ) , 'nombre')) %]&#xa;&#xa;[%  'Depto: '  ||  '(' || &quot;dpto&quot;  || ') '   ||  upper (attribute( get_feature( 'departamento', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ) , 'nombre'))%]&#xa;&#xa;[%  'Localidad: '  ||  '(' || &quot;codloc&quot;  || ') '  || upper (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ||  &quot;codloc&quot; ) , 'nombre'))%]" itemRotation="0" marginY="0" marginX="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" halign="1" positionLock="false" valign="32" templateUuid="{7ee8a3a9-4b4a-453a-a2d2-fbb56eb67bc5}" blendMode="0" frameJoinStyle="miter" type="65641" htmlState="0" outlineWidthM="0.3,mm" position="724.658,93.1905,mm" uuid="{7ee8a3a9-4b4a-453a-a2d2-fbb56eb67bc5}" size="103.309,65.5975,mm" positionOnPage="724.658,93.1905,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="13" marginY="0" position="724.658,93.1905,mm" size="103.309,65.5975,mm" templateUuid="{780e2bfb-41b2-4b2c-befc-2ca2076990cc}" background="false" labelText="[%  'Provincia: '   || '(' || &quot;PROV&quot;  || ') '   || upper(&#xa; attribute(  get_feature( 'provincia', 'codigo', &quot;PROV&quot;  ) , 'nombre')) %]&#xa;&#xa;[%  'Depto: '  ||  '(' || &quot;dpto&quot;  || ') '   ||  upper (attribute( get_feature( 'departamento', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ) , 'nombre'))%]&#xa;&#xa;[%  'Localidad: '  ||  '(' || &quot;codloc&quot;  || ') '  || upper (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot;  ||  &quot;codloc&quot; ) , 'nombre'))%]" positionLock="false" htmlState="0" visibility="1" marginX="0" excludeFromExports="0" id="" referencePoint="0" groupUuid="" blendMode="0" halign="1" uuid="{780e2bfb-41b2-4b2c-befc-2ca2076990cc}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" valign="32" positionOnPage="724.658,93.1905,mm" opacity="1" frame="false" type="65641">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
   <LabelFont style="Normal" description="Arial,18,-1,5,50,0,0,0,0,0,Normal"/>
-  <FontColor red="0" alpha="255" green="0" blue="0"/>
+  <FontColor alpha="255" red="0" green="0" blue="0"/>
  </LayoutItem>
- <LayoutItem zValue="12" northMode="0" svgBorderColor="0,0,0,255" itemRotation="0" file="arrows/NorthArrow_04.svg" pictureRotation="0" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" northOffset="0" positionLock="false" mapUuid="" svgFillColor="255,255,255,255" templateUuid="{d7bff5bd-1dec-4a90-b3ad-8211e03db9c7}" blendMode="0" frameJoinStyle="miter" type="65640" pictureHeight="12.1346" svgBorderWidth="0.2" outlineWidthM="0.3,mm" pictureWidth="7.63102" resizeMode="0" anchorPoint="0" position="14.8571,23.4776,mm" uuid="{d7bff5bd-1dec-4a90-b3ad-8211e03db9c7}" size="7.958,12.1346,mm" positionOnPage="14.8571,23.4776,mm" groupUuid="{9f714057-9d5e-4c65-a480-89009b8f89e7}" opacity="1" mode="0" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="12" anchorPoint="0" pictureRotation="0" mode="0" file="arrows/NorthArrow_04.svg" position="14.8571,23.4776,mm" size="7.958,12.1346,mm" templateUuid="{ad25dfc6-f743-4b26-b801-bf6759e0386c}" background="false" pictureHeight="12.1346" positionLock="false" northOffset="0" visibility="1" excludeFromExports="0" resizeMode="0" id="" svgFillColor="255,255,255,255" referencePoint="0" pictureWidth="7.63104" groupUuid="{bad80506-b0f7-4b28-b99d-3dfc3ec1f4e9}" blendMode="0" uuid="{ad25dfc6-f743-4b26-b801-bf6759e0386c}" outlineWidthM="0.3,mm" northMode="0" svgBorderWidth="0.2" itemRotation="0" frameJoinStyle="miter" mapUuid="" svgBorderColor="0,0,0,255" positionOnPage="14.8571,23.4776,mm" opacity="1" frame="false" type="65640">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem zValue="9" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{05a5a82f-1de3-40ca-abab-988378d29b30}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.426,164.216,mm" uuid="{05a5a82f-1de3-40ca-abab-988378d29b30}" size="127.032,0.28193,mm" endMarkerFile="" positionOnPage="708.426,164.216,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="9" outlineWidth="1" arrowHeadWidth="4" position="708.426,164.216,mm" size="127.032,0.28193,mm" endMarkerFile="" templateUuid="{ecd18705-7529-4997-a05b-bf7d53dd31e9}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{ecd18705-7529-4997-a05b-bf7d53dd31e9}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="708.426,164.216,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -1130,9 +1128,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -1142,21 +1140,21 @@
    <node x="127.032" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="8" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{7c6dcb20-164e-48f2-94b9-9f029167b6ec}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.426,66.6734,mm" uuid="{7c6dcb20-164e-48f2-94b9-9f029167b6ec}" size="126.653,0.28193,mm" endMarkerFile="" positionOnPage="708.426,66.6734,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="8" outlineWidth="1" arrowHeadWidth="4" position="708.426,66.6734,mm" size="126.653,0.28193,mm" endMarkerFile="" templateUuid="{b96fbaab-0a76-4969-9a1e-d75f1c520043}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{b96fbaab-0a76-4969-9a1e-d75f1c520043}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="708.426,66.6734,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -1180,9 +1178,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -1192,21 +1190,21 @@
    <node x="126.653" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="6" itemRotation="0" startMarkerFile="" id="" referencePoint="0" visibility="1" frame="false" excludeFromExports="0" arrowHeadWidth="4" arrowHeadOutlineColor="0,0,0,255" positionLock="false" startMarkerMode="0" templateUuid="{7f34c177-ac7e-41d5-a507-216d4f2d4750}" blendMode="0" frameJoinStyle="miter" type="65645" markerMode="0" outlineWidthM="0.3,mm" arrowHeadFillColor="0,0,0,255" outlineWidth="1" position="708.06,522.503,mm" uuid="{7f34c177-ac7e-41d5-a507-216d4f2d4750}" size="127.019,0.28193,mm" endMarkerFile="" positionOnPage="708.06,522.503,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="6" outlineWidth="1" arrowHeadWidth="4" position="708.06,522.503,mm" size="127.019,0.28193,mm" endMarkerFile="" templateUuid="{a0202f7d-3473-43c4-b6a1-f03baa789e88}" background="false" positionLock="false" visibility="1" excludeFromExports="0" arrowHeadFillColor="0,0,0,255" startMarkerFile="" id="" referencePoint="0" groupUuid="" blendMode="0" uuid="{a0202f7d-3473-43c4-b6a1-f03baa789e88}" markerMode="0" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="708.06,522.503,mm" startMarkerMode="0" opacity="1" arrowHeadOutlineColor="0,0,0,255" frame="false" type="65645">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="line">
-   <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="line" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleLine" locked="0" pass="0">
     <prop v="0" k="align_dash_pattern"/>
     <prop v="square" k="capstyle"/>
     <prop v="5;2" k="customdash"/>
@@ -1230,9 +1228,9 @@
     <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -1242,59 +1240,59 @@
    <node x="127.019" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem zValue="5" itemRotation="0" drawCanvasItems="false" followPreset="false" id="1" referencePoint="4" mapFlags="0" isTemporal="0" visibility="1" frame="false" excludeFromExports="0" positionLock="false" keepLayerSet="false" followPresetName="" templateUuid="{123c2c81-10ca-447e-b570-e588d0195774}" blendMode="0" frameJoinStyle="miter" type="65639" outlineWidthM="0.3,mm" labelMargin="0,mm" mapRotation="0" position="360.743,270.133,mm" uuid="{123c2c81-10ca-447e-b570-e588d0195774}" size="682.643,495.407,mm" positionOnPage="360.743,270.133,mm" groupUuid="" opacity="1" background="true">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="5" mapRotation="0" mapFlags="0" position="360.743,270.133,mm" size="682.643,495.407,mm" templateUuid="{dbe55022-4248-4a2a-9c3b-2d7916742f9e}" background="true" drawCanvasItems="false" positionLock="false" visibility="1" excludeFromExports="0" id="1" keepLayerSet="false" followPresetName="" referencePoint="4" isTemporal="0" followPreset="false" groupUuid="" blendMode="0" uuid="{dbe55022-4248-4a2a-9c3b-2d7916742f9e}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" labelMargin="0,mm" positionOnPage="360.743,270.133,mm" opacity="1" frame="false" type="65639">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties" type="Map">
-      <Option name="dataDefinedHeight" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+     <Option value="" type="QString" name="name"/>
+     <Option type="Map" name="properties">
+      <Option type="Map" name="dataDefinedHeight">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedMapScale" type="Map">
-       <Option value="true" name="active" type="bool"/>
-       <Option value="(CASE WHEN&#xd;&#xa;&#xd;&#xa;@map_scale &lt; '1800'&#xd;&#xa;THEN '1500'&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;END)-10" name="expression" type="QString"/>
-       <Option value="3" name="type" type="int"/>
+      <Option type="Map" name="dataDefinedMapScale">
+       <Option value="true" type="bool" name="active"/>
+       <Option value="(CASE WHEN&#xd;&#xa;&#xd;&#xa;@map_scale &lt; '1800'&#xd;&#xa;THEN '1500'&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;END)-10" type="QString" name="expression"/>
+       <Option value="3" type="int" name="type"/>
       </Option>
-      <Option name="dataDefinedWidth" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedWidth">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
      </Option>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <Extent xmax="3486207.45229636132717133" xmin="3479380.54770363867282867" ymin="7220770.793403091840446" ymax="7225725.20659690909087658"/>
+  <Extent xmax="3486207.45229636132717133" ymin="7220770.79340309090912342" ymax="7225725.206596908159554" xmin="3479380.54770363867282867"/>
   <LayerSet/>
-  <AtlasMap scalingMode="2" margin="0.05" atlasDriven="1"/>
+  <AtlasMap margin="0.05" atlasDriven="1" scalingMode="2"/>
   <labelBlockingItems/>
-  <atlasClippingSettings clippingType="0" forceLabelsInside="0" restrictLayers="0" enabled="0">
+  <atlasClippingSettings enabled="0" forceLabelsInside="0" restrictLayers="0" clippingType="0">
    <layersToClip/>
   </atlasClippingSettings>
-  <itemClippingSettings clippingType="0" clipSource="" forceLabelsInside="0" enabled="0"/>
+  <itemClippingSettings enabled="0" clipSource="" forceLabelsInside="0" clippingType="0"/>
  </LayoutItem>
- <LayoutItem zValue="4" shapeType="1" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{1e5fc80b-2cb5-41c4-bf3c-898b22058886}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="10.0984,522.503,mm" uuid="{1e5fc80b-2cb5-41c4-bf3c-898b22058886}" size="698.21,58.0501,mm" positionOnPage="10.0984,522.503,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="4" position="10.0984,522.503,mm" size="698.21,58.0501,mm" templateUuid="{0f522e74-6124-46de-835c-880bb692d1d2}" background="false" cornerRadiusMeasure="0,mm" positionLock="false" visibility="1" excludeFromExports="0" id="" shapeType="1" referencePoint="0" groupUuid="" blendMode="0" uuid="{0f522e74-6124-46de-835c-880bb692d1d2}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="10.0984,522.503,mm" opacity="1" frame="false" type="65643">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-   <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleFill" locked="0" pass="0">
     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
     <prop v="255,255,255,255" k="color"/>
     <prop v="miter" k="joinstyle"/>
@@ -1308,50 +1306,50 @@
     <prop v="solid" k="style"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="3" shapeType="1" itemRotation="0" id="" referencePoint="4" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{86025889-5343-4314-b152-9c783144e6bd}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="771.833,297.206,mm" uuid="{86025889-5343-4314-b152-9c783144e6bd}" size="127.547,566.693,mm" positionOnPage="771.833,297.206,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="3" position="771.833,297.206,mm" size="127.547,566.693,mm" templateUuid="{970443a7-4f07-4e34-bfe4-bea33a060bd9}" background="false" cornerRadiusMeasure="0,mm" positionLock="false" visibility="1" excludeFromExports="0" id="" shapeType="1" referencePoint="4" groupUuid="" blendMode="0" uuid="{970443a7-4f07-4e34-bfe4-bea33a060bd9}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="771.833,297.206,mm" opacity="1" frame="false" type="65643">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties" type="Map">
-      <Option name="dataDefinedHeight" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+     <Option value="" type="QString" name="name"/>
+     <Option type="Map" name="properties">
+      <Option type="Map" name="dataDefinedHeight">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedPositionX" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedPositionX">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedPositionY" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedPositionY">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedWidth" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedWidth">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
      </Option>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-   <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleFill" locked="0" pass="0">
     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
     <prop v="255,255,255,255" k="color"/>
     <prop v="miter" k="joinstyle"/>
@@ -1365,50 +1363,50 @@
     <prop v="solid" k="style"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="2" shapeType="1" itemRotation="0" id="" referencePoint="4" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{c1dd4477-af9d-436d-b1ee-a343daeaa4d8}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="422.852,296.954,mm" uuid="{c1dd4477-af9d-436d-b1ee-a343daeaa4d8}" size="825.508,566.189,mm" positionOnPage="422.852,296.954,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="2" position="422.852,296.954,mm" size="825.508,566.189,mm" templateUuid="{a24e703c-f1f6-4954-8ef8-bb4695d4a296}" background="false" cornerRadiusMeasure="0,mm" positionLock="false" visibility="1" excludeFromExports="0" id="" shapeType="1" referencePoint="4" groupUuid="" blendMode="0" uuid="{a24e703c-f1f6-4954-8ef8-bb4695d4a296}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="422.852,296.954,mm" opacity="1" frame="false" type="65643">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
-     <Option name="properties" type="Map">
-      <Option name="dataDefinedHeight" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+     <Option value="" type="QString" name="name"/>
+     <Option type="Map" name="properties">
+      <Option type="Map" name="dataDefinedHeight">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedPositionX" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedPositionX">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedPositionY" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedPositionY">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
-      <Option name="dataDefinedWidth" type="Map">
-       <Option value="false" name="active" type="bool"/>
-       <Option value="1" name="type" type="int"/>
-       <Option value="" name="val" type="QString"/>
+      <Option type="Map" name="dataDefinedWidth">
+       <Option value="false" type="bool" name="active"/>
+       <Option value="1" type="int" name="type"/>
+       <Option value="" type="QString" name="val"/>
       </Option>
      </Option>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-   <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleFill" locked="0" pass="0">
     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
     <prop v="255,255,255,255" k="color"/>
     <prop v="miter" k="joinstyle"/>
@@ -1422,29 +1420,29 @@
     <prop v="solid" k="style"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem zValue="1" shapeType="1" itemRotation="0" id="" referencePoint="0" cornerRadiusMeasure="0,mm" visibility="1" frame="false" excludeFromExports="0" positionLock="false" templateUuid="{3473bdfb-790d-4e95-9b16-0ccf7c9be4d0}" blendMode="0" frameJoinStyle="miter" type="65643" outlineWidthM="0.3,mm" position="17.3535,21.4012,mm" uuid="{3473bdfb-790d-4e95-9b16-0ccf7c9be4d0}" size="814.736,555.489,mm" positionOnPage="17.3535,21.4012,mm" groupUuid="" opacity="1" background="false">
-  <FrameColor red="0" alpha="255" green="0" blue="0"/>
-  <BackgroundColor red="255" alpha="255" green="255" blue="255"/>
+ <LayoutItem zValue="1" position="17.3535,21.4012,mm" size="814.736,555.489,mm" templateUuid="{4c9f38b1-82b5-4c21-bdad-ed8e82416bd6}" background="false" cornerRadiusMeasure="0,mm" positionLock="false" visibility="1" excludeFromExports="0" id="" shapeType="1" referencePoint="0" groupUuid="" blendMode="0" uuid="{4c9f38b1-82b5-4c21-bdad-ed8e82416bd6}" outlineWidthM="0.3,mm" itemRotation="0" frameJoinStyle="miter" positionOnPage="17.3535,21.4012,mm" opacity="1" frame="false" type="65643">
+  <FrameColor alpha="255" red="0" green="0" blue="0"/>
+  <BackgroundColor alpha="255" red="255" green="255" blue="255"/>
   <LayoutObject>
    <dataDefinedProperties>
     <Option type="Map">
-     <Option value="" name="name" type="QString"/>
+     <Option value="" type="QString" name="name"/>
      <Option name="properties"/>
-     <Option value="collection" name="type" type="QString"/>
+     <Option value="collection" type="QString" name="type"/>
     </Option>
    </dataDefinedProperties>
    <customproperties/>
   </LayoutObject>
-  <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="" type="fill">
-   <layer locked="0" class="SimpleFill" enabled="1" pass="0">
+  <symbol alpha="1" force_rhr="0" type="fill" clip_to_extent="1" name="">
+   <layer enabled="1" class="SimpleFill" locked="0" pass="0">
     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
     <prop v="255,255,255,255" k="color"/>
     <prop v="miter" k="joinstyle"/>
@@ -1458,9 +1456,9 @@
     <prop v="solid" k="style"/>
     <data_defined_properties>
      <Option type="Map">
-      <Option value="" name="name" type="QString"/>
+      <Option value="" type="QString" name="name"/>
       <Option name="properties"/>
-      <Option value="collection" name="type" type="QString"/>
+      <Option value="collection" type="QString" name="type"/>
      </Option>
     </data_defined_properties>
    </layer>
@@ -1486,5 +1484,5 @@
   <property key="pdfTextFormat" value="0"/>
   <property key="singleFile" value="false"/>
  </customproperties>
- <Atlas coverageLayer="Fracción_f69b92a2_18ae_4c63_a6ba_ac036111651a" coverageLayerSource="dbname='DEVSEG' host=10.70.80.62 port=5432 user='vheredia' key='gid' checkPrimaryKeyUnicity='1' table=&quot;( select * from e66014010.fracciones)&quot; (wkb_geometry)" hideCoverage="0" pageNameExpression="'F'  || &quot;FRAC&quot;  " filterFeatures="0" filenamePattern="'Fraccion-F' ||  &quot;FRAC&quot;   ||   '-' ||   (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot; || &quot;codloc&quot; ) , 'nombre') ) &#xd;" sortKey="frac" sortFeatures="1" sortAscending="1" enabled="1" coverageLayerName="Fracción" coverageLayerProvider="postgres"/>
+ <Atlas enabled="1" pageNameExpression="'F'  || &quot;FRAC&quot;  " sortAscending="1" sortKey="frac" hideCoverage="0" filenamePattern="'Fraccion-F' ||  &quot;FRAC&quot;   ||   '-' ||   (attribute( get_feature( 'localidad', 'codigo', &quot;prov&quot; || &quot;dpto&quot; || &quot;codloc&quot; ) , 'nombre') ) &#xd;" filterFeatures="0" coverageLayer="" sortFeatures="1"/>
 </Layout>
