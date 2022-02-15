@@ -370,7 +370,7 @@ class CensoSegmento:
         dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.222')
 >>>>>>> b24aa3fedd9154a7cbc73ce4715f969306e9fa2d
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
-        dbName = qs.value("PostgreSQL/connections/informatica/database",'PRODSEG')
+        dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
 
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
@@ -524,15 +524,10 @@ class CensoSegmento:
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
         qs = QSettings()
-<<<<<<< HEAD
         dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.82')
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
-=======
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.222')
-        dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
-        dbName = qs.value("PostgreSQL/connections/informatica/database",'PRODSEG')
->>>>>>> b24aa3fedd9154a7cbc73ce4715f969306e9fa2d
+
         ############Pedir al usuario cargar los campos de  usuario y contraseña
         dbUsr = QInputDialog.getText(None, 'usuario', 'Introduce el nombre de usuario de la base de datos')
         dbPwd = QInputDialog.getText(None, 'contraseña', 'Introduce la contraseña', QLineEdit.Password)
