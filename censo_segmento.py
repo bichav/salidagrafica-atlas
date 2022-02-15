@@ -364,11 +364,8 @@ class CensoSegmento:
         ##########Conexion desde BD a Postgis
         QgsProject.instance().clear()
         qs = QSettings()
-<<<<<<< HEAD
+
         dbHost = qs.value("PostgreSQL/connections/informatica/host",'10.70.80.82')
-=======
-        dbHost = qs.value("PostgreSQL/connections/informatica/host",'172.26.68.222')
->>>>>>> b24aa3fedd9154a7cbc73ce4715f969306e9fa2d
         dbPort = qs.value("PostgreSQL/connections/informatica/port",'5432')
         dbName = qs.value("PostgreSQL/connections/informatica/database",'UATSEG')
 
