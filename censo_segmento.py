@@ -476,7 +476,7 @@ class CensoSegmento:
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
          ####### Agrego la capa Colectivas  
-        sql = aglomerado[0] + ".radios"
+        sql = aglomerado[0] 
         uri.setDataSource("", "(select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,  concat(lpad(l.frac::text,2,'0'),lpad(l.radio::text,2,'0'),l.mza ) link from " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
