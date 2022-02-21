@@ -127,7 +127,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="183,72,75,255" k="line_color"/>
           <prop v="no" k="line_style"/>
           <prop v="0.26" k="line_width"/>
@@ -151,7 +151,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="1" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -159,7 +159,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -199,7 +199,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="10" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -207,7 +207,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -247,7 +247,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="11" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -255,7 +255,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -325,7 +325,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -370,7 +370,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="12" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -378,7 +378,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="164,200,18,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -448,7 +448,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -493,7 +493,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="13" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -501,7 +501,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -571,7 +571,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -611,7 +611,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="14" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -619,7 +619,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -689,7 +689,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -729,7 +729,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="15" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -737,7 +737,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -807,7 +807,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -847,7 +847,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="16" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -855,7 +855,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -925,7 +925,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -965,7 +965,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="17" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -973,7 +973,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1043,7 +1043,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1083,7 +1083,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="18" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -1091,7 +1091,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1161,7 +1161,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1201,7 +1201,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="19" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -1209,7 +1209,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1279,7 +1279,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1319,7 +1319,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="2" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -1327,7 +1327,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="164,200,18,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -1367,7 +1367,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="20" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -1375,7 +1375,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1445,7 +1445,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross2" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1485,7 +1485,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="21" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -1493,7 +1493,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1563,7 +1563,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1598,7 +1598,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="22" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -1606,7 +1606,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="164,200,18,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1676,7 +1676,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1711,7 +1711,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="23" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -1719,7 +1719,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1784,7 +1784,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1824,7 +1824,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="24" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -1832,7 +1832,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -1897,7 +1897,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -1932,7 +1932,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="25" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -1940,7 +1940,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2005,7 +2005,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2040,7 +2040,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="26" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -2048,7 +2048,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2113,7 +2113,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2148,7 +2148,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="27" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -2156,7 +2156,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2221,7 +2221,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2256,7 +2256,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="28" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -2264,7 +2264,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2329,7 +2329,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2364,7 +2364,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="29" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -2372,7 +2372,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2437,7 +2437,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2472,7 +2472,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="3" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -2480,7 +2480,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -2520,7 +2520,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="30" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -2528,7 +2528,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2593,7 +2593,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="line" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2628,7 +2628,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="31" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -2636,7 +2636,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2706,7 +2706,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2741,7 +2741,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="32" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -2749,7 +2749,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2819,7 +2819,7 @@
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2854,7 +2854,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="33" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -2862,7 +2862,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -2932,7 +2932,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -2967,7 +2967,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="34" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -2975,7 +2975,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3045,7 +3045,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3080,7 +3080,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="35" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3088,7 +3088,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="135,109,239,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3158,7 +3158,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3193,7 +3193,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="36" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3201,7 +3201,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3271,7 +3271,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3306,7 +3306,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="37" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3314,7 +3314,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3384,7 +3384,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3419,7 +3419,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="38" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3427,7 +3427,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3497,7 +3497,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3532,7 +3532,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="39" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3540,7 +3540,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3610,7 +3610,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3645,7 +3645,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="4" type="line" alpha="0.9">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3653,7 +3653,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -3693,7 +3693,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="40" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MapUnit" k="customdash_unit"/>
@@ -3701,7 +3701,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3766,7 +3766,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3801,7 +3801,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="41" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3809,7 +3809,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3879,7 +3879,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -3914,7 +3914,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="42" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -3922,7 +3922,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -3992,7 +3992,7 @@
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4027,7 +4027,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="43" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4035,7 +4035,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4105,7 +4105,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4140,7 +4140,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="44" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4148,7 +4148,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4218,7 +4218,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4253,7 +4253,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="45" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4261,7 +4261,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="135,109,239,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4331,7 +4331,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4366,7 +4366,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="46" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4374,7 +4374,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4444,7 +4444,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4479,7 +4479,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="47" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4487,7 +4487,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4557,7 +4557,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4592,7 +4592,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="48" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4600,7 +4600,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4670,7 +4670,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4705,7 +4705,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="49" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4713,7 +4713,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4783,7 +4783,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="cross" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4818,7 +4818,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="5" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4826,7 +4826,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -4866,7 +4866,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="50" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4874,7 +4874,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -4944,7 +4944,7 @@
               <prop v="0" k="angle"/>
               <prop v="2,2,2,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -4984,7 +4984,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="51" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -4992,7 +4992,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5062,7 +5062,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5107,7 +5107,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="52" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5115,7 +5115,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="164,200,18,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5185,7 +5185,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5230,7 +5230,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="53" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5238,7 +5238,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5308,7 +5308,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5348,7 +5348,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="54" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5356,7 +5356,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5426,7 +5426,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5466,7 +5466,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="55" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5474,7 +5474,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5544,7 +5544,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5584,7 +5584,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="56" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5592,7 +5592,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5662,7 +5662,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5702,7 +5702,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="57" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5710,7 +5710,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5780,7 +5780,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5820,7 +5820,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="58" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5828,7 +5828,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -5898,7 +5898,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -5938,7 +5938,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="59" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -5946,7 +5946,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6016,7 +6016,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6056,7 +6056,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="6" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6064,7 +6064,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -6104,7 +6104,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="60" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6112,7 +6112,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6182,7 +6182,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6222,7 +6222,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="61" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6230,7 +6230,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6300,7 +6300,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6345,7 +6345,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="62" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6353,7 +6353,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="164,200,18,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6423,7 +6423,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6468,7 +6468,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="63" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6476,7 +6476,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6546,7 +6546,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6586,7 +6586,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="64" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6594,7 +6594,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="57,95,219,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6664,7 +6664,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6704,7 +6704,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="65" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6712,7 +6712,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6782,7 +6782,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6822,7 +6822,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="66" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6830,7 +6830,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="200,109,60,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -6900,7 +6900,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -6940,7 +6940,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="67" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -6948,7 +6948,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -7018,7 +7018,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -7058,7 +7058,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="68" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7066,7 +7066,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -7136,7 +7136,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -7176,7 +7176,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="69" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7184,7 +7184,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="7" k="line_width"/>
@@ -7254,7 +7254,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="equilateral_triangle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -7294,7 +7294,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="7" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7302,7 +7302,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7342,7 +7342,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="70" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7350,7 +7350,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7400,7 +7400,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="118,228,171,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7429,7 +7429,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="71" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7437,7 +7437,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7487,7 +7487,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="172,54,240,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7516,7 +7516,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="72" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7524,7 +7524,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7574,7 +7574,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="188,171,255,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7603,7 +7603,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="73" type="line" alpha="0.9">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7611,7 +7611,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="207,25,119,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7661,7 +7661,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="207,25,119,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7690,7 +7690,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="74" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7698,7 +7698,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="51,84,194,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7748,7 +7748,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="51,84,194,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7777,7 +7777,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="75" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7785,7 +7785,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="135,109,239,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7835,7 +7835,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="135,109,239,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7864,7 +7864,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="76" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7872,7 +7872,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="177,97,53,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -7922,7 +7922,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="177,97,53,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -7951,7 +7951,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="77" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -7959,7 +7959,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8009,7 +8009,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="240,215,85,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8038,7 +8038,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="78" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8046,7 +8046,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8096,7 +8096,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="118,179,210,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8125,7 +8125,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="79" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8133,7 +8133,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8183,7 +8183,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="217,76,208,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8212,7 +8212,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="8" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8220,7 +8220,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8260,7 +8260,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="80" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8268,7 +8268,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,228,171,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8318,7 +8318,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="118,228,171,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8347,7 +8347,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="81" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8355,7 +8355,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="172,54,240,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8405,7 +8405,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="172,54,240,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8434,7 +8434,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="82" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8442,7 +8442,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="188,171,255,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8492,7 +8492,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="188,171,255,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8521,7 +8521,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="83" type="line" alpha="0.9">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8529,7 +8529,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="211,48,132,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8579,7 +8579,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="211,48,132,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8608,7 +8608,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="84" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8616,7 +8616,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="51,84,194,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8666,7 +8666,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="51,84,194,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8695,7 +8695,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="85" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8703,7 +8703,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="135,109,239,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8753,7 +8753,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="135,109,239,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8782,7 +8782,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="86" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8790,7 +8790,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="177,97,53,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8840,7 +8840,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="177,97,53,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8869,7 +8869,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="87" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8877,7 +8877,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="240,215,85,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -8927,7 +8927,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="240,215,85,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -8956,7 +8956,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="88" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -8964,7 +8964,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="118,179,210,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -9014,7 +9014,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="118,179,210,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -9043,7 +9043,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="89" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -9051,7 +9051,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -9101,7 +9101,7 @@
             <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
               <prop v="217,76,208,255" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MapUnit" k="offset_unit"/>
@@ -9130,7 +9130,7 @@
       <symbol clip_to_extent="1" force_rhr="0" name="9" type="line" alpha="1">
         <layer class="SimpleLine" enabled="1" locked="0" pass="0">
           <prop v="0" k="align_dash_pattern"/>
-          <prop v="flat" k="capstyle"/>
+          <prop v="round" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
           <prop v="MM" k="customdash_unit"/>
@@ -9138,7 +9138,7 @@
           <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
           <prop v="MM" k="dash_pattern_offset_unit"/>
           <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
+          <prop v="round" k="joinstyle"/>
           <prop v="217,76,208,255" k="line_color"/>
           <prop v="solid" k="line_style"/>
           <prop v="6" k="line_width"/>
@@ -9191,7 +9191,7 @@
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
+              <prop v="round" k="joinstyle"/>
               <prop v="circle" k="name"/>
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
@@ -10186,7 +10186,7 @@
             <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
             <prop v="MM" k="dash_pattern_offset_unit"/>
             <prop v="0" k="draw_inside_polygon"/>
-            <prop v="bevel" k="joinstyle"/>
+            <prop v="round" k="joinstyle"/>
             <prop v="35,35,35,255" k="line_color"/>
             <prop v="solid" k="line_style"/>
             <prop v="0.26" k="line_width"/>
