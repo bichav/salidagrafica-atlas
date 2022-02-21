@@ -259,7 +259,7 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-       ########Agrego la capa  Mascara 
+        ########Agrego la capa  Mascara 
         sql = aglomerado[0] + ".radios"
         uri.setDataSource("", "( select * from " + sql + ")","wkb_geometry","","gid")
         vlayer = QgsVectorLayer(uri.uri(),"Mascara","postgres")
@@ -271,7 +271,6 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
-        
         #######Agrego la capa  Especiales
         uri.setDataSource(aglomerado[0], "arc" , "wkb_geometry" )
         layer = QgsVectorLayer(uri.uri(), "CodEspeciales", "postgres")
@@ -306,7 +305,18 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-        
+         ####### Agrego la capa Colectivas  
+        sql = aglomerado[0] 
+        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from ) " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
+        if not vlayer.isValid():
+            print ("No se cargo la  capa Radio ")
+        QgsProject.instance().addMapLayer(vlayer)
+        renderer = vlayer.renderer()
+        vlayer.loadNamedStyle(origen +'/estilo_radio/colectiva.qml')
+        iface.mapCanvas().refresh() 
+        QgsProject.instance().mapLayers().values()
+        vlayer.triggerRepaint() 
         ########################### Agregar plantillas de salida##############
         pry= QgsProject.instance()
         #### Plantilla R3 ###############  
@@ -325,7 +335,6 @@ class CensoSegmento:
             lmg.addLayout(layout)
         else:
             print("error en la ruta del archivo R3" )
-        
         #### Plantilla tamaño A4 ###############          
         rutaR4= origen + r'/plantillas/radio_A4.qpt'
         if os.path.exists(rutaR4):
@@ -392,7 +401,7 @@ class CensoSegmento:
         QgsProject.instance().addMapLayer(layer)
         renderer = layer.renderer() 
        
-       ####### Agrego tabla provincia
+        ####### Agrego tabla provincia
         #uri.setDataSource("public","provincia","","","id")
         #vlayer = QgsVectorLayer(uri.uri(),"provincia","postgres")
         #QgsProject.instance().addMapLayer(vlayer)
@@ -475,9 +484,9 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
-         ####### Agrego la capa Colectivas  
+        ####### Agrego la capa Colectivas  
         sql = aglomerado[0] 
-        uri.setDataSource("", "(select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,  concat(lpad(l.frac::text,2,'0'),lpad(l.radio::text,2,'0'),l.mza ) link from " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from ) " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
             print ("No se cargo la  capa Radio ")
@@ -487,7 +496,7 @@ class CensoSegmento:
         iface.mapCanvas().refresh() 
         QgsProject.instance().mapLayers().values()
         vlayer.triggerRepaint() 
-                
+    
         ########################### Agregar plantillas de salida##############
         #### Plantilla tamaño A4 ###############  
         pry= QgsProject.instance()
