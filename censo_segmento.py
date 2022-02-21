@@ -307,7 +307,7 @@ class CensoSegmento:
         layer.triggerRepaint() 
          ####### Agrego la capa Colectivas  
         sql = aglomerado[0] 
-        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from ) " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
             print ("No se cargo la  capa Radio ")
@@ -487,7 +487,7 @@ class CensoSegmento:
         layer.triggerRepaint() 
         ####### Agrego la capa Colectivas  
         sql = aglomerado[0] 
-        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from ) " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from  " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
             print ("No se cargo la  capa Radio ")
