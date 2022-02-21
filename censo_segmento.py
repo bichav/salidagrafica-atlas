@@ -587,7 +587,7 @@ class CensoSegmento:
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
         if not layer.isValid():
             print ("No se cargo capa Segmento")
-        QgsProject.instance().addMapLayer(layer, addToLegend:bool = false)
+        QgsProject.instance().addMapLayer(layer)
         addToLegend:bool = false
         renderer = layer.renderer()
         layer.loadNamedStyle(origen + '/estilo_fraccion/lados_cortados.qml')
