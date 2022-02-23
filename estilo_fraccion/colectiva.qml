@@ -32,9 +32,9 @@
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="scale_method" v="diameter"/>
-          <prop k="size" v="7"/>
+          <prop k="size" v="5"/>
           <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="size_unit" v="MapUnit"/>
+          <prop k="size_unit" v="Point"/>
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
@@ -119,14 +119,21 @@
         </config>
       </editWidget>
     </field>
-    <field name="descripci2" configurationFlags="None">
+    <field name="frac" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="frac" configurationFlags="None">
+    <field name="radio" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="descripci2" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -164,17 +171,19 @@
   </fieldConfiguration>
   <aliases>
     <alias index="0" name="" field="id"/>
-    <alias index="1" name="" field="descripci2"/>
-    <alias index="2" name="" field="frac"/>
-    <alias index="3" name="" field="descripcio"/>
-    <alias index="4" name="" field="ccalle"/>
-    <alias index="5" name="" field="ncalle"/>
-    <alias index="6" name="" field="link"/>
+    <alias index="1" name="" field="frac"/>
+    <alias index="2" name="" field="radio"/>
+    <alias index="3" name="" field="descripci2"/>
+    <alias index="4" name="" field="descripcio"/>
+    <alias index="5" name="" field="ccalle"/>
+    <alias index="6" name="" field="ncalle"/>
+    <alias index="7" name="" field="link"/>
   </aliases>
   <defaults>
     <default field="id" applyOnUpdate="0" expression=""/>
-    <default field="descripci2" applyOnUpdate="0" expression=""/>
     <default field="frac" applyOnUpdate="0" expression=""/>
+    <default field="radio" applyOnUpdate="0" expression=""/>
+    <default field="descripci2" applyOnUpdate="0" expression=""/>
     <default field="descripcio" applyOnUpdate="0" expression=""/>
     <default field="ccalle" applyOnUpdate="0" expression=""/>
     <default field="ncalle" applyOnUpdate="0" expression=""/>
@@ -182,8 +191,9 @@
   </defaults>
   <constraints>
     <constraint constraints="3" exp_strength="0" notnull_strength="1" unique_strength="1" field="id"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="descripci2"/>
     <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="frac"/>
+    <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="radio"/>
+    <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="descripci2"/>
     <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="descripcio"/>
     <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="ccalle"/>
     <constraint constraints="0" exp_strength="0" notnull_strength="0" unique_strength="0" field="ncalle"/>
@@ -191,8 +201,9 @@
   </constraints>
   <constraintExpressions>
     <constraint exp="" field="id" desc=""/>
-    <constraint exp="" field="descripci2" desc=""/>
     <constraint exp="" field="frac" desc=""/>
+    <constraint exp="" field="radio" desc=""/>
+    <constraint exp="" field="descripci2" desc=""/>
     <constraint exp="" field="descripcio" desc=""/>
     <constraint exp="" field="ccalle" desc=""/>
     <constraint exp="" field="ncalle" desc=""/>
@@ -212,6 +223,7 @@
       <column width="-1" type="field" name="link" hidden="0"/>
       <column width="-1" type="actions" hidden="1"/>
       <column width="-1" type="field" name="frac" hidden="0"/>
+      <column width="-1" type="field" name="radio" hidden="0"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -250,6 +262,7 @@ def my_form_open(dialog, layer, feature):
     <field name="id" editable="1"/>
     <field name="link" editable="1"/>
     <field name="ncalle" editable="1"/>
+    <field name="radio" editable="1"/>
   </editable>
   <labelOnTop>
     <field name="ccalle" labelOnTop="0"/>
@@ -259,6 +272,7 @@ def my_form_open(dialog, layer, feature):
     <field name="id" labelOnTop="0"/>
     <field name="link" labelOnTop="0"/>
     <field name="ncalle" labelOnTop="0"/>
+    <field name="radio" labelOnTop="0"/>
   </labelOnTop>
   <dataDefinedFieldProperties/>
   <widgets/>
