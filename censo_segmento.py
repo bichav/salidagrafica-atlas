@@ -252,7 +252,7 @@ class CensoSegmento:
         sql="""(
         select
    seg,
-   replace(descripcion, '. ' , ' ') descripcion,
+   replace(descripcion, '. ' , '\n') descripcion,
    viviendas,
    link,
    lpad( radio::text, 2, '0') radio,
@@ -440,8 +440,15 @@ group by
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
         ####### Agrego la capa Colectivas  
-        sql = aglomerado[0] 
-        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.radio ,  l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        esquema = aglomerado[0] 
+        sql="""( select distinct l.wkb_geometry , l.id , l.radio ,  l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,
+        concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link , lo.cod_subt_v , s.nombre from 
+        """ +esquema+ """.listado_geo as l join 
+        """ +esquema+ """.listado as lo on l.id_list = lo.id 
+        left join public.subtipo_vivienda as s on lo.cod_subt_v = s.codigo 
+        where l.tipoviv = 'CO' )""" 
+        uri.setDataSource("", sql ,"wkb_geometry","","id")
+        
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
             print ("No se cargo la  capa Radio ")
@@ -562,7 +569,142 @@ group by
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
         #Agrego la capa  SEGMENTOS 
-        uri.setDataSource("","(select  seg, descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 and count(*)=conteo then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.conteo, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
+        esquema = aglomerado[0]
+        sql="""(
+        select
+   seg,
+   replace(descripcion, '. ' , ' ') descripcion,
+   viviendas,
+   link,
+   lpad( radio::text, 2, '0') radio,
+   (
+      st_union(geom)
+   )
+   geom 
+FROM
+   (
+      select
+         r3.seg,
+         r3.radio,
+         r3.viviendas,
+         r3.descripcion,
+         concat(lpad(r3.prov::text, 2, '0'), lpad(r3.dpto::text, 3, '0'), lpad(r3.codloc::text, 3, '0'), lpad(r3.frac::text, 2, '0'), lpad( r3.radio::text, 2, '0') , seg ) link,
+         coalesce( 
+         case
+            when
+               l.lado is null 
+            then
+               null 
+            when
+               count(*) = 1 
+               and count(*) = conteo 
+            then
+               st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+               CASE
+                  WHEN
+                     ST_Length(wkb_geometry_lado) > 14 
+                  THEN
+(7 / ST_Length(wkb_geometry_lado))::float8 
+                  ELSE
+                     0.1::float8 
+               END
+, 
+               CASE
+                  WHEN
+                     ST_Length(wkb_geometry_lado) > 14 
+                  THEN
+(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+                  ELSE
+                     0.9::float8 
+               END
+) , - 8) 
+               else
+                  st_union( st_union( st_union(
+                  CASE
+                     WHEN
+                        nro_en_lado = 1 
+                     THEN
+	     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)>0.01 THEN
+             st_offsetcurve(
+              ST_LineSubstring(l.wkb_geometry_lado, 0.01,
+              ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
+              )
+              , -8) ELSE
+	         ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+	              END
+                     else
+                        null 
+                  end
+), st_makeline( l.wkb_geometry 
+      order by
+         orden_reco) ) , st_union(
+         CASE
+            WHEN
+               nro_en_lado = conteo 
+            THEN
+     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)<0.99 THEN
+           st_offsetcurve(
+              ST_LineSubstring(l.wkb_geometry_lado, 
+              ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
+              ,0.99)
+              , -8)
+	ELSE 
+		ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+	END
+            else
+               null 
+         end
+) ) 
+         END
+, st_union( st_union(
+         CASE
+            WHEN
+               nro_en_lado = 1 
+            THEN
+               ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+            WHEN
+               nro_en_lado = conteo 
+            THEN
+               ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+            else
+               null 
+         end
+), st_makeline(l.wkb_geometry 
+      order by
+         orden_reco) ) , st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+         CASE
+            WHEN
+               ST_Length(wkb_geometry_lado) > 14 
+            THEN
+(7 / ST_Length(wkb_geometry_lado))::float8 
+            ELSE
+               0.3::float8 
+         END
+, 
+         CASE
+            WHEN
+               ST_Length(wkb_geometry_lado) > 14 
+            THEN
+(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+            ELSE
+               0.7::float8 
+         END
+), - 8) ) geom 
+      from
+         """+esquema+""".r3 
+         left join
+            """+esquema+""".segmentacion s 
+            on r3.segmento_id = s.segmento_id 
+         left join
+            """+esquema+""".listado_geo l 
+            on l.id_list = s.listado_id 
+      group by
+         r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.conteo, l.lado, l.mza, l.wkb_geometry_lado, r3.seg 
+   )
+   foo 
+group by
+   radio , seg , viviendas , descripcion , link )"""
+        uri.setDataSource("",sql, "geom", "", "link")
         layer = QgsVectorLayer(uri.uri(), "capaseg", "postgres")
         if not layer.isValid():
             print ("No se cargo capa segmento")
@@ -619,8 +761,13 @@ group by
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
         ####### Agrego la capa Colectivas  
-        sql = aglomerado[0] 
-        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.descripci2 ,  l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from  " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        sql="""( select distinct l.wkb_geometry , l.id , l.radio ,  l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,
+        concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link , lo.cod_subt_v , s.nombre from 
+        """ +esquema+ """.listado_geo as l join 
+        """ +esquema+ """.listado as lo on l.id_list = lo.id 
+        left join public.subtipo_vivienda as s on lo.cod_subt_v = s.codigo 
+        where l.tipoviv = 'CO' )""" 
+        uri.setDataSource("", sql ,"wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
             print ("No se cargo la  capa Radio ")
@@ -725,7 +872,142 @@ group by
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
         ####### Agrego la capa  Segmentacion y descripcion
-        uri.setDataSource("","(select  seg, descripcion , viviendas, link, lpad( radio::text,2,'0') radio , (st_union(geom)) geom FROM ( select         r3.seg, r3.radio, r3.viviendas, r3.descripcion, concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'),         lpad( r3.radio::text,2,'0') ,seg ) link,           coalesce(         case when l.lado is null then null          when count(*)=1 and count(*)=conteo then st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END, CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END)    ,-8)         else          st_union( st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end),            st_makeline( l.wkb_geometry order by orden_reco)         ) ,st_union(CASE WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry) else null end)         ) END, st_union( st_union(CASE WHEN nro_en_lado=1 THEN ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)         WHEN nro_en_lado=conteo THEN ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado,-8)),8),wkb_geometry)          else null end ),  st_makeline(l.wkb_geometry order by orden_reco) ) ,         st_offsetcurve( ST_LineSubstring( wkb_geometry_lado,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (7/ST_Length(wkb_geometry_lado))::float8 ELSE 0.1::float8 END,         CASE WHEN ST_Length(wkb_geometry_lado)>14 THEN (1-(7/ST_Length(wkb_geometry_lado)))::float8 ELSE 0.9::float8 END),-8)  ) geom  from "  +sql+  ".r3  left join " +sql+  ".segmentacion s on r3.segmento_id=s.segmento_id    left join "   +sql+  ".listado_geo l on l.id_list = s.listado_id  group by   r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.conteo, l.lado, l.mza, l.wkb_geometry_lado, r3.seg  ) foo group by  radio , seg , viviendas , descripcion , link )", "geom", "", "link")
+        esquema = aglomerado[0]
+        sql="""(
+        select
+   seg,
+   replace(descripcion, '. ' , ' ') descripcion,
+   viviendas,
+   link,
+   lpad( radio::text, 2, '0') radio,
+   (
+      st_union(geom)
+   )
+   geom 
+FROM
+   (
+      select
+         r3.seg,
+         r3.radio,
+         r3.viviendas,
+         r3.descripcion,
+         concat(lpad(r3.prov::text, 2, '0'), lpad(r3.dpto::text, 3, '0'), lpad(r3.codloc::text, 3, '0'), lpad(r3.frac::text, 2, '0'), lpad( r3.radio::text, 2, '0') , seg ) link,
+         coalesce( 
+         case
+            when
+               l.lado is null 
+            then
+               null 
+            when
+               count(*) = 1 
+               and count(*) = conteo 
+            then
+               st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+               CASE
+                  WHEN
+                     ST_Length(wkb_geometry_lado) > 14 
+                  THEN
+(7 / ST_Length(wkb_geometry_lado))::float8 
+                  ELSE
+                     0.1::float8 
+               END
+, 
+               CASE
+                  WHEN
+                     ST_Length(wkb_geometry_lado) > 14 
+                  THEN
+(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+                  ELSE
+                     0.9::float8 
+               END
+) , - 8) 
+               else
+                  st_union( st_union( st_union(
+                  CASE
+                     WHEN
+                        nro_en_lado = 1 
+                     THEN
+	     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)>0.01 THEN
+             st_offsetcurve(
+              ST_LineSubstring(l.wkb_geometry_lado, 0.01,
+              ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
+              )
+              , -8) ELSE
+	         ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+	              END
+                     else
+                        null 
+                  end
+), st_makeline( l.wkb_geometry 
+      order by
+         orden_reco) ) , st_union(
+         CASE
+            WHEN
+               nro_en_lado = conteo 
+            THEN
+     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)<0.99 THEN
+           st_offsetcurve(
+              ST_LineSubstring(l.wkb_geometry_lado, 
+              ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
+              ,0.99)
+              , -8)
+	ELSE 
+		ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+	END
+            else
+               null 
+         end
+) ) 
+         END
+, st_union( st_union(
+         CASE
+            WHEN
+               nro_en_lado = 1 
+            THEN
+               ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+            WHEN
+               nro_en_lado = conteo 
+            THEN
+               ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+            else
+               null 
+         end
+), st_makeline(l.wkb_geometry 
+      order by
+         orden_reco) ) , st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+         CASE
+            WHEN
+               ST_Length(wkb_geometry_lado) > 14 
+            THEN
+(7 / ST_Length(wkb_geometry_lado))::float8 
+            ELSE
+               0.3::float8 
+         END
+, 
+         CASE
+            WHEN
+               ST_Length(wkb_geometry_lado) > 14 
+            THEN
+(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+            ELSE
+               0.7::float8 
+         END
+), - 8) ) geom 
+      from
+         """+esquema+""".r3 
+         left join
+            """+esquema+""".segmentacion s 
+            on r3.segmento_id = s.segmento_id 
+         left join
+            """+esquema+""".listado_geo l 
+            on l.id_list = s.listado_id 
+      group by
+         r3.radio, r3.viviendas, r3.descripcion, r3.prov, r3.dpto, r3.codloc , r3.frac, l.conteo, l.lado, l.mza, l.wkb_geometry_lado, r3.seg 
+   )
+   foo 
+group by
+   radio , seg , viviendas , descripcion , link )"""
+        uri.setDataSource("",sql, "geom", "", "link")
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
         if not layer.isValid():
             print ("No se cargo capa Segmento")
@@ -797,8 +1079,13 @@ group by
         QgsProject.instance().mapLayers().values()
         layer.triggerRepaint() 
         ####### Agrego la capa Colectivas  
-        sql = aglomerado[0] 
-        uri.setDataSource("", "( select l.wkb_geometry , l.id , l.frac , l.radio,  l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,   concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link from " + sql + ".listado_geo as l where l.tipoviv = 'CO')","wkb_geometry","","id")
+        sql="""( select distinct l.wkb_geometry , l.id , l.radio ,  l.descripci2 , l.descripcio,  l.ccalle , l.ncalle ,
+        concat( l.mzae,lpad(l.lado::integer::text,2,'0') ) link , lo.cod_subt_v , s.nombre from 
+        """ +esquema+ """.listado_geo as l join 
+        """ +esquema+ """.listado as lo on l.id_list = lo.id 
+        left join public.subtipo_vivienda as s on lo.cod_subt_v = s.codigo 
+        where l.tipoviv = 'CO' )""" 
+        uri.setDataSource("", sql ,"wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
             print ("No se cargo la  capa fraccion ")
