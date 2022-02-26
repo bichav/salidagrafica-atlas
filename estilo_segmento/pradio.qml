@@ -13,7 +13,7 @@
   </temporal>
   <renderer-v2 forceraster="0" enableorderby="0" symbollevels="1" type="RuleRenderer">
     <rules key="{aab5a632-a917-4c2f-adea-ac5db53f9087}">
-      <rule filter="&#xd;&#xa;&#xd;&#xa;substr(attribute (@atlas_feature ,'link'),9,2) = &quot;frac&quot; &#xd;&#xa;&#xd;&#xa; and&#xd;&#xa;attribute (@atlas_feature ,'radio') =  &quot;radio&quot;" key="{0c92cedb-56fe-47a1-a2b5-ce140b6580c1}" symbol="0" label="Elementos atlas"/>
+      <rule filter=" attribute (@atlas_feature ,'frac') =  &quot;frac&quot;&#xd;&#xa; and&#xd;&#xa;attribute (@atlas_feature ,'radio') =  &quot;radio&quot;" key="{0c92cedb-56fe-47a1-a2b5-ce140b6580c1}" symbol="0" label="Elementos atlas"/>
     </rules>
     <symbols>
       <symbol name="0" alpha="1" clip_to_extent="1" type="fill" force_rhr="0">
@@ -51,8 +51,8 @@
     </symbols>
   </renderer-v2>
   <labeling type="rule-based">
-    <rules key="{b42fef10-b6e8-4247-b71c-5aafdb87e9fb}">
-      <rule filter="attribute (@atlas_feature ,'radio') =  &quot;radio&quot;" key="{1b58462f-9e1e-45e0-9a22-44734f5457bd}">
+    <rules key="{615f8185-f871-438a-8260-73195aabc3db}">
+      <rule filter="attribute (@atlas_feature ,'radio') =  &quot;radio&quot;" key="{e17a3ef9-b325-41c9-809c-9db8fa51e658}">
         <settings calloutType="simple">
           <text-style textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" fontUnderline="0" fontSize="15" blendMode="0" useSubstitutions="0" fontStrikeout="0" capitalization="0" fontFamily="Arial" fontLetterSpacing="0" fontKerning="1" namedStyle="Normal" fontWordSpacing="0" multilineHeight="1" allowHtml="0" fieldName="radio" textColor="227,26,28,255" previewBkgrdColor="255,255,255,255" fontWeight="50" fontItalic="0" textOrientation="horizontal" isExpression="0">
             <text-buffer bufferBlendMode="0" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferJoinStyle="128" bufferDraw="1" bufferNoFill="1" bufferOpacity="1" bufferColor="255,255,255,255"/>
@@ -287,7 +287,7 @@
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;frac&quot;">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;radio&quot;">
     <columns>
       <column type="actions" hidden="1" width="-1"/>
       <column name="gid" type="field" hidden="0" width="-1"/>

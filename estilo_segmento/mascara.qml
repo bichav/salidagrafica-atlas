@@ -13,7 +13,7 @@
   </temporal>
   <renderer-v2 forceraster="0" enableorderby="0" symbollevels="1" type="RuleRenderer">
     <rules key="{aab5a632-a917-4c2f-adea-ac5db53f9087}">
-      <rule filter="&#xd;&#xa;&#xd;&#xa;substr(attribute (@atlas_feature ,'link'),9,2) != &quot;frac&quot; &#xd;&#xa;&#xd;&#xa; and&#xd;&#xa;attribute (@atlas_feature ,'radio') !=  &quot;radio&quot;" key="{22170455-702e-427e-8a2a-fe03a6bbe1fb}" symbol="0"/>
+      <rule filter=" attribute (@atlas_feature ,'frac') !=  &quot;frac&quot;&#xd;&#xa; and&#xd;&#xa;attribute (@atlas_feature ,'radio') !=  &quot;radio&quot;" key="{22170455-702e-427e-8a2a-fe03a6bbe1fb}" symbol="0"/>
     </rules>
     <symbols>
       <symbol name="0" alpha="1" clip_to_extent="1" type="fill" force_rhr="0">
