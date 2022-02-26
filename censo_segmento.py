@@ -778,6 +778,7 @@ group by
         """ +esquema+ """.listado as lo on l.id_list = lo.id 
         left join public.subtipo_vivienda as s on lo.cod_subt_v = s.codigo 
         where l.tipoviv = 'CO' )""" 
+
         uri.setDataSource("", sql ,"wkb_geometry","","id")
         vlayer = QgsVectorLayer(uri.uri(),"Colectivas","postgres")
         if not vlayer.isValid():
