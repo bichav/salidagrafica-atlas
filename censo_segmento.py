@@ -256,7 +256,7 @@ class CensoSegmento:
    viviendas,
    link,
    lpad( radio::text, 2, '0') radio,  
-   lpad( fras::text, 2, '0') frac,  
+   lpad( frac::text, 2, '0') frac,  
    (
       st_union(geom)
    )
@@ -387,7 +387,7 @@ FROM
    )
    foo 
 group by
-   radio , frac,  seg , viviendas , descripcion , link )"""
+     radio , frac,  seg , viviendas , descripcion , link )"""
         uri.setDataSource("",sql, "geom", "", "link")
         layer = QgsVectorLayer(uri.uri(), "Segmentacion", "postgres")
         if not layer.isValid():
