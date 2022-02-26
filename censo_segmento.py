@@ -259,7 +259,7 @@ class CensoSegmento:
    (
       st_union(geom)
    )
-   geom 
+   geom , array_agg ( distinct lado) lados
 FROM
    (
       select
@@ -368,7 +368,10 @@ FROM
             ELSE
                0.7::float8 
          END
-), - 8) ) geom 
+            ), - 8) ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
+            lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'), 
+            lpad( r3.radio ::text,2,'0') , lpad( l.mza::integer::text,3,'0') ,
+            lpad (l.lado::integer::text,2,'0' )) lado 
       from
          """+esquema+""".r3 
          left join
@@ -580,7 +583,7 @@ group by
    (
       st_union(geom)
    )
-   geom 
+   geom , array_agg ( distinct lado) lados
 FROM
    (
       select
@@ -689,7 +692,10 @@ FROM
             ELSE
                0.7::float8 
          END
-), - 8) ) geom 
+            ), - 8) ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
+            lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'), 
+            lpad( r3.radio ::text,2,'0') , lpad( l.mza::integer::text,3,'0') ,
+            lpad (l.lado::integer::text,2,'0' )) lado 
       from
          """+esquema+""".r3 
          left join
@@ -883,7 +889,7 @@ group by
    (
       st_union(geom)
    )
-   geom 
+   geom , array_agg ( distinct lado) lados
 FROM
    (
       select
@@ -992,7 +998,10 @@ FROM
             ELSE
                0.7::float8 
          END
-), - 8) ) geom 
+            ), - 8) ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
+            lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'), 
+            lpad( r3.radio ::text,2,'0') , lpad( l.mza::integer::text,3,'0') ,
+            lpad (l.lado::integer::text,2,'0' )) lado 
       from
          """+esquema+""".r3 
          left join
