@@ -280,25 +280,29 @@ FROM
                count(*) = 1 
                and count(*) = conteo 
             then
-               st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+               st_offsetcurve( 
+               ST_SimplifyPreserveTopology(
+ST_LineSubstring( wkb_geometry_lado, 
                CASE
                   WHEN
-                     ST_Length(wkb_geometry_lado) > 14 
+                     ST_Length(wkb_geometry_lado) > 20 
                   THEN
-(7 / ST_Length(wkb_geometry_lado))::float8 
+(7.0 / ST_Length(wkb_geometry_lado))::float8 
                   ELSE
                      0.1::float8 
                END
 , 
                CASE
                   WHEN
-                     ST_Length(wkb_geometry_lado) > 14 
+                     ST_Length(wkb_geometry_lado) > 20 
                   THEN
-(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+(1 - (7.0 / ST_Length(wkb_geometry_lado)))::float8 
                   ELSE
                      0.9::float8 
                END
-) , - 8) 
+)
+,2) 
+, - 8) 
                else
                   st_union( st_union( st_union(
                   CASE
@@ -307,11 +311,20 @@ FROM
                      THEN
 	     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)>0.01 THEN
              st_offsetcurve(
+                            ST_SimplifyPreserveTopology(
               ST_LineSubstring(l.wkb_geometry_lado, 0.01,
               ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
               )
-              , -8) ELSE
-	         ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+              , 2)
+            , -8) 
+  		ELSE
+	         ST_ShortestLine( st_buffer(st_endpoint(
+	         st_offsetcurve(
+	         ST_SimplifyPreserveTopology(
+	           l.wkb_geometry_lado
+		 , 2)
+	         , - 8)
+	         ), 8), wkb_geometry) 
 	              END
                      else
                         null 
@@ -325,12 +338,20 @@ FROM
             THEN
      CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)<0.99 THEN
            st_offsetcurve(
+       	         ST_SimplifyPreserveTopology(
               ST_LineSubstring(l.wkb_geometry_lado, 
               ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
               ,0.99)
-              , -8)
+              , 2)
+             , -8)
 	ELSE 
-		ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+		ST_ShortestLine( st_buffer(st_startpoint(
+		st_offsetcurve(
+		ST_simplify(
+		  l.wkb_geometry_lado
+		, 2)
+		, - 8)
+		), 8), wkb_geometry) 
 	END
             else
                null 
@@ -342,17 +363,32 @@ FROM
             WHEN
                nro_en_lado = 1 
             THEN
-               ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+               ST_ShortestLine( st_buffer(st_endpoint(
+               st_offsetcurve(
+ST_SimplifyPreserveTopology(
+               l.wkb_geometry_lado
+               ,2)
+               , - 8)
+               ), 8), wkb_geometry) 
             WHEN
                nro_en_lado = conteo 
             THEN
-               ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+               ST_ShortestLine( st_buffer(st_startpoint(
+               st_offsetcurve(
+	         ST_SimplifyPreserveTopology(
+               l.wkb_geometry_lado
+               , 2)
+               , - 8)
+               ), 8), wkb_geometry) 
             else
                null 
          end
 ), st_makeline(l.wkb_geometry 
       order by
-         orden_reco) ) , st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+         orden_reco) ) , 
+         st_offsetcurve( 
+	         ST_SimplifyPreserveTopology(         
+         ST_LineSubstring( wkb_geometry_lado, 
          CASE
             WHEN
                ST_Length(wkb_geometry_lado) > 14 
@@ -370,7 +406,10 @@ FROM
             ELSE
                0.7::float8 
          END
-            ), - 8) ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
+            )
+	, 2)
+            , - 8) 
+            ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
             lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'), 
             lpad( r3.radio ::text,2,'0') , lpad( l.mza::integer::text,3,'0') ,
             lpad (l.lado::integer::text,2,'0' )) lado 
@@ -607,25 +646,29 @@ FROM
                count(*) = 1 
                and count(*) = conteo 
             then
-               st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+               st_offsetcurve( 
+               ST_SimplifyPreserveTopology(
+ST_LineSubstring( wkb_geometry_lado, 
                CASE
                   WHEN
-                     ST_Length(wkb_geometry_lado) > 14 
+                     ST_Length(wkb_geometry_lado) > 20 
                   THEN
-(7 / ST_Length(wkb_geometry_lado))::float8 
+(7.0 / ST_Length(wkb_geometry_lado))::float8 
                   ELSE
                      0.1::float8 
                END
 , 
                CASE
                   WHEN
-                     ST_Length(wkb_geometry_lado) > 14 
+                     ST_Length(wkb_geometry_lado) > 20 
                   THEN
-(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+(1 - (7.0 / ST_Length(wkb_geometry_lado)))::float8 
                   ELSE
                      0.9::float8 
                END
-) , - 8) 
+)
+,2) 
+, - 8) 
                else
                   st_union( st_union( st_union(
                   CASE
@@ -634,11 +677,20 @@ FROM
                      THEN
 	     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)>0.01 THEN
              st_offsetcurve(
+                            ST_SimplifyPreserveTopology(
               ST_LineSubstring(l.wkb_geometry_lado, 0.01,
               ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
               )
-              , -8) ELSE
-	         ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+              , 2)
+            , -8) 
+  		ELSE
+	         ST_ShortestLine( st_buffer(st_endpoint(
+	         st_offsetcurve(
+	         ST_SimplifyPreserveTopology(
+	           l.wkb_geometry_lado
+		 , 2)
+	         , - 8)
+	         ), 8), wkb_geometry) 
 	              END
                      else
                         null 
@@ -652,12 +704,20 @@ FROM
             THEN
      CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)<0.99 THEN
            st_offsetcurve(
+       	         ST_SimplifyPreserveTopology(
               ST_LineSubstring(l.wkb_geometry_lado, 
               ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
               ,0.99)
-              , -8)
+              , 2)
+             , -8)
 	ELSE 
-		ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+		ST_ShortestLine( st_buffer(st_startpoint(
+		st_offsetcurve(
+		ST_simplify(
+		  l.wkb_geometry_lado
+		, 2)
+		, - 8)
+		), 8), wkb_geometry) 
 	END
             else
                null 
@@ -669,17 +729,32 @@ FROM
             WHEN
                nro_en_lado = 1 
             THEN
-               ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+               ST_ShortestLine( st_buffer(st_endpoint(
+               st_offsetcurve(
+ST_SimplifyPreserveTopology(
+               l.wkb_geometry_lado
+               ,2)
+               , - 8)
+               ), 8), wkb_geometry) 
             WHEN
                nro_en_lado = conteo 
             THEN
-               ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+               ST_ShortestLine( st_buffer(st_startpoint(
+               st_offsetcurve(
+	         ST_SimplifyPreserveTopology(
+               l.wkb_geometry_lado
+               , 2)
+               , - 8)
+               ), 8), wkb_geometry) 
             else
                null 
          end
 ), st_makeline(l.wkb_geometry 
       order by
-         orden_reco) ) , st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+         orden_reco) ) , 
+         st_offsetcurve( 
+	         ST_SimplifyPreserveTopology(         
+         ST_LineSubstring( wkb_geometry_lado, 
          CASE
             WHEN
                ST_Length(wkb_geometry_lado) > 14 
@@ -697,11 +772,14 @@ FROM
             ELSE
                0.7::float8 
          END
-            ), - 8) ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
+            )
+	, 2)
+            , - 8) 
+            ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
             lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'), 
             lpad( r3.radio ::text,2,'0') , lpad( l.mza::integer::text,3,'0') ,
             lpad (l.lado::integer::text,2,'0' )) lado 
-      from
+       from
          """+esquema+""".r3 
          left join
             """+esquema+""".segmentacion s 
@@ -916,25 +994,29 @@ FROM
                count(*) = 1 
                and count(*) = conteo 
             then
-               st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+               st_offsetcurve( 
+               ST_SimplifyPreserveTopology(
+ST_LineSubstring( wkb_geometry_lado, 
                CASE
                   WHEN
-                     ST_Length(wkb_geometry_lado) > 14 
+                     ST_Length(wkb_geometry_lado) > 20 
                   THEN
-(7 / ST_Length(wkb_geometry_lado))::float8 
+(7.0 / ST_Length(wkb_geometry_lado))::float8 
                   ELSE
                      0.1::float8 
                END
 , 
                CASE
                   WHEN
-                     ST_Length(wkb_geometry_lado) > 14 
+                     ST_Length(wkb_geometry_lado) > 20 
                   THEN
-(1 - (7 / ST_Length(wkb_geometry_lado)))::float8 
+(1 - (7.0 / ST_Length(wkb_geometry_lado)))::float8 
                   ELSE
                      0.9::float8 
                END
-) , - 8) 
+)
+,2) 
+, - 8) 
                else
                   st_union( st_union( st_union(
                   CASE
@@ -943,11 +1025,20 @@ FROM
                      THEN
 	     CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)>0.01 THEN
              st_offsetcurve(
+                            ST_SimplifyPreserveTopology(
               ST_LineSubstring(l.wkb_geometry_lado, 0.01,
               ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
               )
-              , -8) ELSE
-	         ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+              , 2)
+            , -8) 
+  		ELSE
+	         ST_ShortestLine( st_buffer(st_endpoint(
+	         st_offsetcurve(
+	         ST_SimplifyPreserveTopology(
+	           l.wkb_geometry_lado
+		 , 2)
+	         , - 8)
+	         ), 8), wkb_geometry) 
 	              END
                      else
                         null 
@@ -961,12 +1052,20 @@ FROM
             THEN
      CASE WHEN ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)<0.99 THEN
            st_offsetcurve(
+       	         ST_SimplifyPreserveTopology(
               ST_LineSubstring(l.wkb_geometry_lado, 
               ST_LineLocatePoint(l.wkb_geometry_lado,l.wkb_geometry)
               ,0.99)
-              , -8)
+              , 2)
+             , -8)
 	ELSE 
-		ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+		ST_ShortestLine( st_buffer(st_startpoint(
+		st_offsetcurve(
+		ST_simplify(
+		  l.wkb_geometry_lado
+		, 2)
+		, - 8)
+		), 8), wkb_geometry) 
 	END
             else
                null 
@@ -978,17 +1077,32 @@ FROM
             WHEN
                nro_en_lado = 1 
             THEN
-               ST_ShortestLine( st_buffer(st_endpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+               ST_ShortestLine( st_buffer(st_endpoint(
+               st_offsetcurve(
+ST_SimplifyPreserveTopology(
+               l.wkb_geometry_lado
+               ,2)
+               , - 8)
+               ), 8), wkb_geometry) 
             WHEN
                nro_en_lado = conteo 
             THEN
-               ST_ShortestLine( st_buffer(st_startpoint(st_offsetcurve(l.wkb_geometry_lado, - 8)), 8), wkb_geometry) 
+               ST_ShortestLine( st_buffer(st_startpoint(
+               st_offsetcurve(
+	         ST_SimplifyPreserveTopology(
+               l.wkb_geometry_lado
+               , 2)
+               , - 8)
+               ), 8), wkb_geometry) 
             else
                null 
          end
 ), st_makeline(l.wkb_geometry 
       order by
-         orden_reco) ) , st_offsetcurve( ST_LineSubstring( wkb_geometry_lado, 
+         orden_reco) ) , 
+         st_offsetcurve( 
+	         ST_SimplifyPreserveTopology(         
+         ST_LineSubstring( wkb_geometry_lado, 
          CASE
             WHEN
                ST_Length(wkb_geometry_lado) > 14 
@@ -1006,7 +1120,10 @@ FROM
             ELSE
                0.7::float8 
          END
-            ), - 8) ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
+            )
+	, 2)
+            , - 8) 
+            ) geom  , concat(lpad(r3.prov::text,2,'0'),lpad(r3.dpto::text,3,'0'),
             lpad(r3.codloc::text,3,'0'), lpad(r3.frac::text,2,'0'), 
             lpad( r3.radio ::text,2,'0') , lpad( l.mza::integer::text,3,'0') ,
             lpad (l.lado::integer::text,2,'0' )) lado 
